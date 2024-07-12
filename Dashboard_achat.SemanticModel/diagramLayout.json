@@ -45,7 +45,7 @@
             "height": 388.79622753996546,
             "width": 234
           },
-          "zIndex": 15
+          "zIndex": 14
         },
         {
           "location": {
@@ -68,10 +68,10 @@
           "nodeIndex": "Ge_Article_Laboratoire",
           "nodeLineageTag": "5b9ab778-4eba-47ba-9d48-86a82617da62",
           "size": {
-            "height": 187.67221784192429,
+            "height": 264.7965117534095,
             "width": 234
           },
-          "zIndex": 13
+          "zIndex": 12
         },
         {
           "location": {
@@ -97,7 +97,7 @@
             "height": 817.21662300198693,
             "width": 357.14563503419009
           },
-          "zIndex": 17
+          "zIndex": 16
         },
         {
           "location": {
@@ -120,7 +120,7 @@
           "nodeIndex": "Produit",
           "nodeLineageTag": "67c08ad2-72cd-4a3d-be11-21586d5ddf69",
           "size": {
-            "height": 179.59886915024481,
+            "height": 215.82391629048777,
             "width": 234
           },
           "zIndex": 8
@@ -162,7 +162,7 @@
             "height": 152.02001953991589,
             "width": 234
           },
-          "zIndex": 12
+          "zIndex": 11
         },
         {
           "location": {
@@ -175,7 +175,7 @@
             "height": 185.8980036254369,
             "width": 234
           },
-          "zIndex": 11
+          "zIndex": 18
         },
         {
           "location": {
@@ -188,7 +188,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 14
+          "zIndex": 13
         },
         {
           "location": {
@@ -227,7 +227,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 16
+          "zIndex": 15
         },
         {
           "location": {
@@ -240,11 +240,24 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 18
+          "zIndex": 17
+        },
+        {
+          "location": {
+            "x": 2595.6366215994,
+            "y": 556.0883500459679
+          },
+          "nodeIndex": "vTopFournisseur",
+          "nodeLineageTag": "921f150e-df10-4a14-b899-92089e77b839",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Toutes les tables",
-      "zoomValue": 76.327583382659014,
+      "zoomValue": 85.576148127524618,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
