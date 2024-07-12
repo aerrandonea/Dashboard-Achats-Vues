@@ -192,8 +192,8 @@
         },
         {
           "location": {
-            "x": 2721.7111693568186,
-            "y": 25.898133018735706
+            "x": 2311.6366215994,
+            "y": 801.5024083854538
           },
           "nodeIndex": "Paramètre",
           "nodeLineageTag": "36f73dfd-753a-4ee5-89bf-e6598c39e321",
@@ -228,6 +228,19 @@
             "width": 234
           },
           "zIndex": 16
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 230.58505483875405
+          },
+          "nodeIndex": "Producteur",
+          "nodeLineageTag": "7261b054-d60d-4776-809f-01144e4d8310",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 18
         }
       ],
       "name": "Toutes les tables",

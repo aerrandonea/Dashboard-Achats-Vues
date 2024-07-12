@@ -12748,6 +12748,13 @@
         "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
         "toTable": "LocalDateTable_01fa2a3c-9a16-4413-b40f-0ac859fe16bd"
+      },
+      {
+        "name": "8a53fe55-9c4a-9dfb-80e2-5d3d494a5601",
+        "fromColumn": "eIdFabricant",
+        "fromTable": "Ligne",
+        "toColumn": "eIDLaboratoire",
+        "toTable": "Producteur"
       }
     ],
     "sourceQueryCulture": "fr-FR",
@@ -12946,7 +12953,22 @@
             "lineageTag": "dfbd84e5-6898-4626-84b2-a1172b246b9e",
             "sourceColumn": "eIdFabricant",
             "sourceProviderType": "varchar(max)",
-            "summarizeBy": "sum"
+            "summarizeBy": "none"
+          },
+          {
+            "name": "entete_etat",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "RELATED(Entete[eEtat])",
+            "isDataTypeInferred": true,
+            "lineageTag": "5723daa7-7aa6-43d8-a0ad-9f5f12c43321",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "fc6bb513-3514-4254-939a-fd987585515f",
@@ -13139,6 +13161,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
@@ -13243,6 +13269,19 @@
             "lineageTag": "01524850-e64e-4622-b4ca-7aed4d0b443b",
             "sourceColumn": "eDateCommande",
             "summarizeBy": "none"
+          },
+          {
+            "name": "eNobon",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6d6eebd9-f7f0-47a3-8a48-cde38f957080",
+            "sourceColumn": "eNobon",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "0d03534f-ef87-4067-8aaf-072b6e4553be",
@@ -13282,7 +13321,7 @@
                 "    Source = Sql.Databases(\"dwh-almaviva-group-uat.database.windows.net\"),",
                 "    #\"DATAMART-ACHATS\" = Source{[Name=\"DATAMART-ACHATS\"]}[Data],",
                 "    dbo_Entete = #\"DATAMART-ACHATS\"{[Schema=\"dbo\",Item=\"Entete\"]}[Data],",
-                "    #\"Colonnes supprimées\" = Table.RemoveColumns(dbo_Entete,{\"eNobon\", \"eNodoc\", \"eTotalHT\", \"eTotalTVA\", \"eTotalTTC\", \"mMontantTTCFacture\", \"eDateProposition\", \"eDateLivraison\", \"eDateEcheance\", \"sCommentaire\", \"bCloture\", \"sCommentaireLivraison\", \"bEnLitige\", \"sCommentaireLitige\", \"bRetour\", \"bAvoir\", \"bAnnule\", \"bRenouvellement\", \"eDateCreation\", \"eDateModif\", \"eIdLaboratoireDist\", \"eIdLaboratoireFac\", \"bTransfere\", \"bRetourSansAvoir\", \"bCommandeEnvoyeParEDI\", \"eIdTracabilite\", \"eIdUniteMedicale\", \"sLstIdPatient\", \"bCommandeUrgente\", \"eIdTransitaire\", \"rCoefficientApproche\", \"eIdEnteteExterne\", \"eIdUtilisateurCde\", \"mEcartFacture\", \"eIdSejour\", \"eIdEnteteUniteMedicale\", \"eIdPatient\", \"eIdBordereau\", \"sCommentaireChangementStatut\", \"sDateChangementStatut\", \"sReferenceChangementStatut\", \"eChangementStatut\", \"sNumCommandeExterne\", \"bValide\", \"eIdEntiteLiee\", \"bRegulDMI\", \"eIdEnteteFusion\", \"bReceptionEDI\", \"eIdAdresseLivraison\", \"eIdAdresseFacturation\", \"SOURCE_DB_NAME\"}),",
+                "    #\"Colonnes supprimées\" = Table.RemoveColumns(dbo_Entete,{ \"eNodoc\", \"eTotalHT\", \"eTotalTVA\", \"eTotalTTC\", \"mMontantTTCFacture\", \"eDateProposition\", \"eDateLivraison\", \"eDateEcheance\", \"sCommentaire\", \"bCloture\", \"sCommentaireLivraison\", \"bEnLitige\", \"sCommentaireLitige\", \"bRetour\", \"bAvoir\", \"bAnnule\", \"bRenouvellement\", \"eDateCreation\", \"eDateModif\", \"eIdLaboratoireDist\", \"eIdLaboratoireFac\", \"bTransfere\", \"bRetourSansAvoir\", \"bCommandeEnvoyeParEDI\", \"eIdTracabilite\", \"eIdUniteMedicale\", \"sLstIdPatient\", \"bCommandeUrgente\", \"eIdTransitaire\", \"rCoefficientApproche\", \"eIdEnteteExterne\", \"eIdUtilisateurCde\", \"mEcartFacture\", \"eIdSejour\", \"eIdEnteteUniteMedicale\", \"eIdPatient\", \"eIdBordereau\", \"sCommentaireChangementStatut\", \"sDateChangementStatut\", \"sReferenceChangementStatut\", \"eChangementStatut\", \"sNumCommandeExterne\", \"bValide\", \"eIdEntiteLiee\", \"bRegulDMI\", \"eIdEnteteFusion\", \"bReceptionEDI\", \"eIdAdresseLivraison\", \"eIdAdresseFacturation\", \"SOURCE_DB_NAME\"}),",
                 "    #\"Type modifié\" = Table.TransformColumnTypes(#\"Colonnes supprimées\",{{\"eDateCommande\", type date}, {\"eDateFacturation\", type date}})",
                 "in",
                 "    #\"Type modifié\""
@@ -15539,6 +15578,60 @@
           }
         ],
         "showAsVariationsOnly": true
+      },
+      {
+        "name": "Producteur",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "486c33135ebe46089ec83412a7d4fa42"
+          }
+        ],
+        "columns": [
+          {
+            "name": "eIDLaboratoire",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "dbfd9f0e-494f-4efd-aaec-f44df262476a",
+            "sourceColumn": "Laboratoire[eIDLaboratoire]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "sRaisonSocialeBCB",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "67b5934a-6107-4795-9f6c-f5b5843f35f9",
+            "sourceColumn": "Laboratoire[sRaisonSocialeBCB]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "lineageTag": "7261b054-d60d-4776-809f-01144e4d8310",
+        "partitions": [
+          {
+            "name": "Producteur",
+            "mode": "import",
+            "source": {
+              "expression": "Laboratoire",
+              "type": "calculated"
+            }
+          }
+        ]
       }
     ]
   }
