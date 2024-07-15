@@ -19212,7 +19212,7 @@
             "name": "Paramètre",
             "mode": "import",
             "source": {
-              "expression": "GENERATESERIES(1, 100, 1)",
+              "expression": "GENERATESERIES(1, 5000, 1)",
               "type": "calculated"
             }
           }
@@ -20452,6 +20452,32 @@
             "expression": "[Evolution_Montant] / [Montant_N-1]",
             "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
             "lineageTag": "d54bb515-4f33-4427-849e-2d23ff42cb7a"
+          },
+          {
+            "name": "Rank_TopN_fournisseur",
+            "expression": [
+              "",
+              "var _TopN = SELECTEDVALUE('Paramètre'[Paramètre])",
+              "return",
+              "if(HASONEFILTER(vTop[Laboratoire livreur]),",
+              "SWITCH(TRUE(),RANKX(ALLSELECTED(vTop[Laboratoire livreur]),[Volume_article_N])<=_TopN,",
+              "RANKX(ALLSELECTED(vTop[Laboratoire livreur]),[Volume_article_N])))"
+            ],
+            "formatString": "0",
+            "lineageTag": "36c0ff37-e670-4494-88d8-e2ccb45b8351"
+          },
+          {
+            "name": "Rank_TopN_fournisseur_montant",
+            "expression": [
+              "",
+              "var _TopN = SELECTEDVALUE('Paramètre'[Paramètre])",
+              "return",
+              "if(HASONEFILTER(vTop[Laboratoire livreur]),",
+              "SWITCH(TRUE(),RANKX(ALLSELECTED(vTop[Laboratoire livreur]),[Montant_N])<=_TopN,",
+              "RANKX(ALLSELECTED(vTop[Laboratoire livreur]),[Montant_N])))"
+            ],
+            "formatString": "0",
+            "lineageTag": "384b1de4-d118-4a78-8735-02d9086c479e"
           }
         ],
         "partitions": [
