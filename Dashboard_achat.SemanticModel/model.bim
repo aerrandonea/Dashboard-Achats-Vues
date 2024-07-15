@@ -2072,6 +2072,22 @@
                   }
                 ]
               },
+              "date_ligne.année": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date_ligne",
+                    "ConceptualProperty": "Année"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "année": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
               "date_ligne.date": {
                 "Definition": {
                   "Binding": {
@@ -4363,28 +4379,28 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "Evolution_Montant_%": {
+                    "Evolution_Montant_%_old": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "evolution_montant_ percentage": {
+                    "evolution_montant_ percentage _old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.75
+                      "Weight": 0.617
                     }
                   },
                   {
-                    "evolution_montant_ pct": {
+                    "evolution_montant_ pct _old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.727
+                      "Weight": 0.599
                     }
                   },
                   {
@@ -5279,15 +5295,25 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "evol montant": {
+                    "evol montant old": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "Evol_Montant": {
+                    "Evol_Montant_old": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
+                    }
+                  },
+                  {
+                    "Evol Montant": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   },
                   {
@@ -5312,28 +5338,28 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "evolution_%": {
+                    "evolution_%_old": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "evolution_ percentage": {
+                    "evolution_ percentage _old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.762
+                      "Weight": 0.624
                     }
                   },
                   {
-                    "evolution_ pct": {
+                    "evolution_ pct _old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.739
+                      "Weight": 0.605
                     }
                   },
                   {
@@ -5358,85 +5384,85 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "evolution volume": {
+                    "evolution volume old": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "Evolution_volume": {
+                    "Evolution_volume_old": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
                     }
                   },
                   {
-                    "evolution capacity": {
+                    "evolution capacity old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.485
+                      "Weight": 0.492
                     }
                   },
                   {
-                    "evolution size": {
+                    "evolution size old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.485
+                      "Weight": 0.492
                     }
                   },
                   {
-                    "evolution bulk": {
+                    "evolution bulk old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.485
+                      "Weight": 0.492
                     }
                   },
                   {
-                    "evolution tome": {
+                    "evolution tome old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.475
+                      "Weight": 0.482
                     }
                   },
                   {
-                    "evolution book": {
+                    "evolution book old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.461
+                      "Weight": 0.468
                     }
                   },
                   {
-                    "evolution work": {
+                    "evolution work old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.461
+                      "Weight": 0.468
                     }
                   },
                   {
-                    "evolution edition": {
+                    "evolution edition old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.451
+                      "Weight": 0.458
                     }
                   },
                   {
@@ -5461,115 +5487,115 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "montant total article": {
+                    "montant total article old": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "Montant_total_article": {
+                    "Montant_total_article_old": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
                     }
                   },
                   {
-                    "montant aggregate article": {
+                    "montant aggregate article old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.591
+                      "Weight": 0.599
                     }
                   },
                   {
-                    "montant overall article": {
+                    "montant overall article old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.591
+                      "Weight": 0.599
                     }
                   },
                   {
-                    "montant total thing": {
+                    "montant total thing old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.508
+                      "Weight": 0.514
                     }
                   },
                   {
-                    "montant total artefact": {
+                    "montant total artefact old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.508
+                      "Weight": 0.514
                     }
                   },
                   {
-                    "montant total artifact": {
+                    "montant total artifact old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.508
+                      "Weight": 0.514
                     }
                   },
                   {
-                    "montant total object": {
+                    "montant total object old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.492
+                      "Weight": 0.499
                     }
                   },
                   {
-                    "montant total item": {
+                    "montant total item old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.492
+                      "Weight": 0.499
                     }
                   },
                   {
-                    "montant total piece": {
+                    "montant total piece old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.492
+                      "Weight": 0.499
                     }
                   },
                   {
-                    "montant total commentary": {
+                    "montant total commentary old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.482
+                      "Weight": 0.489
                     }
                   },
                   {
-                    "montant total exposé": {
+                    "montant total exposé old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.482
+                      "Weight": 0.489
                     }
                   },
                   {
@@ -5594,35 +5620,15 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "montant total article N 1": {
+                    "montant total article N 1 old": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "Montant_total_article_N-1": {
+                    "Montant_total_article_N-1_old": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
-                    }
-                  },
-                  {
-                    "montant aggregate article n 1": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  },
-                  {
-                    "montant overall article n 1": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
                     }
                   },
                   {
@@ -5647,12 +5653,12 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "poids marche": {
+                    "poids marche old": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "Poids_marche": {
+                    "Poids_marche_old": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
@@ -5670,12 +5676,12 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "poids marche TTC": {
+                    "poids marche TTC old": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "Poids_marche_TTC": {
+                    "Poids_marche_TTC_old": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
@@ -5693,127 +5699,115 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "rank top N article": {
+                    "rank top N article old": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "Rank_TopN_article": {
+                    "Rank_TopN_article_old": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
                     }
                   },
                   {
-                    "N article": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "top N article": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "rank best n article": {
+                    "rank best n article old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.599
+                      "Weight": 0.605
                     }
                   },
                   {
-                    "rank first n article": {
+                    "rank first n article old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.599
+                      "Weight": 0.605
                     }
                   },
                   {
-                    "rank leading n article": {
+                    "rank leading n article old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.599
+                      "Weight": 0.605
                     }
                   },
                   {
-                    "rank maximum n article": {
+                    "rank maximum n article old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.599
+                      "Weight": 0.605
                     }
                   },
                   {
-                    "rank peak n article": {
+                    "rank peak n article old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.599
+                      "Weight": 0.605
                     }
                   },
                   {
-                    "rank upper n article": {
+                    "rank upper n article old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.599
+                      "Weight": 0.605
                     }
                   },
                   {
-                    "best n article": {
+                    "rank top n thing old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.591
+                      "Weight": 0.52
                     }
                   },
                   {
-                    "first n article": {
+                    "rank top n artefact old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.591
+                      "Weight": 0.52
                     }
                   },
                   {
-                    "leading n article": {
+                    "rank top n artifact old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.591
+                      "Weight": 0.52
                     }
                   },
                   {
-                    "maximum n article": {
+                    "rank top n object old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.591
+                      "Weight": 0.504
                     }
                   }
                 ]
@@ -5828,75 +5822,15 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "rank top N article montant": {
+                    "rank top N article montant old": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "Rank_TopN_article_montant": {
+                    "Rank_TopN_article_montant_old": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
-                    }
-                  },
-                  {
-                    "rank best n article montant": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  },
-                  {
-                    "rank first n article montant": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  },
-                  {
-                    "rank leading n article montant": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  },
-                  {
-                    "rank maximum n article montant": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  },
-                  {
-                    "rank peak n article montant": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  },
-                  {
-                    "rank upper n article montant": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
                     }
                   }
                 ]
@@ -5911,75 +5845,75 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "rank top N fournisseur": {
+                    "rank top N fournisseur old": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "Rank_TopN_fournisseur": {
+                    "Rank_TopN_fournisseur_old": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
                     }
                   },
                   {
-                    "rank best n fournisseur": {
+                    "rank best n fournisseur old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.599
+                      "Weight": 0.605
                     }
                   },
                   {
-                    "rank first n fournisseur": {
+                    "rank first n fournisseur old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.599
+                      "Weight": 0.605
                     }
                   },
                   {
-                    "rank leading n fournisseur": {
+                    "rank leading n fournisseur old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.599
+                      "Weight": 0.605
                     }
                   },
                   {
-                    "rank maximum n fournisseur": {
+                    "rank maximum n fournisseur old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.599
+                      "Weight": 0.605
                     }
                   },
                   {
-                    "rank peak n fournisseur": {
+                    "rank peak n fournisseur old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.599
+                      "Weight": 0.605
                     }
                   },
                   {
-                    "rank upper n fournisseur": {
+                    "rank upper n fournisseur old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.599
+                      "Weight": 0.605
                     }
                   },
                   {
@@ -6004,75 +5938,15 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "rank top N fournisseur montant": {
+                    "rank top N fournisseur montant old": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "Rank_TopN_fournisseur_montant": {
+                    "Rank_TopN_fournisseur_montant_old": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
-                    }
-                  },
-                  {
-                    "rank best n fournisseur montant": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  },
-                  {
-                    "rank first n fournisseur montant": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  },
-                  {
-                    "rank leading n fournisseur montant": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  },
-                  {
-                    "rank maximum n fournisseur montant": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  },
-                  {
-                    "rank peak n fournisseur montant": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  },
-                  {
-                    "rank upper n fournisseur montant": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
                     }
                   },
                   {
@@ -6097,115 +5971,115 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "taux rotation": {
+                    "taux rotation old": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "Taux_rotation": {
+                    "Taux_rotation_old": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
                     }
                   },
                   {
-                    "taux revolution": {
+                    "taux revolution old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.5
+                      "Weight": 0.508
                     }
                   },
                   {
-                    "taux gyration": {
+                    "taux gyration old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.5
+                      "Weight": 0.508
                     }
                   },
                   {
-                    "taux spin": {
+                    "taux spin old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.485
+                      "Weight": 0.492
                     }
                   },
                   {
-                    "taux turning": {
+                    "taux turning old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.485
+                      "Weight": 0.492
                     }
                   },
                   {
-                    "taux alternation": {
+                    "taux alternation old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.475
+                      "Weight": 0.482
                     }
                   },
                   {
-                    "taux variation": {
+                    "taux variation old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.475
+                      "Weight": 0.482
                     }
                   },
                   {
-                    "taux replacement": {
+                    "taux replacement old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.461
+                      "Weight": 0.468
                     }
                   },
                   {
-                    "taux cycle": {
+                    "taux cycle old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.461
+                      "Weight": 0.468
                     }
                   },
                   {
-                    "taux interchange": {
+                    "taux interchange old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.461
+                      "Weight": 0.468
                     }
                   },
                   {
-                    "taux sequence": {
+                    "taux sequence old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.461
+                      "Weight": 0.468
                     }
                   },
                   {
@@ -6230,115 +6104,115 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "volume article": {
+                    "volume article old": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "Volume_article": {
+                    "Volume_article_old": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
                     }
                   },
                   {
-                    "volume thing": {
+                    "volume thing old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.5
+                      "Weight": 0.508
                     }
                   },
                   {
-                    "volume artefact": {
+                    "volume artefact old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.5
+                      "Weight": 0.508
                     }
                   },
                   {
-                    "volume artifact": {
+                    "volume artifact old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.5
+                      "Weight": 0.508
                     }
                   },
                   {
-                    "volume object": {
+                    "volume object old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.485
+                      "Weight": 0.492
                     }
                   },
                   {
-                    "volume item": {
+                    "volume item old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.485
+                      "Weight": 0.492
                     }
                   },
                   {
-                    "volume piece": {
+                    "volume piece old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.485
+                      "Weight": 0.492
                     }
                   },
                   {
-                    "volume commentary": {
+                    "volume commentary old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.475
+                      "Weight": 0.482
                     }
                   },
                   {
-                    "volume exposé": {
+                    "volume exposé old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.475
+                      "Weight": 0.482
                     }
                   },
                   {
-                    "volume editorial": {
+                    "volume editorial old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.461
+                      "Weight": 0.468
                     }
                   },
                   {
-                    "volume critique": {
+                    "volume critique old": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.461
+                      "Weight": 0.468
                     }
                   },
                   {
@@ -6363,27 +6237,15 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "volume article N 1": {
+                    "volume article N 1 old": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "Volume_article_N-1": {
+                    "Volume_article_N-1_old": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
-                    }
-                  },
-                  {
-                    "N 1": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "article N 1": {
-                      "State": "Generated",
-                      "Weight": 0.97
                     }
                   },
                   {
@@ -7845,6 +7707,12 @@
                     }
                   },
                   {
+                    "type": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
                     "nom type": {
                       "State": "Generated",
                       "Weight": 0.97
@@ -8767,6 +8635,12 @@
                     }
                   },
                   {
+                    "type": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
                     "nom type": {
                       "State": "Generated",
                       "Weight": 0.97
@@ -9189,6 +9063,98 @@
                   }
                 ]
               },
+              "v_top.Evolution_Montant_": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "vTop",
+                    "ConceptualProperty": "Evolution_Montant_%"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Evolution_Montant_%": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "evolution_montant_ percentage": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "evolution_montant_ pct": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "Evol %": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "v_top.Evolution_Volume_": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "vTop",
+                    "ConceptualProperty": "Evolution_Volume_%"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Evolution_Volume_%": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "evolution_volume_ percentage": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "evolution_volume_ pct": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "Evol %": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
               "v_top.annee_e_date_facturation": {
                 "Definition": {
                   "Binding": {
@@ -9228,16 +9194,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.599
-                    }
-                  },
-                  {
-                    "Année_fac": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   }
                 ]
@@ -9954,6 +9910,142 @@
                   }
                 ]
               },
+              "v_top.evolution_montant": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "vTop",
+                    "ConceptualProperty": "Evolution_Montant"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "evolution montant": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Evolution_Montant": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "Evol Valeur": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "v_top.evolution_volume": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "vTop",
+                    "ConceptualProperty": "Evolution_volume"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "evolution volume": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Evolution_volume": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "evolution capacity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "evolution size": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "evolution bulk": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "evolution tome": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.475
+                    }
+                  },
+                  {
+                    "evolution book": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.461
+                    }
+                  },
+                  {
+                    "evolution work": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.461
+                    }
+                  },
+                  {
+                    "evolution edition": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.451
+                    }
+                  },
+                  {
+                    "Evol Valeur": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
               "v_top.laboratoire_fabriquant": {
                 "Definition": {
                   "Binding": {
@@ -9982,6 +10074,16 @@
                   {
                     "laboratoire livreur": {
                       "State": "Generated"
+                    }
+                  },
+                  {
+                    "Libellé Fournisseur": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -10045,6 +10147,62 @@
                   }
                 ]
               },
+              "v_top.montant_N": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "vTop",
+                    "ConceptualProperty": "Montant_N"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "montant N": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Montant_N": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "v_top.montant_N_1": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "vTop",
+                    "ConceptualProperty": "Montant_N-1"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "montant N 1": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Montant_N-1": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "Mt TTC N-1": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
               "v_top.région": {
                 "Definition": {
                   "Binding": {
@@ -10061,6 +10219,41 @@
                   }
                 ]
               },
+              "v_top.volume_article_N": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "vTop",
+                    "ConceptualProperty": "Volume_article_N"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "volume article N": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Volume_article_N": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "N": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "article N": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
               "v_top.volume_article_N_1_vue": {
                 "Definition": {
                   "Binding": {
@@ -10071,15 +10264,37 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "volume article N 1 vue": {
+                    "volume article N 1": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "Volume_article_N-1_vue": {
+                    "Volume_article_N-1": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
+                    }
+                  },
+                  {
+                    "N 1": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "article N 1": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "Volume N-1": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -10940,7 +11155,7 @@
                         "Role": "date.date"
                       }
                     },
-                    "ID": "dates_have_hiérarchie_de_dates",
+                    "ID": "dates_have_hiérarchie_de_dates3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -10973,7 +11188,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date.année"
                       }
                     },
-                    "ID": "années_have_trimestres",
+                    "ID": "années_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -10986,7 +11201,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_années",
+                    "ID": "trimestres_have_années4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11039,7 +11254,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_années",
+                    "ID": "hiérarchie_de_dates_have_années4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11072,7 +11287,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_jour",
+                    "ID": "hiérarchie_de_dates_have_jour4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11105,7 +11320,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_moises",
+                    "ID": "hiérarchie_de_dates_have_moises4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11138,7 +11353,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_trimestres",
+                    "ID": "hiérarchie_de_dates_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11171,7 +11386,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_jour",
+                    "ID": "moises_have_jour3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11184,7 +11399,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date.jour"
                       }
                     },
-                    "ID": "jour_have_moises",
+                    "ID": "jour_have_moises3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11237,7 +11452,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises",
+                    "ID": "trimestres_have_moises3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11250,7 +11465,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres",
+                    "ID": "moises_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11435,7 +11650,7 @@
                         "Role": "date_ligne.date"
                       }
                     },
-                    "ID": "dates_have_hiérarchie_de_dates3",
+                    "ID": "dates_have_hiérarchie_de_dates",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11468,7 +11683,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.année"
                       }
                     },
-                    "ID": "années_have_trimestres4",
+                    "ID": "années_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11481,7 +11696,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_années4",
+                    "ID": "trimestres_have_années",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11534,7 +11749,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_années4",
+                    "ID": "hiérarchie_de_dates_have_années",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11567,7 +11782,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_jour4",
+                    "ID": "hiérarchie_de_dates_have_jour",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11600,7 +11815,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_moises4",
+                    "ID": "hiérarchie_de_dates_have_moises",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11633,7 +11848,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_trimestres4",
+                    "ID": "hiérarchie_de_dates_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11784,6 +11999,39 @@
                 },
                 "State": "Generated"
               },
+              "date_ligne_has_année": {
+                "Binding": {
+                  "ConceptualEntity": "Date_ligne"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date_ligne.année"
+                      },
+                      "Subject": {
+                        "Role": "date_ligne"
+                      }
+                    },
+                    "ID": "date_lignes_have_années",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date_ligne": {
+                    "Target": {
+                      "Entity": "date_ligne"
+                    }
+                  },
+                  "date_ligne.année": {
+                    "Target": {
+                      "Entity": "date_ligne.année"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "date_ligne_has_date": {
                 "Binding": {
                   "ConceptualEntity": "Date_ligne"
@@ -11831,7 +12079,7 @@
                         "Role": "dates_article.date"
                       }
                     },
-                    "ID": "dates_have_hiérarchie_de_dates1",
+                    "ID": "dates_have_hiérarchie_de_dates2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11864,7 +12112,7 @@
                         "Role": "dates_article.date.variation.hiérarchie_de_date.année"
                       }
                     },
-                    "ID": "années_have_trimestres1",
+                    "ID": "années_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11877,7 +12125,7 @@
                         "Role": "dates_article.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_années1",
+                    "ID": "trimestres_have_années3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11930,7 +12178,7 @@
                         "Role": "dates_article.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_années1",
+                    "ID": "hiérarchie_de_dates_have_années3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11963,7 +12211,7 @@
                         "Role": "dates_article.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_jour1",
+                    "ID": "hiérarchie_de_dates_have_jour3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11996,7 +12244,7 @@
                         "Role": "dates_article.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_moises1",
+                    "ID": "hiérarchie_de_dates_have_moises3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12029,7 +12277,7 @@
                         "Role": "dates_article.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_trimestres1",
+                    "ID": "hiérarchie_de_dates_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12062,7 +12310,7 @@
                         "Role": "dates_article.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_jour1",
+                    "ID": "moises_have_jour2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12075,7 +12323,7 @@
                         "Role": "dates_article.date.variation.hiérarchie_de_date.jour"
                       }
                     },
-                    "ID": "jour_have_moises1",
+                    "ID": "jour_have_moises2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12128,7 +12376,7 @@
                         "Role": "dates_article.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises1",
+                    "ID": "trimestres_have_moises2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12141,7 +12389,7 @@
                         "Role": "dates_article.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres1",
+                    "ID": "moises_have_trimestres2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12227,7 +12475,7 @@
                         "Role": "dates_entete.date"
                       }
                     },
-                    "ID": "dates_have_hiérarchie_de_dates2",
+                    "ID": "dates_have_hiérarchie_de_dates1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12458,7 +12706,7 @@
                         "Role": "dates_entete.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_jour2",
+                    "ID": "moises_have_jour1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12471,7 +12719,7 @@
                         "Role": "dates_entete.date.variation.hiérarchie_de_date.jour"
                       }
                     },
-                    "ID": "jour_have_moises2",
+                    "ID": "jour_have_moises1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12524,7 +12772,7 @@
                         "Role": "dates_entete.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises2",
+                    "ID": "trimestres_have_moises1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12537,7 +12785,7 @@
                         "Role": "dates_entete.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres2",
+                    "ID": "moises_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12656,7 +12904,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date.année"
                       }
                     },
-                    "ID": "années_have_trimestres3",
+                    "ID": "années_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12669,7 +12917,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_années3",
+                    "ID": "trimestres_have_années1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12722,7 +12970,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_années3",
+                    "ID": "hiérarchie_de_dates_have_années1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12755,7 +13003,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_jour3",
+                    "ID": "hiérarchie_de_dates_have_jour1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12788,7 +13036,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_moises3",
+                    "ID": "hiérarchie_de_dates_have_moises1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12821,7 +13069,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_trimestres3",
+                    "ID": "hiérarchie_de_dates_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12854,7 +13102,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_jour3",
+                    "ID": "moises_have_jour",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12867,7 +13115,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date.jour"
                       }
                     },
-                    "ID": "jour_have_moises3",
+                    "ID": "jour_have_moises",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12920,7 +13168,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises3",
+                    "ID": "trimestres_have_moises",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12933,7 +13181,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres3",
+                    "ID": "moises_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13764,7 +14012,7 @@
                         "Role": "ligne"
                       }
                     },
-                    "ID": "lignes_have_Evolution_Montant_",
+                    "ID": "lignes_have_Evolution_Montant__old",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14249,7 +14497,7 @@
                         "Role": "ligne"
                       }
                     },
-                    "ID": "lignes_have_evol_montant",
+                    "ID": "lignes_have_evol_montant_old",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14282,7 +14530,7 @@
                         "Role": "ligne"
                       }
                     },
-                    "ID": "lignes_have_evolution_",
+                    "ID": "lignes_have_evolution__old",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14315,7 +14563,7 @@
                         "Role": "ligne"
                       }
                     },
-                    "ID": "lignes_have_evolution_volume",
+                    "ID": "lignes_have_evolution_volume_old",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14348,7 +14596,7 @@
                         "Role": "ligne"
                       }
                     },
-                    "ID": "lignes_have_montant_total_article",
+                    "ID": "lignes_have_montant_total_article_old",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14381,7 +14629,7 @@
                         "Role": "ligne"
                       }
                     },
-                    "ID": "lignes_have_montant_total_article_N_1",
+                    "ID": "lignes_have_montant_total_article_N_1_old",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14414,7 +14662,7 @@
                         "Role": "ligne"
                       }
                     },
-                    "ID": "lignes_have_poids_marche",
+                    "ID": "lignes_have_poids_marche_old",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14447,7 +14695,7 @@
                         "Role": "ligne"
                       }
                     },
-                    "ID": "lignes_have_poids_marche_TTC",
+                    "ID": "lignes_have_poids_marche_TTC_old",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14553,7 +14801,7 @@
                         "Role": "ligne"
                       }
                     },
-                    "ID": "lignes_have_rank_top_N_article",
+                    "ID": "lignes_have_rank_top_N_article_old",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14586,7 +14834,7 @@
                         "Role": "ligne"
                       }
                     },
-                    "ID": "lignes_have_rank_top_N_article_montant",
+                    "ID": "lignes_have_rank_top_N_article_montant_old",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14619,7 +14867,7 @@
                         "Role": "ligne"
                       }
                     },
-                    "ID": "lignes_have_rank_top_N_fournisseur",
+                    "ID": "lignes_have_rank_top_N_fournisseur_old",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14652,7 +14900,7 @@
                         "Role": "ligne"
                       }
                     },
-                    "ID": "lignes_have_rank_top_N_fournisseur_montant",
+                    "ID": "lignes_have_rank_top_N_fournisseur_montant_old",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14685,7 +14933,7 @@
                         "Role": "ligne"
                       }
                     },
-                    "ID": "lignes_have_taux_rotation",
+                    "ID": "lignes_have_taux_rotation_old",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14764,7 +15012,7 @@
                         "Role": "ligne"
                       }
                     },
-                    "ID": "lignes_have_volume_article",
+                    "ID": "lignes_have_volume_article_old",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14797,7 +15045,7 @@
                         "Role": "ligne"
                       }
                     },
-                    "ID": "lignes_have_volume_article_N_1",
+                    "ID": "lignes_have_volume_article_N_1_old",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -15766,6 +16014,72 @@
                 },
                 "State": "Generated"
               },
+              "v_top_has_Evolution_Montant_": {
+                "Binding": {
+                  "ConceptualEntity": "vTop"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_top.Evolution_Montant_"
+                      },
+                      "Subject": {
+                        "Role": "v_top"
+                      }
+                    },
+                    "ID": "v_top_have_Evolution_Montant_",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_top": {
+                    "Target": {
+                      "Entity": "v_top"
+                    }
+                  },
+                  "v_top.Evolution_Montant_": {
+                    "Target": {
+                      "Entity": "v_top.Evolution_Montant_"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_top_has_Evolution_Volume_": {
+                "Binding": {
+                  "ConceptualEntity": "vTop"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_top.Evolution_Volume_"
+                      },
+                      "Subject": {
+                        "Role": "v_top"
+                      }
+                    },
+                    "ID": "v_top_have_Evolution_Volume_",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_top": {
+                    "Target": {
+                      "Entity": "v_top"
+                    }
+                  },
+                  "v_top.Evolution_Volume_": {
+                    "Target": {
+                      "Entity": "v_top.Evolution_Volume_"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "v_top_has_annee_e_date_facturation": {
                 "Binding": {
                   "ConceptualEntity": "vTop"
@@ -16175,6 +16489,72 @@
                 },
                 "State": "Generated"
               },
+              "v_top_has_evolution_montant": {
+                "Binding": {
+                  "ConceptualEntity": "vTop"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_top.evolution_montant"
+                      },
+                      "Subject": {
+                        "Role": "v_top"
+                      }
+                    },
+                    "ID": "v_top_have_evolution_montant",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_top": {
+                    "Target": {
+                      "Entity": "v_top"
+                    }
+                  },
+                  "v_top.evolution_montant": {
+                    "Target": {
+                      "Entity": "v_top.evolution_montant"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_top_has_evolution_volume": {
+                "Binding": {
+                  "ConceptualEntity": "vTop"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_top.evolution_volume"
+                      },
+                      "Subject": {
+                        "Role": "v_top"
+                      }
+                    },
+                    "ID": "v_top_have_evolution_volume",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_top": {
+                    "Target": {
+                      "Entity": "v_top"
+                    }
+                  },
+                  "v_top.evolution_volume": {
+                    "Target": {
+                      "Entity": "v_top.evolution_volume"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "v_top_has_laboratoire_fabriquant": {
                 "Binding": {
                   "ConceptualEntity": "vTop"
@@ -16307,6 +16687,72 @@
                 },
                 "State": "Generated"
               },
+              "v_top_has_montant_N": {
+                "Binding": {
+                  "ConceptualEntity": "vTop"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_top.montant_N"
+                      },
+                      "Subject": {
+                        "Role": "v_top"
+                      }
+                    },
+                    "ID": "v_top_have_montant_N",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_top": {
+                    "Target": {
+                      "Entity": "v_top"
+                    }
+                  },
+                  "v_top.montant_N": {
+                    "Target": {
+                      "Entity": "v_top.montant_N"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_top_has_montant_N_1": {
+                "Binding": {
+                  "ConceptualEntity": "vTop"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_top.montant_N_1"
+                      },
+                      "Subject": {
+                        "Role": "v_top"
+                      }
+                    },
+                    "ID": "v_top_have_montant_N_1",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_top": {
+                    "Target": {
+                      "Entity": "v_top"
+                    }
+                  },
+                  "v_top.montant_N_1": {
+                    "Target": {
+                      "Entity": "v_top.montant_N_1"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "v_top_has_région": {
                 "Binding": {
                   "ConceptualEntity": "vTop"
@@ -16340,6 +16786,39 @@
                 },
                 "State": "Generated"
               },
+              "v_top_has_volume_article_N": {
+                "Binding": {
+                  "ConceptualEntity": "vTop"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_top.volume_article_N"
+                      },
+                      "Subject": {
+                        "Role": "v_top"
+                      }
+                    },
+                    "ID": "v_top_have_volume_article_N",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_top": {
+                    "Target": {
+                      "Entity": "v_top"
+                    }
+                  },
+                  "v_top.volume_article_N": {
+                    "Target": {
+                      "Entity": "v_top.volume_article_N"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "v_top_has_volume_article_N_1_vue": {
                 "Binding": {
                   "ConceptualEntity": "vTop"
@@ -16354,7 +16833,7 @@
                         "Role": "v_top"
                       }
                     },
-                    "ID": "v_top_have_volume_article_N_1_vue",
+                    "ID": "v_top_have_volume_article_N_1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -19905,7 +20384,7 @@
             "lineageTag": "003d0a33-e9c0-400d-9b52-7665458cc77a"
           },
           {
-            "name": "Volume_montant_N-1",
+            "name": "Montant_N-1",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -19930,7 +20409,7 @@
             "lineageTag": "be26a497-fa11-4ec6-bd6f-07e72678731a"
           },
           {
-            "name": "Evol_montant_vue",
+            "name": "Evolution_volume",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -19939,6 +20418,40 @@
             ],
             "expression": "[Volume_article_N] - [Volume_article_N-1]",
             "lineageTag": "51093dfb-39a8-4819-828b-1f95e887619b"
+          },
+          {
+            "name": "Evolution_Volume_%",
+            "expression": "[Evolution_volume] / [Volume_article_N-1]",
+            "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+            "lineageTag": "c3097db4-e60e-4322-9b17-bbde3f220e2f"
+          },
+          {
+            "name": "Montant_N",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "sum(vTop[ePxUnitTTCUCD])",
+            "lineageTag": "dc1a177c-1990-43fb-966c-db8387ab4c43"
+          },
+          {
+            "name": "Evolution_Montant",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "[Montant_N]-[Montant_N-1]",
+            "lineageTag": "505fa095-d266-4d91-9ac1-46db4a05514d"
+          },
+          {
+            "name": "Evolution_Montant_%",
+            "expression": "[Evolution_Montant] / [Montant_N-1]",
+            "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+            "lineageTag": "d54bb515-4f33-4427-849e-2d23ff42cb7a"
           }
         ],
         "partitions": [
