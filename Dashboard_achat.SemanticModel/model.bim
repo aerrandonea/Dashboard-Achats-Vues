@@ -4357,7 +4357,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Ligne",
-                    "ConceptualProperty": "Evolution_Montant_%"
+                    "ConceptualProperty": "Evolution_Montant_%_old"
                   }
                 },
                 "State": "Generated",
@@ -5273,7 +5273,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Ligne",
-                    "ConceptualProperty": "Evol_Montant"
+                    "ConceptualProperty": "Evol_Montant_old"
                   }
                 },
                 "State": "Generated",
@@ -5306,7 +5306,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Ligne",
-                    "ConceptualProperty": "Evolution_%"
+                    "ConceptualProperty": "Evolution_%_old"
                   }
                 },
                 "State": "Generated",
@@ -5352,7 +5352,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Ligne",
-                    "ConceptualProperty": "Evolution_volume"
+                    "ConceptualProperty": "Evolution_volume_old"
                   }
                 },
                 "State": "Generated",
@@ -5455,7 +5455,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Ligne",
-                    "ConceptualProperty": "Montant_total_article"
+                    "ConceptualProperty": "Montant_total_article_old"
                   }
                 },
                 "State": "Generated",
@@ -5588,7 +5588,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Ligne",
-                    "ConceptualProperty": "Montant_total_article_N-1"
+                    "ConceptualProperty": "Montant_total_article_N-1_old"
                   }
                 },
                 "State": "Generated",
@@ -5641,7 +5641,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Ligne",
-                    "ConceptualProperty": "Poids_marche"
+                    "ConceptualProperty": "Poids_marche_old"
                   }
                 },
                 "State": "Generated",
@@ -5664,7 +5664,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Ligne",
-                    "ConceptualProperty": "Poids_marche_TTC"
+                    "ConceptualProperty": "Poids_marche_TTC_old"
                   }
                 },
                 "State": "Generated",
@@ -5687,7 +5687,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Ligne",
-                    "ConceptualProperty": "Rank_TopN_article"
+                    "ConceptualProperty": "Rank_TopN_article_old"
                   }
                 },
                 "State": "Generated",
@@ -5822,7 +5822,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Ligne",
-                    "ConceptualProperty": "Rank_TopN_article_montant"
+                    "ConceptualProperty": "Rank_TopN_article_montant_old"
                   }
                 },
                 "State": "Generated",
@@ -5905,7 +5905,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Ligne",
-                    "ConceptualProperty": "Rank_TopN_fournisseur"
+                    "ConceptualProperty": "Rank_TopN_fournisseur_old"
                   }
                 },
                 "State": "Generated",
@@ -5998,7 +5998,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Ligne",
-                    "ConceptualProperty": "Rank_TopN_fournisseur_montant"
+                    "ConceptualProperty": "Rank_TopN_fournisseur_montant_old"
                   }
                 },
                 "State": "Generated",
@@ -6091,7 +6091,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Ligne",
-                    "ConceptualProperty": "Taux_rotation"
+                    "ConceptualProperty": "Taux_rotation_old"
                   }
                 },
                 "State": "Generated",
@@ -6224,7 +6224,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Ligne",
-                    "ConceptualProperty": "Volume_article"
+                    "ConceptualProperty": "Volume_article_old"
                   }
                 },
                 "State": "Generated",
@@ -6357,7 +6357,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Ligne",
-                    "ConceptualProperty": "Volume_article_N-1"
+                    "ConceptualProperty": "Volume_article_N-1_old"
                   }
                 },
                 "State": "Generated",
@@ -10065,7 +10065,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "vTop",
-                    "ConceptualProperty": "Volume_article_N-1_vue"
+                    "ConceptualProperty": "Volume_article_N-1"
                   }
                 },
                 "State": "Generated",
@@ -16866,20 +16866,20 @@
         "lineageTag": "fc6bb513-3514-4254-939a-fd987585515f",
         "measures": [
           {
-            "name": "Rank_TopN_article",
+            "name": "Rank_TopN_article_old",
             "expression": [
               "",
               "var _TopN = SELECTEDVALUE('Paramètre'[Paramètre])",
               "return",
-              "if(HASONEFILTER(Article[sLibelleCourt])&&NOT(ISBLANK([Volume_article])),",
-              "SWITCH(TRUE(),RANKX(ALLSELECTED(Article[sLibelleCourt]),[Volume_article])<=_TopN,",
-              "RANKX(ALLSELECTED(Article[sLibelleCourt]),[Volume_article])))"
+              "if(HASONEFILTER(Article[sLibelleCourt])&&NOT(ISBLANK([Volume_article_old])),",
+              "SWITCH(TRUE(),RANKX(ALLSELECTED(Article[sLibelleCourt]),[Volume_article_old])<=_TopN,",
+              "RANKX(ALLSELECTED(Article[sLibelleCourt]),[Volume_article_old])))"
             ],
             "formatString": "0",
             "lineageTag": "a7919354-0367-4fa1-98d5-894e8106e171"
           },
           {
-            "name": "Volume_article",
+            "name": "Volume_article_old",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -16891,20 +16891,20 @@
             "lineageTag": "632d5ff7-fe9a-4aaf-a18c-653475ea67cd"
           },
           {
-            "name": "Rank_TopN_fournisseur",
+            "name": "Rank_TopN_fournisseur_old",
             "expression": [
               "",
               "var _TopN = SELECTEDVALUE('Paramètre'[Paramètre])",
               "return",
               "if(HASONEFILTER(Laboratoire[sRaisonSocialeBCB]),",
-              "SWITCH(TRUE(),RANKX(ALLSELECTED(Laboratoire[sRaisonSocialeBCB]),[Volume_article])<=_TopN,",
-              "RANKX(ALLSELECTED(Laboratoire[sRaisonSocialeBCB]),[Volume_article])))"
+              "SWITCH(TRUE(),RANKX(ALLSELECTED(Laboratoire[sRaisonSocialeBCB]),[Volume_article_old])<=_TopN,",
+              "RANKX(ALLSELECTED(Laboratoire[sRaisonSocialeBCB]),[Volume_article_old])))"
             ],
             "formatString": "0",
             "lineageTag": "c7b5e66d-34c8-418c-9479-dae687d61f4c"
           },
           {
-            "name": "Volume_article_N-1",
+            "name": "Volume_article_N-1_old",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -16916,25 +16916,25 @@
             "lineageTag": "641423de-2571-4c95-abcc-ade99660e80a"
           },
           {
-            "name": "Evolution_volume",
+            "name": "Evolution_volume_old",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
                 "value": "{\"isDecimal\":true}"
               }
             ],
-            "expression": "[Volume_article]-[Volume_article_N-1]",
+            "expression": "[Volume_article_old]-[Volume_article_N-1_old]",
             "formatString": "#,0",
             "lineageTag": "6264e073-18bb-4bd1-8839-8e689cf2eeba"
           },
           {
-            "name": "Evolution_%",
-            "expression": "[Evolution_volume] / [Volume_article_N-1]",
+            "name": "Evolution_%_old",
+            "expression": "[Evolution_volume_old] / [Volume_article_N-1_old]",
             "formatString": "0\\ %;-0\\ %;0\\ %",
             "lineageTag": "ebb9a481-f63a-44c3-95a0-279b3ed59b34"
           },
           {
-            "name": "Montant_total_article",
+            "name": "Montant_total_article_old",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -16946,20 +16946,20 @@
             "lineageTag": "f685827a-cfa7-44bc-81fa-603690761119"
           },
           {
-            "name": "Rank_TopN_fournisseur_montant",
+            "name": "Rank_TopN_fournisseur_montant_old",
             "expression": [
               "",
               "var _TopN = SELECTEDVALUE('Paramètre'[Paramètre])",
               "return",
               "if(HASONEFILTER(Laboratoire[sRaisonSocialeBCB]),",
-              "SWITCH(TRUE(),RANKX(ALLSELECTED(Laboratoire[sRaisonSocialeBCB]),[Montant_total_article])<=_TopN,",
-              "RANKX(ALLSELECTED(Laboratoire[sRaisonSocialeBCB]),[Montant_total_article])))"
+              "SWITCH(TRUE(),RANKX(ALLSELECTED(Laboratoire[sRaisonSocialeBCB]),[Montant_total_article_old])<=_TopN,",
+              "RANKX(ALLSELECTED(Laboratoire[sRaisonSocialeBCB]),[Montant_total_article_old])))"
             ],
             "formatString": "0",
             "lineageTag": "9c85d78a-b6d0-406f-98a6-a5e86321db48"
           },
           {
-            "name": "Montant_total_article_N-1",
+            "name": "Montant_total_article_N-1_old",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -16971,38 +16971,38 @@
             "lineageTag": "a39563ba-8e07-4e43-a222-0a84d3b5e7cc"
           },
           {
-            "name": "Evol_Montant",
+            "name": "Evol_Montant_old",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
                 "value": "{\"isDecimal\":true}"
               }
             ],
-            "expression": "[Montant_total_article] - [Montant_total_article_N-1]",
+            "expression": "[Montant_total_article_old] - [Montant_total_article_N-1_old]",
             "formatString": "#,0",
             "lineageTag": "7a3029c0-b11e-4ca5-a726-e61814f92e59"
           },
           {
-            "name": "Evolution_Montant_%",
-            "expression": "[Evol_Montant] / [Montant_total_article_N-1]",
+            "name": "Evolution_Montant_%_old",
+            "expression": "[Evol_Montant_old] / [Montant_total_article_N-1_old]",
             "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
             "lineageTag": "4c70da94-24e5-4619-b5b6-ef133e441e22"
           },
           {
-            "name": "Rank_TopN_article_montant",
+            "name": "Rank_TopN_article_montant_old",
             "expression": [
               "",
               "var _TopN = SELECTEDVALUE('Paramètre'[Paramètre])",
               "return",
-              "if(HASONEFILTER(Article[sLibelleCourt])&&NOT(ISBLANK([Montant_total_article])),",
-              "SWITCH(TRUE(),RANKX(ALLSELECTED(Article[sLibelleCourt]),[Montant_total_article])<=_TopN,",
-              "RANKX(ALLSELECTED(Article[sLibelleCourt]),[Montant_total_article])))"
+              "if(HASONEFILTER(Article[sLibelleCourt])&&NOT(ISBLANK([Montant_total_article_old])),",
+              "SWITCH(TRUE(),RANKX(ALLSELECTED(Article[sLibelleCourt]),[Montant_total_article_old])<=_TopN,",
+              "RANKX(ALLSELECTED(Article[sLibelleCourt]),[Montant_total_article_old])))"
             ],
             "formatString": "0",
             "lineageTag": "9b36d025-660d-464b-a293-087e4b1868ed"
           },
           {
-            "name": "Taux_rotation",
+            "name": "Taux_rotation_old",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -17013,13 +17013,13 @@
             "lineageTag": "d003d5f9-c392-40d2-b9d0-4baeca2b729e"
           },
           {
-            "name": "Poids_marche",
+            "name": "Poids_marche_old",
             "expression": "SUM(Ligne[eQteInit])/CALCULATE(SUM(Ligne[eQteInit]),ALL(Marche[sLibelleMarche]))",
             "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
             "lineageTag": "807094fa-b4b5-4f6e-b50c-01470e7ba3e3"
           },
           {
-            "name": "Poids_marche_TTC",
+            "name": "Poids_marche_TTC_old",
             "expression": "SUM(Ligne[eMontTTCUCD])/CALCULATE(SUM(Ligne[eMontTTCUCD]),ALL(Marche[sLibelleMarche]))",
             "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
             "lineageTag": "de5abcbe-299e-41e6-bac6-276a84d61827"
@@ -19891,7 +19891,7 @@
         "lineageTag": "e6ab35a6-b14f-4546-8ed9-45a686887ba8",
         "measures": [
           {
-            "name": "Volume_article_N-1_vue",
+            "name": "Volume_article_N-1",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -19905,7 +19905,7 @@
             "lineageTag": "003d0a33-e9c0-400d-9b52-7665458cc77a"
           },
           {
-            "name": "Volume_montant_N-1_vue",
+            "name": "Volume_montant_N-1",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -19917,6 +19917,28 @@
               "CALCULATE(SUM(vTop[ePxUnitTTCUCD]),SAMEPERIODLASTYEAR(Date_ligne[Date]))"
             ],
             "lineageTag": "a72217cb-561d-4f1e-b239-bddd3e028f33"
+          },
+          {
+            "name": "Volume_article_N",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "SUM(vTop[eQteInit])",
+            "lineageTag": "be26a497-fa11-4ec6-bd6f-07e72678731a"
+          },
+          {
+            "name": "Evol_montant_vue",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "[Volume_article_N] - [Volume_article_N-1]",
+            "lineageTag": "51093dfb-39a8-4819-828b-1f95e887619b"
           }
         ],
         "partitions": [
