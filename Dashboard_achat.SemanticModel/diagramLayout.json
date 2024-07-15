@@ -244,19 +244,6 @@
         },
         {
           "location": {
-            "x": 2595.6366215994,
-            "y": 604.2704635874104
-          },
-          "nodeIndex": "vArticles",
-          "nodeLineageTag": "864d9452-cccb-4fa5-af17-8257f8b61acf",
-          "size": {
-            "height": 248,
-            "width": 234
-          },
-          "zIndex": 1
-        },
-        {
-          "location": {
             "x": 2687.0456951147585,
             "y": 352.2478638256224
           },

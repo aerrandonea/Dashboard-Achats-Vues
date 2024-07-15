@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.55\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.55\",\"type\":2}},\"activeSectionIndex\":2,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
   "layoutOptimization": 0,
   "publicCustomVisuals": [
     "textFilter25A4896A83E0487089E2B90C9AE57C8A"
@@ -40,54 +40,6 @@
     }
   ],
   "sections": [
-    {
-      "config": "{}",
-      "displayName": "Page 2",
-      "displayOption": 1,
-      "filters": "[]",
-      "height": 720.00,
-      "name": "21f46629d64bee0a98d1",
-      "ordinal": 12,
-      "visualContainers": [
-        {
-          "config": "{\"name\":\"13407953cbe651290b01\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.670804101457096,\"y\":0,\"z\":1,\"width\":143.68051807879115,\"height\":107.76038855909336,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"vTop.LPP\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vTop\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"LPP\"},\"Name\":\"vTop.LPP\",\"NativeReferenceName\":\"LPP\"}]},\"drillFilterOtherVisuals\":true}}",
-          "filters": "[]",
-          "height": 107.76,
-          "width": 143.68,
-          "x": 9.67,
-          "y": 0.00,
-          "z": 1.00
-        },
-        {
-          "config": "{\"name\":\"a2167a40a03064157e7e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":189.96222342147868,\"y\":0,\"z\":2,\"width\":148.51592012951969,\"height\":94.63572584997301,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"vTop.eIdLaboratoireLiv\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vTop\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdLaboratoireLiv\"},\"Name\":\"vTop.eIdLaboratoireLiv\",\"NativeReferenceName\":\"eIdLaboratoireLiv\"}]},\"drillFilterOtherVisuals\":true}}",
-          "filters": "[]",
-          "height": 94.64,
-          "width": 148.52,
-          "x": 189.96,
-          "y": 0.00,
-          "z": 2.00
-        },
-        {
-          "config": "{\"name\":\"b571f3cc8bd5989d3920\",\"layouts\":[{\"id\":0,\"position\":{\"x\":802.6767404209389,\"y\":0,\"z\":3,\"width\":477.32325957906096,\"height\":107.76038855909336,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(vTop.eIdArticle)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vTop\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdArticle\"}},\"Function\":5},\"Name\":\"Min(vTop.eIdArticle)\",\"NativeReferenceName\":\"Nombre de eIdArticle\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdArticle\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]}}}",
-          "filters": "[]",
-          "height": 107.76,
-          "width": 477.32,
-          "x": 802.68,
-          "y": 0.00,
-          "z": 3.00
-        },
-        {
-          "config": "{\"name\":\"d8ff9b18a85b255bbd10\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.670804101457096,\"y\":181.67296276308687,\"z\":0,\"width\":1270.3291958985428,\"height\":538.1111710739341,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"vTop.Annee_eDateFacturation\"},{\"queryRef\":\"vTop.CodeLibelléALM\"},{\"queryRef\":\"vTop.eDateFacturation\"},{\"queryRef\":\"vTop.eIdArticle\"},{\"queryRef\":\"vTop.eIdFabricant\"},{\"queryRef\":\"vTop.eIdLaboratoireFac\"},{\"queryRef\":\"vTop.eIdLaboratoireLiv\"},{\"queryRef\":\"vTop.Laboratoire fabriquant\"},{\"queryRef\":\"vTop.Laboratoire livreur\"},{\"queryRef\":\"vTop.LPP\"},{\"queryRef\":\"vTop.Mois_eDateFacturation\"},{\"queryRef\":\"vTop.Région\"},{\"queryRef\":\"vTop.Article_sLibelleCourt\"},{\"queryRef\":\"Sum(vTop.ePxUnitTTCUCD)\"},{\"queryRef\":\"Sum(vTop.eQteInit)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vTop\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Annee_eDateFacturation\"},\"Name\":\"vTop.Annee_eDateFacturation\",\"NativeReferenceName\":\"Annee_eDateFacturation\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"CodeLibelléALM\"},\"Name\":\"vTop.CodeLibelléALM\",\"NativeReferenceName\":\"CodeLibelléALM\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eDateFacturation\"},\"Name\":\"vTop.eDateFacturation\",\"NativeReferenceName\":\"eDateFacturation\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdArticle\"},\"Name\":\"vTop.eIdArticle\",\"NativeReferenceName\":\"eIdArticle\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdFabricant\"},\"Name\":\"vTop.eIdFabricant\",\"NativeReferenceName\":\"eIdFabricant\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdLaboratoireFac\"},\"Name\":\"vTop.eIdLaboratoireFac\",\"NativeReferenceName\":\"eIdLaboratoireFac\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdLaboratoireLiv\"},\"Name\":\"vTop.eIdLaboratoireLiv\",\"NativeReferenceName\":\"eIdLaboratoireLiv\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Laboratoire fabriquant\"},\"Name\":\"vTop.Laboratoire fabriquant\",\"NativeReferenceName\":\"Laboratoire fabriquant\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Laboratoire livreur\"},\"Name\":\"vTop.Laboratoire livreur\",\"NativeReferenceName\":\"Laboratoire livreur\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"LPP\"},\"Name\":\"vTop.LPP\",\"NativeReferenceName\":\"LPP\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Mois_eDateFacturation\"},\"Name\":\"vTop.Mois_eDateFacturation\",\"NativeReferenceName\":\"Mois_eDateFacturation\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Région\"},\"Name\":\"vTop.Région\",\"NativeReferenceName\":\"Région\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Article_sLibelleCourt\"},\"Name\":\"vTop.Article_sLibelleCourt\",\"NativeReferenceName\":\"Article_sLibelleCourt\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"ePxUnitTTCUCD\"}},\"Function\":0},\"Name\":\"Sum(vTop.ePxUnitTTCUCD)\",\"NativeReferenceName\":\"Somme de ePxUnitTTCUCD\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eQteInit\"}},\"Function\":0},\"Name\":\"Sum(vTop.eQteInit)\",\"NativeReferenceName\":\"Somme de eQteInit\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdArticle\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{}}}",
-          "filters": "[]",
-          "height": 538.11,
-          "width": 1270.33,
-          "x": 9.67,
-          "y": 181.67,
-          "z": 0.00
-        }
-      ],
-      "width": 1280.00
-    },
     {
       "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"259L\"}}}}}]},\"visibility\":1}",
       "displayName": "Top Nombre de Commande",
@@ -827,111 +779,6 @@
           "x": 272.24,
           "y": 404.67,
           "z": 16000.00
-        }
-      ],
-      "width": 1280.00
-    },
-    {
-      "config": "{}",
-      "displayName": "Doublon de Page 2",
-      "displayOption": 1,
-      "filters": "[]",
-      "height": 720.00,
-      "name": "557338fe6a20dbe61424",
-      "ordinal": 13,
-      "visualContainers": [
-        {
-          "config": "{\"name\":\"537cb7373761d0e05ac9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":201.01457096600106,\"y\":0,\"z\":3001,\"width\":149.897463572585,\"height\":107.76038855909336,\"tabOrder\":3001}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"vTop.eIdLaboratoireFac\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vTop\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdLaboratoireFac\"},\"Name\":\"vTop.eIdLaboratoireFac\",\"NativeReferenceName\":\"eIdLaboratoireFac\"}]},\"drillFilterOtherVisuals\":true}}",
-          "filters": "[]",
-          "height": 107.76,
-          "width": 149.90,
-          "x": 201.01,
-          "y": 0.00,
-          "z": 3001.00
-        },
-        {
-          "config": "{\"name\":\"5ac31bf920c39472703e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.670804101457096,\"y\":181.67296276308687,\"z\":0,\"width\":1270.3291958985428,\"height\":538.1111710739341,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"vTop.LPP\"},{\"queryRef\":\"vTop.eIdArticle\"},{\"queryRef\":\"vTop.eIdFabricant\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vTop\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"LPP\"},\"Name\":\"vTop.LPP\",\"NativeReferenceName\":\"LPP\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdArticle\"},\"Name\":\"vTop.eIdArticle\",\"NativeReferenceName\":\"eIdArticle\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdFabricant\"},\"Name\":\"vTop.eIdFabricant\",\"NativeReferenceName\":\"eIdFabricant\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"219.08202568566497D\"}}}},\"selector\":{\"metadata\":\"vTop.LPP\"}}]}}}",
-          "filters": "[]",
-          "height": 538.11,
-          "width": 1270.33,
-          "x": 9.67,
-          "y": 181.67,
-          "z": 0.00
-        },
-        {
-          "config": "{\"name\":\"885a088c5665e1009bda\",\"layouts\":[{\"id\":0,\"position\":{\"x\":350.91203453858606,\"y\":0,\"z\":3002,\"width\":149.897463572585,\"height\":107.76038855909336,\"tabOrder\":3002}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"vTop.eIdLaboratoireLiv\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vTop\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdLaboratoireLiv\"},\"Name\":\"vTop.eIdLaboratoireLiv\",\"NativeReferenceName\":\"eIdLaboratoireLiv\"}]},\"drillFilterOtherVisuals\":true}}",
-          "filters": "[]",
-          "height": 107.76,
-          "width": 149.90,
-          "x": 350.91,
-          "y": 0.00,
-          "z": 3002.00
-        },
-        {
-          "config": "{\"name\":\"b21eab5837ce9a7e48ce\",\"layouts\":[{\"id\":0,\"position\":{\"x\":500.809498111171,\"y\":0,\"z\":3003,\"width\":201.01457096600106,\"height\":107.76038855909336,\"tabOrder\":3003}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"vTop.eIdFabricant\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vTop\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdFabricant\"},\"Name\":\"vTop.eIdFabricant\",\"NativeReferenceName\":\"eIdFabricant\"}]},\"drillFilterOtherVisuals\":true}}",
-          "filters": "[]",
-          "height": 107.76,
-          "width": 201.01,
-          "x": 500.81,
-          "y": 0.00,
-          "z": 3003.00
-        },
-        {
-          "config": "{\"name\":\"e35110b60255b00bce0d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":671.4301133297355,\"y\":10.361575822989746,\"z\":3000,\"width\":477.32325957906096,\"height\":107.76038855909336,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(vTop.eIdArticle)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vTop\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdArticle\"}},\"Function\":5},\"Name\":\"Min(vTop.eIdArticle)\",\"NativeReferenceName\":\"Nombre de eIdArticle\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdArticle\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]}}}",
-          "filters": "[]",
-          "height": 107.76,
-          "width": 477.32,
-          "x": 671.43,
-          "y": 10.36,
-          "z": 3000.00
-        },
-        {
-          "config": "{\"name\":\"e5c77636b437b7362774\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.670804101457096,\"y\":0,\"z\":1000,\"width\":143.68051807879115,\"height\":107.76038855909336,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"vTop.LPP\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vTop\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"LPP\"},\"Name\":\"vTop.LPP\",\"NativeReferenceName\":\"LPP\"}]},\"drillFilterOtherVisuals\":true}}",
-          "filters": "[]",
-          "height": 107.76,
-          "width": 143.68,
-          "x": 9.67,
-          "y": 0.00,
-          "z": 1000.00
-        }
-      ],
-      "width": 1280.00
-    },
-    {
-      "config": "{}",
-      "displayName": "Page 1",
-      "displayOption": 1,
-      "filters": "[]",
-      "height": 720.00,
-      "name": "55ea38bc05304db47513",
-      "ordinal": 11,
-      "visualContainers": [
-        {
-          "config": "{\"name\":\"4e779e095ee3a0d95279\",\"layouts\":[{\"id\":0,\"position\":{\"x\":765.3750674581759,\"y\":0,\"z\":2,\"width\":514.624932541824,\"height\":212.75769023205612,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(vTop.eQteInit)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vTop\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eQteInit\"}},\"Function\":0},\"Name\":\"Sum(vTop.eQteInit)\",\"NativeReferenceName\":\"Somme de eQteInit\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eQteInit\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
-          "filters": "[]",
-          "height": 212.76,
-          "width": 514.62,
-          "x": 765.38,
-          "y": 0.00,
-          "z": 2.00
-        },
-        {
-          "config": "{\"name\":\"608ad877e96218346c7d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":808.8936859147328,\"y\":306.01187263896384,\"z\":3,\"width\":471.1063140852671,\"height\":413.77226119805715,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(vTop.eQteInit)\"}],\"Columns\":[{\"queryRef\":\"vTop.Laboratoire fabriquant\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vTop\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eQteInit\"}},\"Function\":0},\"Name\":\"Sum(vTop.eQteInit)\",\"NativeReferenceName\":\"Somme de eQteInit\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Laboratoire fabriquant\"},\"Name\":\"vTop.Laboratoire fabriquant\",\"NativeReferenceName\":\"Laboratoire fabriquant\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eQteInit\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true}}",
-          "filters": "[]",
-          "height": 413.77,
-          "width": 471.11,
-          "x": 808.89,
-          "y": 306.01,
-          "z": 3.00
-        },
-        {
-          "config": "{\"name\":\"bac0505d4b04094d8857\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.670804101457096,\"y\":0,\"z\":0,\"width\":679.7193739881274,\"height\":551.2358337830544,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Laboratoire.sRaisonSocialeBCB\",\"active\":true},{\"queryRef\":\"Ligne.eIdEntete\"}],\"Values\":[{\"queryRef\":\"Sum(Ligne.eQteInit)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Laboratoire\",\"Type\":0},{\"Name\":\"l1\",\"Entity\":\"Ligne\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"sRaisonSocialeBCB\"},\"Name\":\"Laboratoire.sRaisonSocialeBCB\",\"NativeReferenceName\":\"sRaisonSocialeBCB\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l1\"}},\"Property\":\"eQteInit\"}},\"Function\":0},\"Name\":\"Sum(Ligne.eQteInit)\",\"NativeReferenceName\":\"Somme de eQteInit\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l1\"}},\"Property\":\"eIdEntete\"},\"Name\":\"Ligne.eIdEntete\",\"NativeReferenceName\":\"eIdEntete\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l1\"}},\"Property\":\"eQteInit\"}},\"Function\":0}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Laboratoire.sRaisonSocialeBCB\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Laboratoire\"}},\"Property\":\"sRaisonSocialeBCB\"}}],\"isPinned\":true},{\"queryRefs\":[\"Ligne.eIdEntete\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true}}",
-          "filters": "[{\"name\":\"Filter2c5a69058d0ebc04db0e\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Laboratoire\"}},\"Property\":\"sRaisonSocialeBCB\"}},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
-          "height": 551.24,
-          "width": 679.72,
-          "x": 9.67,
-          "y": 0.00,
-          "z": 0.00
         }
       ],
       "width": 1280.00

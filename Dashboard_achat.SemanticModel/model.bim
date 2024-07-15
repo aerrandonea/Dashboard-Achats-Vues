@@ -12,7 +12,7 @@
       },
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"Ligne\",\"Entete\",\"Article\",\"Etablissement\",\"TypeEtablissement\",\"Utilisateur\",\"Marche\",\"TypeProduit\",\"Ge_Article_Laboratoire\",\"Laboratoire\",\"Produit\",\"AML_Etablissement\",\"Table_Mapping_Annuaire\",\"Erreurs dans Ge_Article_Laboratoire\",\"Erreurs dans Ge_Article_Laboratoire (2)\",\"vArticles\",\"vGeArticleLaboratoireWithLPP\",\"vTop\"]"
+        "value": "[\"Ligne\",\"Entete\",\"Article\",\"Etablissement\",\"TypeEtablissement\",\"Utilisateur\",\"Marche\",\"TypeProduit\",\"Ge_Article_Laboratoire\",\"Laboratoire\",\"Produit\",\"AML_Etablissement\",\"Table_Mapping_Annuaire\",\"Erreurs dans Ge_Article_Laboratoire\",\"Erreurs dans Ge_Article_Laboratoire (2)\",\"vGeArticleLaboratoireWithLPP\",\"vTop\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -7931,826 +7931,6 @@
                   }
                 ]
               },
-              "v_article": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "vArticles"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "v article": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "vArticles": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "v thing": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "v artefact": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "v artifact": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "v object": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "v item": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "v piece": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "v commentary": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.475
-                    }
-                  },
-                  {
-                    "v exposé": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.475
-                    }
-                  },
-                  {
-                    "v editorial": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.461
-                    }
-                  },
-                  {
-                    "v critique": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.461
-                    }
-                  }
-                ]
-              },
-              "v_article.annee_e_date_creation": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "vArticles",
-                    "ConceptualProperty": "Annee_eDateCreation"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "annee e date creation": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Annee_eDateCreation": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "annee e moment creation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.617
-                    }
-                  },
-                  {
-                    "annee e period creation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.599
-                    }
-                  },
-                  {
-                    "annee e date formation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "annee e date conception": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "annee e date construction": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "annee e date establishment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "annee e date making": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
-                    }
-                  },
-                  {
-                    "annee e date manufacture": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
-                    }
-                  },
-                  {
-                    "annee e date design": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
-                    }
-                  },
-                  {
-                    "annee e date foundation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
-                    }
-                  }
-                ]
-              },
-              "v_article.code_libellé_ALM": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "vArticles",
-                    "ConceptualProperty": "CodeLibelléALM"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "code libellé ALM": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "CodeLibelléALM": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "id libellé alm": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "key libellé alm": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  }
-                ]
-              },
-              "v_article.e_date_creation": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "vArticles",
-                    "ConceptualProperty": "eDateCreation"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "e date creation": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "eDateCreation": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "creation": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "date creation": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "e moment creation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "moment creation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "e period creation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  },
-                  {
-                    "period creation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "e date formation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "e date conception": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "e date construction": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "e date establishment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "date formation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "date conception": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  }
-                ]
-              },
-              "v_article.mois_e_date_creation": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "vArticles",
-                    "ConceptualProperty": "Mois_eDateCreation"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "mois e date creation": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Mois_eDateCreation": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "mois e moment creation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.617
-                    }
-                  },
-                  {
-                    "mois e period creation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.599
-                    }
-                  },
-                  {
-                    "mois e date formation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "mois e date conception": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "mois e date construction": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "mois e date establishment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.514
-                    }
-                  },
-                  {
-                    "mois e date making": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
-                    }
-                  },
-                  {
-                    "mois e date manufacture": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
-                    }
-                  },
-                  {
-                    "mois e date design": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
-                    }
-                  },
-                  {
-                    "mois e date foundation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.499
-                    }
-                  }
-                ]
-              },
-              "v_article.s_libelle_court": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "vArticles",
-                    "ConceptualProperty": "sLibelleCourt"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "s libelle court": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "sLibelleCourt": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "s libelle law court": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "s libelle courtyard": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.482
-                    }
-                  },
-                  {
-                    "s libelle piazza": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.482
-                    }
-                  },
-                  {
-                    "s libelle enclosure": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.482
-                    }
-                  },
-                  {
-                    "s libelle square": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.468
-                    }
-                  },
-                  {
-                    "s libelle yard": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.468
-                    }
-                  },
-                  {
-                    "s libelle quad": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.468
-                    }
-                  },
-                  {
-                    "s libelle patio": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.468
-                    }
-                  },
-                  {
-                    "s libelle close": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.468
-                    }
-                  }
-                ]
-              },
-              "v_article.s_libelle_marche": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "vArticles",
-                    "ConceptualProperty": "sLibelleMarche"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "s libelle marche": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "sLibelleMarche": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ]
-              },
-              "v_article.s_nom_type": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "vArticles",
-                    "ConceptualProperty": "sNomType"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "s nom type": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "sNomType": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "type": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "nom type": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "s nom category": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.762
-                    }
-                  },
-                  {
-                    "s nom genre": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.762
-                    }
-                  },
-                  {
-                    "s nom manner": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.762
-                    }
-                  },
-                  {
-                    "s nom variety": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.762
-                    }
-                  },
-                  {
-                    "nom category": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "nom genre": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "nom manner": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "nom variety": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "s nom brand": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.739
-                    }
-                  },
-                  {
-                    "s nom class": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.739
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
               "v_ge_article_laboratoire_with_LPP": {
                 "Definition": {
                   "Binding": {
@@ -8898,69 +8078,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.508
-                    }
-                  }
-                ]
-              },
-              "v_ge_article_laboratoire_with_LPP.e_id_laboratoire": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "vGeArticleLaboratoireWithLPP",
-                    "ConceptualProperty": "eIdLaboratoire"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "e id laboratoire": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "eIdLaboratoire": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "e identification laboratoire": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "e identity laboratoire": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "e identifier laboratoire": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "e credential laboratoire": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
                     }
                   }
                 ]
@@ -9783,132 +8900,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.582
-                    }
-                  }
-                ]
-              },
-              "v_top.e_id_laboratoire_fac": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "vTop",
-                    "ConceptualProperty": "eIdLaboratoireFac"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "e id laboratoire fac": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "eIdLaboratoireFac": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "e identification laboratoire fac": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.617
-                    }
-                  },
-                  {
-                    "e identity laboratoire fac": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.617
-                    }
-                  },
-                  {
-                    "e identifier laboratoire fac": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.617
-                    }
-                  },
-                  {
-                    "e credential laboratoire fac": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.599
-                    }
-                  }
-                ]
-              },
-              "v_top.e_id_laboratoire_liv": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "vTop",
-                    "ConceptualProperty": "eIdLaboratoireLiv"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "e id laboratoire liv": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "eIdLaboratoireLiv": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "e identification laboratoire liv": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.617
-                    }
-                  },
-                  {
-                    "e identity laboratoire liv": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.617
-                    }
-                  },
-                  {
-                    "e identifier laboratoire liv": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.617
-                    }
-                  },
-                  {
-                    "e credential laboratoire liv": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.599
                     }
                   }
                 ]
@@ -16333,250 +15324,6 @@
                 },
                 "State": "Generated"
               },
-              "v_article_has_annee_e_date_creation": {
-                "Binding": {
-                  "ConceptualEntity": "vArticles"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_article.annee_e_date_creation"
-                      },
-                      "Subject": {
-                        "Role": "v_article"
-                      }
-                    },
-                    "ID": "v_article_have_annee_e_date_creations",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_article": {
-                    "Target": {
-                      "Entity": "v_article"
-                    }
-                  },
-                  "v_article.annee_e_date_creation": {
-                    "Target": {
-                      "Entity": "v_article.annee_e_date_creation"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "v_article_has_code_libellé_ALM": {
-                "Binding": {
-                  "ConceptualEntity": "vArticles"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_article.code_libellé_ALM"
-                      },
-                      "Subject": {
-                        "Role": "v_article"
-                      }
-                    },
-                    "ID": "v_article_have_code_libellé_ALMs",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_article": {
-                    "Target": {
-                      "Entity": "v_article"
-                    }
-                  },
-                  "v_article.code_libellé_ALM": {
-                    "Target": {
-                      "Entity": "v_article.code_libellé_ALM"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "v_article_has_e_date_creation": {
-                "Binding": {
-                  "ConceptualEntity": "vArticles"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_article.e_date_creation"
-                      },
-                      "Subject": {
-                        "Role": "v_article"
-                      }
-                    },
-                    "ID": "v_article_have_e_date_creations",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_article": {
-                    "Target": {
-                      "Entity": "v_article"
-                    }
-                  },
-                  "v_article.e_date_creation": {
-                    "Target": {
-                      "Entity": "v_article.e_date_creation"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "v_article_has_mois_e_date_creation": {
-                "Binding": {
-                  "ConceptualEntity": "vArticles"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_article.mois_e_date_creation"
-                      },
-                      "Subject": {
-                        "Role": "v_article"
-                      }
-                    },
-                    "ID": "v_article_have_mois_e_date_creations",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_article": {
-                    "Target": {
-                      "Entity": "v_article"
-                    }
-                  },
-                  "v_article.mois_e_date_creation": {
-                    "Target": {
-                      "Entity": "v_article.mois_e_date_creation"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "v_article_has_s_libelle_court": {
-                "Binding": {
-                  "ConceptualEntity": "vArticles"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_article.s_libelle_court"
-                      },
-                      "Subject": {
-                        "Role": "v_article"
-                      }
-                    },
-                    "ID": "v_article_have_s_libelle_courts",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_article": {
-                    "Target": {
-                      "Entity": "v_article"
-                    }
-                  },
-                  "v_article.s_libelle_court": {
-                    "Target": {
-                      "Entity": "v_article.s_libelle_court"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "v_article_has_s_libelle_marche": {
-                "Binding": {
-                  "ConceptualEntity": "vArticles"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_article.s_libelle_marche"
-                      },
-                      "Subject": {
-                        "Role": "v_article"
-                      }
-                    },
-                    "ID": "v_article_have_s_libelle_marche",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_article": {
-                    "Target": {
-                      "Entity": "v_article"
-                    }
-                  },
-                  "v_article.s_libelle_marche": {
-                    "Target": {
-                      "Entity": "v_article.s_libelle_marche"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "v_article_has_type_produit": {
-                "Binding": {
-                  "ConceptualEntity": "vArticles"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "type_produit"
-                      },
-                      "Subject": {
-                        "Role": "v_article"
-                      }
-                    },
-                    "ID": "v_article_have_type_produits",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_article"
-                      },
-                      "Subject": {
-                        "Role": "type_produit"
-                      }
-                    },
-                    "ID": "type_produits_have_v_article",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "type_produit": {
-                    "Target": {
-                      "Entity": "type_produit"
-                    }
-                  },
-                  "v_article": {
-                    "Target": {
-                      "Entity": "v_article"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "v_ge_article_laboratoire_with_LPP_has_e_id_article": {
                 "Binding": {
                   "ConceptualEntity": "vGeArticleLaboratoireWithLPP"
@@ -18011,13 +16758,6 @@
         "toTable": "Producteur"
       },
       {
-        "name": "AutoDetected_62f98751-fbd1-4fe4-a281-d213376f7cf2",
-        "fromColumn": "sNomType",
-        "fromTable": "vArticles",
-        "toColumn": "sNomType",
-        "toTable": "TypeProduit"
-      },
-      {
         "name": "4e69b107-3f91-4901-9521-2e4f6f754fd0",
         "fromColumn": "Date",
         "fromTable": "Date_ligne",
@@ -18031,6 +16771,28 @@
         "fromTable": "vTop",
         "toColumn": "Date",
         "toTable": "Date_ligne"
+      },
+      {
+        "name": "AutoDetected_67070b09-5357-4ef9-a6e8-86e3b94adaf9",
+        "fromColumn": "eIdEtablissement",
+        "fromTable": "vTop",
+        "toColumn": "eIdEtablissement",
+        "toTable": "Etablissement"
+      },
+      {
+        "name": "AutoDetected_1e622bb9-58bf-4a11-b5a6-c99e3be67b0a",
+        "fromColumn": "sNomType",
+        "fromTable": "vTop",
+        "toColumn": "sNomType",
+        "toTable": "TypeProduit"
+      },
+      {
+        "name": "AutoDetected_07ac33d6-e7a6-4186-b030-a132012e3c1b",
+        "fromColumn": "eIdEntete",
+        "fromTable": "vTop",
+        "isActive": false,
+        "toColumn": "eIdEntete",
+        "toTable": "Entete"
       }
     ],
     "sourceQueryCulture": "fr-FR",
@@ -20881,122 +19643,6 @@
         ]
       },
       {
-        "name": "vArticles",
-        "columns": [
-          {
-            "name": "CodeLibelléALM",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "d67b6dc6-0971-4f61-9c09-ac6d75c961f7",
-            "sourceColumn": "CodeLibelléALM",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "eDateCreation",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "956d1ea4-e3e0-4166-9342-442cbf1394ba",
-            "sourceColumn": "eDateCreation",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Mois_eDateCreation",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "1c7fabfb-e44e-44a3-bed7-76559ae8fd2c",
-            "sourceColumn": "Mois_eDateCreation",
-            "summarizeBy": "sum"
-          },
-          {
-            "name": "Annee_eDateCreation",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "af55bebc-1058-4a8e-8a4a-801e99a1cd06",
-            "sourceColumn": "Annee_eDateCreation",
-            "summarizeBy": "sum"
-          },
-          {
-            "name": "sLibelleCourt",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "d5ea9222-6707-4f17-8921-1fb86121477c",
-            "sourceColumn": "sLibelleCourt",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "sLibelleMarche",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "43b97b00-82cb-4fcb-8969-1ae681873bee",
-            "sourceColumn": "sLibelleMarche",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "sNomType",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "aa2d5d10-3dce-4613-b856-fdc94ea3f49c",
-            "sourceColumn": "sNomType",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "864d9452-cccb-4fa5-af17-8257f8b61acf",
-        "partitions": [
-          {
-            "name": "vArticles",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Source = Sql.Databases(\"dwh-almaviva-group-uat.database.windows.net\"),",
-                "    #\"DATAMART-ACHATS\" = Source{[Name=\"DATAMART-ACHATS\"]}[Data],",
-                "    dbo_vArticles = #\"DATAMART-ACHATS\"{[Schema=\"dbo\",Item=\"vArticles\"]}[Data]",
-                "in",
-                "    dbo_vArticles"
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
         "name": "vGeArticleLaboratoireWithLPP",
         "columns": [
           {
@@ -21010,19 +19656,6 @@
             "dataType": "string",
             "lineageTag": "8ba1ad8d-ec89-434c-83db-e8a9a7bc6cb4",
             "sourceColumn": "eIdArticle",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "eIdLaboratoire",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "b268f60e-e0d1-4225-9eb0-5bfec84399f9",
-            "sourceColumn": "eIdLaboratoire",
             "summarizeBy": "none"
           },
           {
@@ -21060,6 +19693,16 @@
       },
       {
         "name": "vTop",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
         "columns": [
           {
             "name": "Région",
@@ -21233,32 +19876,6 @@
             "summarizeBy": "none"
           },
           {
-            "name": "eIdLaboratoireFac",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "15382efe-fc5c-4520-9cbc-e3b20a584513",
-            "sourceColumn": "eIdLaboratoireFac",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "eIdLaboratoireLiv",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "275481bc-b0f3-4c2c-bc9d-669ce1fbe17b",
-            "sourceColumn": "eIdLaboratoireLiv",
-            "summarizeBy": "none"
-          },
-          {
             "name": "eIdFabricant",
             "annotations": [
               {
@@ -21285,6 +19902,72 @@
             "lineageTag": "5ab036b6-c9d5-4a01-adfb-18ca9f9031f9",
             "summarizeBy": "none",
             "type": "calculated"
+          },
+          {
+            "name": "sLibelleMarche",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f535ea83-5bbc-486d-9eec-6afae35149c0",
+            "sourceColumn": "sLibelleMarche",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sNomType",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "463676fe-70c4-4f02-a9c5-291f4bbc1b7b",
+            "sourceColumn": "sNomType",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "eIdEtablissement",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bd423a1e-2952-43dd-a83a-ed066fd52dc6",
+            "sourceColumn": "eIdEtablissement",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "eIdEntete",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f42b9326-bd10-4434-ab6e-e68b4842a522",
+            "sourceColumn": "eIdEntete",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sedna",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "09b10d1e-d9dc-46d5-adb0-573c22483045",
+            "sourceColumn": "Sedna",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "e6ab35a6-b14f-4546-8ed9-45a686887ba8",
@@ -21440,9 +20123,10 @@
                 "let",
                 "    Source = Sql.Databases(\"dwh-almaviva-group-uat.database.windows.net\"),",
                 "    #\"DATAMART-ACHATS\" = Source{[Name=\"DATAMART-ACHATS\"]}[Data],",
-                "    dbo_vTop = #\"DATAMART-ACHATS\"{[Schema=\"dbo\",Item=\"vTop\"]}[Data]",
+                "    dbo_vTop = #\"DATAMART-ACHATS\"{[Schema=\"dbo\",Item=\"vTop\"]}[Data],",
+                "    #\"Lignes filtrées\" = Table.SelectRows(dbo_vTop, each true)",
                 "in",
-                "    dbo_vTop"
+                "    #\"Lignes filtrées\""
               ],
               "type": "m"
             }
