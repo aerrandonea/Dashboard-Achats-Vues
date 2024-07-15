@@ -20365,6 +20365,21 @@
             "lineageTag": "512a8ece-b235-4561-b794-352e62fa02be",
             "sourceColumn": "eIdFabricant",
             "summarizeBy": "none"
+          },
+          {
+            "name": "code_region",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "CONCATENATE(vTop[Région],CONCATENATE(\" - \", vTop[CodeLibelléALM]))",
+            "isDataTypeInferred": true,
+            "lineageTag": "5ab036b6-c9d5-4a01-adfb-18ca9f9031f9",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "e6ab35a6-b14f-4546-8ed9-45a686887ba8",
@@ -20478,6 +20493,11 @@
             ],
             "formatString": "0",
             "lineageTag": "384b1de4-d118-4a78-8735-02d9086c479e"
+          },
+          {
+            "name": "label_date_top",
+            "expression": "CONCATENATE(FORMAT(FIRSTDATE(Date_ligne[Date]), \"mmmm - yyyy\"),CONCATENATE(\"  à  \",FORMAT(LASTDATE(Date_ligne[Date]), \"mmmm - yyyy\")))",
+            "lineageTag": "1d79acef-e0c9-444e-82ea-14ce0a5e76c3"
           }
         ],
         "partitions": [
