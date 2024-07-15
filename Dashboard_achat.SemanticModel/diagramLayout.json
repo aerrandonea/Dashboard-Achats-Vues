@@ -4,8 +4,8 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
-        "y": 0
+        "x": 1289.9604089625814,
+        "y": 20.962277712614004
       },
       "nodes": [
         {
@@ -19,7 +19,7 @@
             "height": 314.55707652540821,
             "width": 234
           },
-          "zIndex": 3
+          "zIndex": 5
         },
         {
           "location": {
@@ -32,7 +32,7 @@
             "height": 459.75471922095539,
             "width": 234
           },
-          "zIndex": 4
+          "zIndex": 6
         },
         {
           "location": {
@@ -45,7 +45,7 @@
             "height": 388.79622753996546,
             "width": 234
           },
-          "zIndex": 14
+          "zIndex": 16
         },
         {
           "location": {
@@ -58,7 +58,7 @@
             "height": 224.34591684763097,
             "width": 234
           },
-          "zIndex": 5
+          "zIndex": 7
         },
         {
           "location": {
@@ -71,7 +71,7 @@
             "height": 264.7965117534095,
             "width": 234
           },
-          "zIndex": 12
+          "zIndex": 14
         },
         {
           "location": {
@@ -84,7 +84,7 @@
             "height": 157.65735212887148,
             "width": 234
           },
-          "zIndex": 6
+          "zIndex": 8
         },
         {
           "location": {
@@ -97,7 +97,7 @@
             "height": 817.21662300198693,
             "width": 357.14563503419009
           },
-          "zIndex": 16
+          "zIndex": 18
         },
         {
           "location": {
@@ -110,7 +110,7 @@
             "height": 145,
             "width": 234
           },
-          "zIndex": 7
+          "zIndex": 9
         },
         {
           "location": {
@@ -123,7 +123,7 @@
             "height": 215.82391629048777,
             "width": 234
           },
-          "zIndex": 8
+          "zIndex": 10
         },
         {
           "location": {
@@ -136,7 +136,7 @@
             "height": 151.8026785767106,
             "width": 234
           },
-          "zIndex": 9
+          "zIndex": 11
         },
         {
           "location": {
@@ -149,7 +149,7 @@
             "height": 146.38268695096019,
             "width": 234
           },
-          "zIndex": 10
+          "zIndex": 12
         },
         {
           "location": {
@@ -162,7 +162,7 @@
             "height": 152.02001953991589,
             "width": 234
           },
-          "zIndex": 11
+          "zIndex": 13
         },
         {
           "location": {
@@ -175,7 +175,7 @@
             "height": 185.8980036254369,
             "width": 234
           },
-          "zIndex": 18
+          "zIndex": 20
         },
         {
           "location": {
@@ -188,7 +188,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 13
+          "zIndex": 15
         },
         {
           "location": {
@@ -201,7 +201,7 @@
             "height": 224,
             "width": 234
           },
-          "zIndex": 1
+          "zIndex": 3
         },
         {
           "location": {
@@ -214,7 +214,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 2
+          "zIndex": 4
         },
         {
           "location": {
@@ -227,7 +227,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 15
+          "zIndex": 17
         },
         {
           "location": {
@@ -240,24 +240,62 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 17
+          "zIndex": 19
         },
         {
           "location": {
             "x": 2595.6366215994,
-            "y": 556.0883500459679
+            "y": 604.2704635874104
           },
-          "nodeIndex": "vTopFournisseur",
-          "nodeLineageTag": "921f150e-df10-4a14-b899-92089e77b839",
+          "nodeIndex": "vArticles",
+          "nodeLineageTag": "864d9452-cccb-4fa5-af17-8257f8b61acf",
           "size": {
-            "height": 272,
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 2687.0456951147585,
+            "y": 352.2478638256224
+          },
+          "nodeIndex": "vGeArticleLaboratoireWithLPP",
+          "nodeLineageTag": "2577a689-4904-43ee-86e8-2fae33ec4b2c",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 21
+        },
+        {
+          "location": {
+            "x": 3079.7874707665728,
+            "y": 701.42384514901767
+          },
+          "nodeIndex": "vTop",
+          "nodeLineageTag": "e6ab35a6-b14f-4546-8ed9-45a686887ba8",
+          "size": {
+            "height": 461.14750991572009,
+            "width": 320.469395564533
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 3450.2568663311058,
+            "y": 628.2704635874104
+          },
+          "nodeIndex": "Date_ligne",
+          "size": {
+            "height": 200,
             "width": 234
           },
           "zIndex": 0
         }
       ],
       "name": "Toutes les tables",
-      "zoomValue": 85.576148127524618,
+      "zoomValue": 76.327583382659014,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
