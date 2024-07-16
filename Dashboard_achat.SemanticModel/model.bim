@@ -9666,115 +9666,72 @@
                   }
                 ]
               },
-              "v_top.e_px_unit_TTCUCD": {
+              "v_top.e_mont_HTUCD": {
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "vTop",
-                    "ConceptualProperty": "ePxUnitTTCUCD"
+                    "ConceptualProperty": "eMontHTUCD"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "e px unit TTCUCD": {
+                    "e mont HTUCD": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "ePxUnitTTCUCD": {
+                    "eMontHTUCD": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
                     }
                   },
                   {
-                    "e px module ttcucd": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.617
+                    "HTUCD": {
+                      "State": "Generated",
+                      "Weight": 0.97
                     }
                   },
                   {
-                    "e px element ttcucd": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.617
+                    "mont HTUCD": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "v_top.e_mont_TTCUCD": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "vTop",
+                    "ConceptualProperty": "eMontTTCUCD"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "e mont TTCUCD": {
+                      "State": "Generated"
                     }
                   },
                   {
-                    "e px entity ttcucd": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
+                    "eMontTTCUCD": {
+                      "State": "Generated",
                       "Type": "Noun",
-                      "Weight": 0.617
+                      "Weight": 0.99
                     }
                   },
                   {
-                    "e px group ttcucd": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.599
+                    "TTCUCD": {
+                      "State": "Generated",
+                      "Weight": 0.97
                     }
                   },
                   {
-                    "e px component ttcucd": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.599
-                    }
-                  },
-                  {
-                    "e px constituent ttcucd": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.599
-                    }
-                  },
-                  {
-                    "e px item ttcucd": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.599
-                    }
-                  },
-                  {
-                    "e px part ttcucd": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.599
-                    }
-                  },
-                  {
-                    "e px section ttcucd": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.599
+                    "mont TTCUCD": {
+                      "State": "Generated",
+                      "Weight": 0.97
                     }
                   }
                 ]
@@ -10268,6 +10225,16 @@
                   },
                   {
                     "Libellé Fournisseur": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Laboratoire": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -11080,6 +11047,49 @@
                   }
                 ]
               },
+              "v_top.s_libelle_commercial": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "vTop",
+                    "ConceptualProperty": "sLibelleCommercial"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "s libelle commercial": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "sLibelleCommercial": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "s libelle advertisement": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.458
+                    }
+                  },
+                  {
+                    "s libelle infomercial": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.458
+                    }
+                  }
+                ]
+              },
               "v_top.s_libelle_marche": {
                 "Definition": {
                   "Binding": {
@@ -11725,7 +11735,7 @@
                         "Role": "article.e_date_creation.variation.hiérarchie_de_date.année"
                       }
                     },
-                    "ID": "années_have_trimestres4",
+                    "ID": "années_have_trimestres6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11738,7 +11748,7 @@
                         "Role": "article.e_date_creation.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_années4",
+                    "ID": "trimestres_have_années6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11791,7 +11801,7 @@
                         "Role": "article.e_date_creation.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_années5",
+                    "ID": "hiérarchie_de_dates_have_années6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11824,7 +11834,7 @@
                         "Role": "article.e_date_creation.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_jour4",
+                    "ID": "hiérarchie_de_dates_have_jour6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11857,7 +11867,7 @@
                         "Role": "article.e_date_creation.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_moises5",
+                    "ID": "hiérarchie_de_dates_have_moises6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11890,7 +11900,7 @@
                         "Role": "article.e_date_creation.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_trimestres5",
+                    "ID": "hiérarchie_de_dates_have_trimestres6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11923,7 +11933,7 @@
                         "Role": "article.e_date_creation.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_jour4",
+                    "ID": "moises_have_jour5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11936,7 +11946,7 @@
                         "Role": "article.e_date_creation.variation.hiérarchie_de_date.jour"
                       }
                     },
-                    "ID": "jour_have_moises4",
+                    "ID": "jour_have_moises5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11989,7 +11999,7 @@
                         "Role": "article.e_date_creation.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises4",
+                    "ID": "trimestres_have_moises5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12002,7 +12012,7 @@
                         "Role": "article.e_date_creation.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres4",
+                    "ID": "moises_have_trimestres5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12543,7 +12553,7 @@
                         "Role": "date_article.date.variation.hiérarchie_de_date.année"
                       }
                     },
-                    "ID": "années_have_trimestres2",
+                    "ID": "années_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12556,7 +12566,7 @@
                         "Role": "date_article.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_années2",
+                    "ID": "trimestres_have_années4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12609,7 +12619,7 @@
                         "Role": "date_article.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_années3",
+                    "ID": "hiérarchie_de_dates_have_années4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12642,7 +12652,7 @@
                         "Role": "date_article.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_jour2",
+                    "ID": "hiérarchie_de_dates_have_jour4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12675,7 +12685,7 @@
                         "Role": "date_article.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_moises3",
+                    "ID": "hiérarchie_de_dates_have_moises4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12708,7 +12718,7 @@
                         "Role": "date_article.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_trimestres3",
+                    "ID": "hiérarchie_de_dates_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12741,7 +12751,7 @@
                         "Role": "date_article.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_jour2",
+                    "ID": "moises_have_jour3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12754,7 +12764,7 @@
                         "Role": "date_article.date.variation.hiérarchie_de_date.jour"
                       }
                     },
-                    "ID": "jour_have_moises2",
+                    "ID": "jour_have_moises3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12807,7 +12817,7 @@
                         "Role": "date_article.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises2",
+                    "ID": "trimestres_have_moises3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12820,7 +12830,7 @@
                         "Role": "date_article.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres2",
+                    "ID": "moises_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12939,7 +12949,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date.année"
                       }
                     },
-                    "ID": "années_have_trimestres3",
+                    "ID": "années_have_trimestres5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12952,7 +12962,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_années3",
+                    "ID": "trimestres_have_années5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13005,7 +13015,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_années4",
+                    "ID": "hiérarchie_de_dates_have_années5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13038,7 +13048,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_jour3",
+                    "ID": "hiérarchie_de_dates_have_jour5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13071,7 +13081,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_moises4",
+                    "ID": "hiérarchie_de_dates_have_moises5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13104,7 +13114,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_trimestres4",
+                    "ID": "hiérarchie_de_dates_have_trimestres5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13137,7 +13147,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_jour3",
+                    "ID": "moises_have_jour4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13150,7 +13160,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date.jour"
                       }
                     },
-                    "ID": "jour_have_moises3",
+                    "ID": "jour_have_moises4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13203,7 +13213,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises3",
+                    "ID": "trimestres_have_moises4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13216,7 +13226,7 @@
                         "Role": "date.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres3",
+                    "ID": "moises_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13434,7 +13444,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.année"
                       }
                     },
-                    "ID": "années_have_trimestres1",
+                    "ID": "années_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13447,7 +13457,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_années1",
+                    "ID": "trimestres_have_années3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13500,7 +13510,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_années2",
+                    "ID": "hiérarchie_de_dates_have_années3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13533,7 +13543,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_jour1",
+                    "ID": "hiérarchie_de_dates_have_jour3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13566,7 +13576,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_moises2",
+                    "ID": "hiérarchie_de_dates_have_moises3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13599,7 +13609,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_trimestres2",
+                    "ID": "hiérarchie_de_dates_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13632,7 +13642,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_jour1",
+                    "ID": "moises_have_jour2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13645,7 +13655,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.jour"
                       }
                     },
-                    "ID": "jour_have_moises1",
+                    "ID": "jour_have_moises2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13698,7 +13708,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises1",
+                    "ID": "trimestres_have_moises2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13711,7 +13721,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres1",
+                    "ID": "moises_have_trimestres2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13863,7 +13873,7 @@
                         "Role": "dates_entete.date.variation.hiérarchie_de_date.année"
                       }
                     },
-                    "ID": "années_have_trimestres",
+                    "ID": "années_have_trimestres2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13876,7 +13886,7 @@
                         "Role": "dates_entete.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_années",
+                    "ID": "trimestres_have_années2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13929,7 +13939,7 @@
                         "Role": "dates_entete.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_années1",
+                    "ID": "hiérarchie_de_dates_have_années2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13962,7 +13972,7 @@
                         "Role": "dates_entete.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_jour",
+                    "ID": "hiérarchie_de_dates_have_jour2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13995,7 +14005,7 @@
                         "Role": "dates_entete.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_moises1",
+                    "ID": "hiérarchie_de_dates_have_moises2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14028,7 +14038,7 @@
                         "Role": "dates_entete.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_trimestres1",
+                    "ID": "hiérarchie_de_dates_have_trimestres2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14061,7 +14071,7 @@
                         "Role": "dates_entete.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_jour",
+                    "ID": "moises_have_jour1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -14074,7 +14084,7 @@
                         "Role": "dates_entete.date.variation.hiérarchie_de_date.jour"
                       }
                     },
-                    "ID": "jour_have_moises",
+                    "ID": "jour_have_moises1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -14127,7 +14137,7 @@
                         "Role": "dates_entete.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises",
+                    "ID": "trimestres_have_moises1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -14140,7 +14150,7 @@
                         "Role": "dates_entete.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres",
+                    "ID": "moises_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -14259,7 +14269,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date.année"
                       }
                     },
-                    "ID": "années_have_trimestres5",
+                    "ID": "années_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -14272,7 +14282,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_années5",
+                    "ID": "trimestres_have_années1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -14325,7 +14335,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_années",
+                    "ID": "hiérarchie_de_dates_have_années1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14358,7 +14368,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_jour5",
+                    "ID": "hiérarchie_de_dates_have_jour1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14391,7 +14401,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_moises",
+                    "ID": "hiérarchie_de_dates_have_moises1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14424,7 +14434,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_trimestres",
+                    "ID": "hiérarchie_de_dates_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14457,7 +14467,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_jour5",
+                    "ID": "moises_have_jour",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -14470,7 +14480,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date.jour"
                       }
                     },
-                    "ID": "jour_have_moises5",
+                    "ID": "jour_have_moises",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -14523,7 +14533,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises5",
+                    "ID": "trimestres_have_moises",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -14536,7 +14546,7 @@
                         "Role": "entete.e_date_facturation.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres5",
+                    "ID": "moises_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -17139,7 +17149,7 @@
                         "Role": "v_top.e_entete_date_creation.variation.hiérarchie_de_date.année"
                       }
                     },
-                    "ID": "années_have_trimestres6",
+                    "ID": "années_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -17152,7 +17162,7 @@
                         "Role": "v_top.e_entete_date_creation.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_années6",
+                    "ID": "trimestres_have_années",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -17205,7 +17215,7 @@
                         "Role": "v_top.e_entete_date_creation.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_années6",
+                    "ID": "hiérarchie_de_dates_have_années",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -17238,7 +17248,7 @@
                         "Role": "v_top.e_entete_date_creation.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_jour6",
+                    "ID": "hiérarchie_de_dates_have_jour",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -17271,7 +17281,7 @@
                         "Role": "v_top.e_entete_date_creation.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_moises6",
+                    "ID": "hiérarchie_de_dates_have_moises",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -17304,7 +17314,7 @@
                         "Role": "v_top.e_entete_date_creation.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_trimestres6",
+                    "ID": "hiérarchie_de_dates_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -18125,7 +18135,7 @@
                 },
                 "State": "Generated"
               },
-              "v_top_has_e_px_unit_TTCUCD": {
+              "v_top_has_e_mont_HTUCD": {
                 "Binding": {
                   "ConceptualEntity": "vTop"
                 },
@@ -18133,13 +18143,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "v_top.e_px_unit_TTCUCD"
+                        "Role": "v_top.e_mont_HTUCD"
                       },
                       "Subject": {
                         "Role": "v_top"
                       }
                     },
-                    "ID": "v_top_have_e_px_unit_TTCUCDs",
+                    "ID": "v_top_have_e_mont_HTUCDs",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -18150,9 +18160,42 @@
                       "Entity": "v_top"
                     }
                   },
-                  "v_top.e_px_unit_TTCUCD": {
+                  "v_top.e_mont_HTUCD": {
                     "Target": {
-                      "Entity": "v_top.e_px_unit_TTCUCD"
+                      "Entity": "v_top.e_mont_HTUCD"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_top_has_e_mont_TTCUCD": {
+                "Binding": {
+                  "ConceptualEntity": "vTop"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_top.e_mont_TTCUCD"
+                      },
+                      "Subject": {
+                        "Role": "v_top"
+                      }
+                    },
+                    "ID": "v_top_have_e_mont_TTCUCDs",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_top": {
+                    "Target": {
+                      "Entity": "v_top"
+                    }
+                  },
+                  "v_top.e_mont_TTCUCD": {
+                    "Target": {
+                      "Entity": "v_top.e_mont_TTCUCD"
                     }
                   }
                 },
@@ -18846,6 +18889,39 @@
                   "v_top.région": {
                     "Target": {
                       "Entity": "v_top.région"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_top_has_s_libelle_commercial": {
+                "Binding": {
+                  "ConceptualEntity": "vTop"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_top.s_libelle_commercial"
+                      },
+                      "Subject": {
+                        "Role": "v_top"
+                      }
+                    },
+                    "ID": "v_top_have_s_libelle_commercials",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_top": {
+                    "Target": {
+                      "Entity": "v_top"
+                    }
+                  },
+                  "v_top.s_libelle_commercial": {
+                    "Target": {
+                      "Entity": "v_top.s_libelle_commercial"
                     }
                   }
                 },
@@ -22120,23 +22196,6 @@
             "summarizeBy": "none"
           },
           {
-            "name": "ePxUnitTTCUCD",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "dataType": "double",
-            "lineageTag": "7f0c4dbd-2b2b-4b1c-b2e2-90f7f69c8751",
-            "sourceColumn": "ePxUnitTTCUCD",
-            "summarizeBy": "sum"
-          },
-          {
             "name": "LPP",
             "annotations": [
               {
@@ -22350,6 +22409,53 @@
             "lineageTag": "01e2737d-6472-4d05-806e-21358c80dd30",
             "summarizeBy": "sum",
             "type": "calculated"
+          },
+          {
+            "name": "eMontHTUCD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "90b68659-3c8e-49e8-a8dc-095f826f935c",
+            "sourceColumn": "eMontHTUCD",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "eMontTTCUCD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "5327c738-ad55-4cc1-b9aa-83eed7478576",
+            "sourceColumn": "eMontTTCUCD",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "sLibelleCommercial",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a09adea9-5470-4913-adf8-a354073ad1e6",
+            "sourceColumn": "sLibelleCommercial",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "e6ab35a6-b14f-4546-8ed9-45a686887ba8",
@@ -22378,7 +22484,7 @@
             ],
             "expression": [
               "",
-              "CALCULATE(SUM(vTop[ePxUnitTTCUCD]),SAMEPERIODLASTYEAR(Date_ligne[Date]))"
+              "CALCULATE(SUM(vTop[eMontHTUCD]),SAMEPERIODLASTYEAR(Date_ligne[Date]))"
             ],
             "lineageTag": "a72217cb-561d-4f1e-b239-bddd3e028f33"
           },
@@ -22418,7 +22524,7 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "expression": "sum(vTop[ePxUnitTTCUCD])",
+            "expression": "sum(vTop[eMontHTUCD])",
             "lineageTag": "dc1a177c-1990-43fb-966c-db8387ab4c43"
           },
           {
