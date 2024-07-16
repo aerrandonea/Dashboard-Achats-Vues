@@ -1817,16 +1817,6 @@
                       "Type": "Noun",
                       "Weight": 0.468
                     }
-                  },
-                  {
-                    "Libellé Article": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
                   }
                 ]
               },
@@ -3579,16 +3569,6 @@
                       "Type": "Noun",
                       "Weight": 0.99
                     }
-                  },
-                  {
-                    "eEtatEntete": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
                   }
                 ]
               },
@@ -4794,16 +4774,6 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
-                    }
-                  },
-                  {
-                    "eEtatLigne": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   }
                 ]
@@ -6175,16 +6145,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.468
-                    }
-                  },
-                  {
-                    "Taux de rotation": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   }
                 ]
@@ -10917,6 +10877,16 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.739
+                    }
+                  },
+                  {
+                    "Type produit": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
