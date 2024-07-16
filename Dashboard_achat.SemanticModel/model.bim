@@ -2339,386 +2339,6 @@
                   }
                 ]
               },
-              "dates_article": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Dates_Articles"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "dates article": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "date article": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.78
-                    }
-                  },
-                  {
-                    "Dates_Articles": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "date thing": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "date artefact": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "date artifact": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.5
-                    }
-                  },
-                  {
-                    "date object": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "date item": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "date piece": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.485
-                    }
-                  },
-                  {
-                    "date commentary": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.475
-                    }
-                  },
-                  {
-                    "date exposé": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.475
-                    }
-                  },
-                  {
-                    "date editorial": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.461
-                    }
-                  },
-                  {
-                    "date critique": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.461
-                    }
-                  }
-                ]
-              },
-              "dates_article.date": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Dates_Articles",
-                    "ConceptualProperty": "Date"
-                  }
-                },
-                "SemanticType": "Time",
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "date": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "moment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "period": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.714
-                    }
-                  }
-                ]
-              },
-              "dates_article.date.variation.hiérarchie_de_date": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Dates_Articles",
-                    "Hierarchy": "Hiérarchie de dates",
-                    "VariationSet": "Variation",
-                    "VariationSource": "Date"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "hiérarchie de date": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "hiérarchie de moment": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.762
-                    }
-                  },
-                  {
-                    "hiérarchie de period": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.739
-                    }
-                  }
-                ]
-              },
-              "dates_article.date.variation.hiérarchie_de_date.année": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Dates_Articles",
-                    "Hierarchy": "Hiérarchie de dates",
-                    "HierarchyLevel": "Année",
-                    "VariationSet": "Variation",
-                    "VariationSource": "Date"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "année": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "date année": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "moment année": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "period année": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  }
-                ]
-              },
-              "dates_article.date.variation.hiérarchie_de_date.jour": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Dates_Articles",
-                    "Hierarchy": "Hiérarchie de dates",
-                    "HierarchyLevel": "Jour",
-                    "VariationSet": "Variation",
-                    "VariationSource": "Date"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "jour": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "date jour": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "moment jour": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "period jour": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  }
-                ]
-              },
-              "dates_article.date.variation.hiérarchie_de_date.mois": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Dates_Articles",
-                    "Hierarchy": "Hiérarchie de dates",
-                    "HierarchyLevel": "Mois",
-                    "VariationSet": "Variation",
-                    "VariationSource": "Date"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "mois": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "date mois": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "moment mois": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "period mois": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  }
-                ]
-              },
-              "dates_article.date.variation.hiérarchie_de_date.trimestre": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Dates_Articles",
-                    "Hierarchy": "Hiérarchie de dates",
-                    "HierarchyLevel": "Trimestre",
-                    "VariationSet": "Variation",
-                    "VariationSource": "Date"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "trimestre": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "date trimestre": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "moment trimestre": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "period trimestre": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  }
-                ]
-              },
               "dates_entete": {
                 "Definition": {
                   "Binding": {
@@ -8301,29 +7921,6 @@
                   }
                 ]
               },
-              "v_top.article_créés_N_1": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "vTop",
-                    "ConceptualProperty": "Article_créés_N-1"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "article créés N 1": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Article_créés_N-1": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ]
-              },
               "v_top.article_s_libelle_court": {
                 "Definition": {
                   "Binding": {
@@ -12487,402 +12084,6 @@
                   "date_ligne.date": {
                     "Target": {
                       "Entity": "date_ligne.date"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "dates_article_date_has_variation_hiérarchie_de_date": {
-                "Binding": {
-                  "ConceptualEntity": "Dates_Articles"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date"
-                      },
-                      "Subject": {
-                        "Role": "dates_article.date"
-                      }
-                    },
-                    "ID": "dates_have_hiérarchie_de_dates1",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "dates_article.date": {
-                    "Target": {
-                      "Entity": "dates_article.date"
-                    }
-                  },
-                  "dates_article.date.variation.hiérarchie_de_date": {
-                    "Target": {
-                      "Entity": "dates_article.date.variation.hiérarchie_de_date"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "dates_article_date_variation_hiérarchie_de_date_année_has_dates_article_date_variation_hiérarchie_de_date_trimestre": {
-                "Binding": {
-                  "ConceptualEntity": "Dates_Articles"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.trimestre"
-                      },
-                      "Subject": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.année"
-                      }
-                    },
-                    "ID": "années_have_trimestres3",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.année"
-                      },
-                      "Subject": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.trimestre"
-                      }
-                    },
-                    "ID": "trimestres_have_années3",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "ID": "trimestres_are_in_années2",
-                    "Preposition": {
-                      "Object": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.année"
-                      },
-                      "Prepositions": [
-                        {
-                          "in": {
-                            "State": "Generated"
-                          }
-                        }
-                      ],
-                      "Subject": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.trimestre"
-                      }
-                    },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "dates_article.date.variation.hiérarchie_de_date.année": {
-                    "Target": {
-                      "Entity": "dates_article.date.variation.hiérarchie_de_date.année"
-                    }
-                  },
-                  "dates_article.date.variation.hiérarchie_de_date.trimestre": {
-                    "Target": {
-                      "Entity": "dates_article.date.variation.hiérarchie_de_date.trimestre"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "dates_article_date_variation_hiérarchie_de_date_has_année": {
-                "Binding": {
-                  "ConceptualEntity": "Dates_Articles"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.année"
-                      },
-                      "Subject": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date"
-                      }
-                    },
-                    "ID": "hiérarchie_de_dates_have_années3",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "dates_article.date.variation.hiérarchie_de_date": {
-                    "Target": {
-                      "Entity": "dates_article.date.variation.hiérarchie_de_date"
-                    }
-                  },
-                  "dates_article.date.variation.hiérarchie_de_date.année": {
-                    "Target": {
-                      "Entity": "dates_article.date.variation.hiérarchie_de_date.année"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "dates_article_date_variation_hiérarchie_de_date_has_jour": {
-                "Binding": {
-                  "ConceptualEntity": "Dates_Articles"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.jour"
-                      },
-                      "Subject": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date"
-                      }
-                    },
-                    "ID": "hiérarchie_de_dates_have_jour3",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "dates_article.date.variation.hiérarchie_de_date": {
-                    "Target": {
-                      "Entity": "dates_article.date.variation.hiérarchie_de_date"
-                    }
-                  },
-                  "dates_article.date.variation.hiérarchie_de_date.jour": {
-                    "Target": {
-                      "Entity": "dates_article.date.variation.hiérarchie_de_date.jour"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "dates_article_date_variation_hiérarchie_de_date_has_mois": {
-                "Binding": {
-                  "ConceptualEntity": "Dates_Articles"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.mois"
-                      },
-                      "Subject": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date"
-                      }
-                    },
-                    "ID": "hiérarchie_de_dates_have_moises3",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "dates_article.date.variation.hiérarchie_de_date": {
-                    "Target": {
-                      "Entity": "dates_article.date.variation.hiérarchie_de_date"
-                    }
-                  },
-                  "dates_article.date.variation.hiérarchie_de_date.mois": {
-                    "Target": {
-                      "Entity": "dates_article.date.variation.hiérarchie_de_date.mois"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "dates_article_date_variation_hiérarchie_de_date_has_trimestre": {
-                "Binding": {
-                  "ConceptualEntity": "Dates_Articles"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.trimestre"
-                      },
-                      "Subject": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date"
-                      }
-                    },
-                    "ID": "hiérarchie_de_dates_have_trimestres3",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "dates_article.date.variation.hiérarchie_de_date": {
-                    "Target": {
-                      "Entity": "dates_article.date.variation.hiérarchie_de_date"
-                    }
-                  },
-                  "dates_article.date.variation.hiérarchie_de_date.trimestre": {
-                    "Target": {
-                      "Entity": "dates_article.date.variation.hiérarchie_de_date.trimestre"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "dates_article_date_variation_hiérarchie_de_date_mois_has_dates_article_date_variation_hiérarchie_de_date_jour": {
-                "Binding": {
-                  "ConceptualEntity": "Dates_Articles"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.jour"
-                      },
-                      "Subject": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.mois"
-                      }
-                    },
-                    "ID": "moises_have_jour2",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.mois"
-                      },
-                      "Subject": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.jour"
-                      }
-                    },
-                    "ID": "jour_have_moises2",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "ID": "jour_are_in_moises2",
-                    "Preposition": {
-                      "Object": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.mois"
-                      },
-                      "Prepositions": [
-                        {
-                          "in": {
-                            "State": "Generated"
-                          }
-                        }
-                      ],
-                      "Subject": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.jour"
-                      }
-                    },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "dates_article.date.variation.hiérarchie_de_date.jour": {
-                    "Target": {
-                      "Entity": "dates_article.date.variation.hiérarchie_de_date.jour"
-                    }
-                  },
-                  "dates_article.date.variation.hiérarchie_de_date.mois": {
-                    "Target": {
-                      "Entity": "dates_article.date.variation.hiérarchie_de_date.mois"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "dates_article_date_variation_hiérarchie_de_date_trimestre_has_dates_article_date_variation_hiérarchie_de_date_mois": {
-                "Binding": {
-                  "ConceptualEntity": "Dates_Articles"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.mois"
-                      },
-                      "Subject": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.trimestre"
-                      }
-                    },
-                    "ID": "trimestres_have_moises2",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.trimestre"
-                      },
-                      "Subject": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.mois"
-                      }
-                    },
-                    "ID": "moises_have_trimestres2",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "ID": "moises_are_in_trimestres2",
-                    "Preposition": {
-                      "Object": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.trimestre"
-                      },
-                      "Prepositions": [
-                        {
-                          "in": {
-                            "State": "Generated"
-                          }
-                        }
-                      ],
-                      "Subject": {
-                        "Role": "dates_article.date.variation.hiérarchie_de_date.mois"
-                      }
-                    },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "dates_article.date.variation.hiérarchie_de_date.mois": {
-                    "Target": {
-                      "Entity": "dates_article.date.variation.hiérarchie_de_date.mois"
-                    }
-                  },
-                  "dates_article.date.variation.hiérarchie_de_date.trimestre": {
-                    "Target": {
-                      "Entity": "dates_article.date.variation.hiérarchie_de_date.trimestre"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "dates_article_has_date": {
-                "Binding": {
-                  "ConceptualEntity": "Dates_Articles"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "dates_article.date"
-                      },
-                      "Subject": {
-                        "Role": "dates_article"
-                      }
-                    },
-                    "ID": "dates_articles_have_dates",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "dates_article": {
-                    "Target": {
-                      "Entity": "dates_article"
-                    }
-                  },
-                  "dates_article.date": {
-                    "Target": {
-                      "Entity": "dates_article.date"
                     }
                   }
                 },
@@ -18107,21 +17308,6 @@
         "toTable": "Ligne"
       },
       {
-        "name": "b815dd68-c960-4ed3-a835-da9584d423a7",
-        "fromColumn": "Date",
-        "fromTable": "Dates_Articles",
-        "joinOnDateBehavior": "datePartOnly",
-        "toColumn": "Date",
-        "toTable": "LocalDateTable_7333677d-eef6-4bbc-8db2-60e48fe30ac7"
-      },
-      {
-        "name": "20fdf788-fe94-5f96-9ea5-4a823c884c99",
-        "fromColumn": "eDateCreation",
-        "fromTable": "Article",
-        "toColumn": "Date",
-        "toTable": "Dates_Articles"
-      },
-      {
         "name": "90494116-92e3-c05b-7690-3b80a7ca6ae5",
         "fromColumn": "eIdEtablissement",
         "fromTable": "Entete",
@@ -18174,12 +17360,27 @@
         "toTable": "Date_ligne"
       },
       {
-        "name": "0ff9bef7-541f-45a0-ab33-cc4888081d5a",
+        "name": "e80fcd65-b223-4a9b-8f83-da6046690860",
         "fromColumn": "eDateCreation",
-        "fromTable": "vTop",
+        "fromTable": "Article",
         "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
-        "toTable": "LocalDateTable_deb87397-ff64-4a1e-835c-b87feca0f9cb"
+        "toTable": "LocalDateTable_ab3eb1c6-385e-4955-8174-baab655a01a5"
+      },
+      {
+        "name": "ba35f940-8ca9-41b3-9cf7-94a3bc4f0037",
+        "fromColumn": "Date",
+        "fromTable": "Date_Articles",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_7c4f4f6a-b740-434e-9cc2-b9db6c7d7754"
+      },
+      {
+        "name": "381a6e9a-5e57-76e6-fc22-0eabb622e24e",
+        "fromColumn": "eDateCreation",
+        "fromTable": "vTop",
+        "toColumn": "Date",
+        "toTable": "Date_Articles"
       }
     ],
     "sourceQueryCulture": "fr-FR",
@@ -18871,7 +18072,18 @@
             "formatString": "General Date",
             "lineageTag": "b9671919-f6cd-44f8-8f54-5dfd0df795ad",
             "sourceColumn": "eDateCreation",
-            "summarizeBy": "none"
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hiérarchie de dates",
+                  "table": "LocalDateTable_ab3eb1c6-385e-4955-8174-baab655a01a5"
+                },
+                "isDefault": true,
+                "relationship": "e80fcd65-b223-4a9b-8f83-da6046690860"
+              }
+            ]
           },
           {
             "name": "eDateModif",
@@ -20273,257 +19485,6 @@
         ]
       },
       {
-        "name": "Dates_Articles",
-        "annotations": [
-          {
-            "name": "PBI_Id",
-            "value": "90c037be0bd2450eb20af07408a2876c"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Date",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "General Date",
-            "isDataTypeInferred": true,
-            "isNameInferred": true,
-            "lineageTag": "49b6a83a-29ed-4af6-b9ae-ff81776bd344",
-            "sourceColumn": "[Date]",
-            "summarizeBy": "none",
-            "type": "calculatedTableColumn",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Hiérarchie de dates",
-                  "table": "LocalDateTable_7333677d-eef6-4bbc-8db2-60e48fe30ac7"
-                },
-                "isDefault": true,
-                "relationship": "b815dd68-c960-4ed3-a835-da9584d423a7"
-              }
-            ]
-          }
-        ],
-        "lineageTag": "29a73508-f39f-4bc5-b773-73a381a10f82",
-        "partitions": [
-          {
-            "name": "Dates_Articles",
-            "mode": "import",
-            "source": {
-              "expression": "CALENDAR(MIN(Article[eDateCreation]), MAX(Article[eDateCreation]))",
-              "type": "calculated"
-            }
-          }
-        ]
-      },
-      {
-        "name": "LocalDateTable_7333677d-eef6-4bbc-8db2-60e48fe30ac7",
-        "annotations": [
-          {
-            "name": "__PBI_LocalDateTable",
-            "value": "true"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Date",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataCategory": "PaddedDateTableDates",
-            "dataType": "dateTime",
-            "isHidden": true,
-            "isNameInferred": true,
-            "lineageTag": "040504ec-ca62-4b65-b2ba-8456f2438889",
-            "sourceColumn": "[Date]",
-            "summarizeBy": "none",
-            "type": "calculatedTableColumn"
-          },
-          {
-            "name": "Année",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Year"
-              }
-            ],
-            "dataCategory": "Years",
-            "dataType": "int64",
-            "expression": "YEAR([Date])",
-            "isHidden": true,
-            "lineageTag": "fd9cbd0b-35db-483d-9e72-82aa1b010aa0",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "NoMois",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "MonthNumber"
-              }
-            ],
-            "dataCategory": "MonthOfYear",
-            "dataType": "int64",
-            "expression": "MONTH([Date])",
-            "isHidden": true,
-            "lineageTag": "785f5b24-a18d-4ab7-b63d-6da07e0e115d",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Mois",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Month"
-              }
-            ],
-            "dataCategory": "Months",
-            "dataType": "string",
-            "expression": "FORMAT([Date], \"MMMM\")",
-            "isHidden": true,
-            "lineageTag": "56adbf4a-11b7-493c-97d4-3a4e71430479",
-            "sortByColumn": "NoMois",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "NoTrimestre",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "QuarterNumber"
-              }
-            ],
-            "dataCategory": "QuarterOfYear",
-            "dataType": "int64",
-            "expression": "INT(([NoMois] + 2) / 3)",
-            "isHidden": true,
-            "lineageTag": "e124c4e7-25e3-4274-9b04-feef57eee698",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Trimestre",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Quarter"
-              }
-            ],
-            "dataCategory": "Quarters",
-            "dataType": "string",
-            "expression": "\"Trim \" & [NoTrimestre]",
-            "isHidden": true,
-            "lineageTag": "0785ec1d-09c2-42cb-b9b9-9e4d0939e8e9",
-            "sortByColumn": "NoTrimestre",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Jour",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Day"
-              }
-            ],
-            "dataCategory": "DayOfMonth",
-            "dataType": "int64",
-            "expression": "DAY([Date])",
-            "isHidden": true,
-            "lineageTag": "c2c681f8-ec3b-45ff-b74c-053564eb5dd1",
-            "summarizeBy": "none",
-            "type": "calculated"
-          }
-        ],
-        "hierarchies": [
-          {
-            "name": "Hiérarchie de dates",
-            "annotations": [
-              {
-                "name": "TemplateId",
-                "value": "DateHierarchy"
-              }
-            ],
-            "levels": [
-              {
-                "name": "Année",
-                "column": "Année",
-                "lineageTag": "693ddb14-068c-4225-817f-9ae0a002f7df",
-                "ordinal": 0
-              },
-              {
-                "name": "Trimestre",
-                "column": "Trimestre",
-                "lineageTag": "0d90aeee-f53a-4cf8-a862-fbaf5fe9b244",
-                "ordinal": 1
-              },
-              {
-                "name": "Mois",
-                "column": "Mois",
-                "lineageTag": "fe34ab50-d0e3-42d7-afdc-614cf568ee2f",
-                "ordinal": 2
-              },
-              {
-                "name": "Jour",
-                "column": "Jour",
-                "lineageTag": "550076bf-b598-4ef6-8768-e3a53b710dbe",
-                "ordinal": 3
-              }
-            ],
-            "lineageTag": "fa4f9e57-f82f-4ab2-831c-d93325855950"
-          }
-        ],
-        "isHidden": true,
-        "lineageTag": "7891c18d-cb68-4763-8db1-ad2fdfb0a9c9",
-        "partitions": [
-          {
-            "name": "LocalDateTable_7333677d-eef6-4bbc-8db2-60e48fe30ac7",
-            "mode": "import",
-            "source": {
-              "expression": "Calendar(Date(Year(MIN('Dates_Articles'[Date])), 1, 1), Date(Year(MAX('Dates_Articles'[Date])), 12, 31))",
-              "type": "calculated"
-            }
-          }
-        ],
-        "showAsVariationsOnly": true
-      },
-      {
         "name": "Dates_Entete",
         "annotations": [
           {
@@ -21088,15 +20049,24 @@
         "name": "vTop",
         "annotations": [
           {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          },
-          {
             "name": "PBI_ResultType",
             "value": "Table"
           }
         ],
         "columns": [
+          {
+            "name": "Région",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c125b594-98be-47c3-ab11-98eca8cda592",
+            "sourceColumn": "Région",
+            "summarizeBy": "none"
+          },
           {
             "name": "Laboratoire livreur",
             "annotations": [
@@ -21349,19 +20319,6 @@
             "summarizeBy": "none"
           },
           {
-            "name": "Région",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "c125b594-98be-47c3-ab11-98eca8cda592",
-            "sourceColumn": "Région",
-            "summarizeBy": "none"
-          },
-          {
             "name": "eDateCreation",
             "annotations": [
               {
@@ -21377,18 +20334,7 @@
             "formatString": "Long Date",
             "lineageTag": "940909a5-ccde-4bbb-a94c-ac98cd5c6276",
             "sourceColumn": "eDateCreation",
-            "summarizeBy": "none",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Hiérarchie de dates",
-                  "table": "LocalDateTable_deb87397-ff64-4a1e-835c-b87feca0f9cb"
-                },
-                "isDefault": true,
-                "relationship": "0ff9bef7-541f-45a0-ab33-cc4888081d5a"
-              }
-            ]
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "e6ab35a6-b14f-4546-8ed9-45a686887ba8",
@@ -21535,14 +20481,6 @@
             "lineageTag": "a95f3025-10bb-4c79-9dba-935e80822dae"
           },
           {
-            "name": "Article_créés_N-1",
-            "expression": [
-              "",
-              "CALCULATE(DISTINCTCOUNT(vTop[eIdArticle],SAMEPERIODLASTYEAR(Date_ligne[Date])))"
-            ],
-            "lineageTag": "5a6d017a-096a-4172-b367-a01f2618c045"
-          },
-          {
             "name": "Nb_commande",
             "expression": "DISTINCTCOUNT(vTop[eIdEntete])",
             "formatString": "0",
@@ -21574,9 +20512,15 @@
           },
           {
             "name": "Nb_article_N-1",
-            "expression": "CALCULATE([Nb_article], SAMEPERIODLASTYEAR(Date_ligne[Date]))",
+            "expression": "CALCULATE([Nb_article], SAMEPERIODLASTYEAR(Date_Articles[Date]))",
             "formatString": "0",
             "lineageTag": "fe83ed89-25a8-4bfb-8d3e-53970ce6f4a2"
+          },
+          {
+            "name": "Evol_Valeur_nb_article",
+            "expression": "[Nb_article]-[Nb_article_N-1]",
+            "formatString": "0",
+            "lineageTag": "fd075a38-8a23-4c4c-98bb-2cf6ef22bddd"
           }
         ],
         "partitions": [
@@ -21865,7 +20809,7 @@
         "showAsVariationsOnly": true
       },
       {
-        "name": "LocalDateTable_deb87397-ff64-4a1e-835c-b87feca0f9cb",
+        "name": "LocalDateTable_ab3eb1c6-385e-4955-8174-baab655a01a5",
         "annotations": [
           {
             "name": "__PBI_LocalDateTable",
@@ -21885,7 +20829,7 @@
             "dataType": "dateTime",
             "isHidden": true,
             "isNameInferred": true,
-            "lineageTag": "aae3a074-7c9d-44d8-8559-3ae03aa7a1f4",
+            "lineageTag": "c71f0fa6-cc35-4e70-a6f6-328b8884541d",
             "sourceColumn": "[Date]",
             "summarizeBy": "none",
             "type": "calculatedTableColumn"
@@ -21906,7 +20850,7 @@
             "dataType": "int64",
             "expression": "YEAR([Date])",
             "isHidden": true,
-            "lineageTag": "a7950723-5c1f-4d50-b4f6-d4d2743f9846",
+            "lineageTag": "6525bec4-a0d5-4461-b3fc-3c6f7a487368",
             "summarizeBy": "none",
             "type": "calculated"
           },
@@ -21926,7 +20870,7 @@
             "dataType": "int64",
             "expression": "MONTH([Date])",
             "isHidden": true,
-            "lineageTag": "dcd19705-d841-4d00-9c4f-091d1669dbac",
+            "lineageTag": "8f7d83c0-ad02-441b-8ec2-4734766e9773",
             "summarizeBy": "none",
             "type": "calculated"
           },
@@ -21946,7 +20890,7 @@
             "dataType": "string",
             "expression": "FORMAT([Date], \"MMMM\")",
             "isHidden": true,
-            "lineageTag": "eb69e9bf-be3c-4978-afbc-d6e58cea193d",
+            "lineageTag": "0aca31d0-18dd-4cd3-998c-b2652ddda56c",
             "sortByColumn": "NoMois",
             "summarizeBy": "none",
             "type": "calculated"
@@ -21967,7 +20911,7 @@
             "dataType": "int64",
             "expression": "INT(([NoMois] + 2) / 3)",
             "isHidden": true,
-            "lineageTag": "356f7676-9c34-4127-b4a7-87ada6486e81",
+            "lineageTag": "98755063-d10b-4e05-b76b-0aa9dc2e0912",
             "summarizeBy": "none",
             "type": "calculated"
           },
@@ -21987,7 +20931,7 @@
             "dataType": "string",
             "expression": "\"Trim \" & [NoTrimestre]",
             "isHidden": true,
-            "lineageTag": "a308f517-1870-46e9-955e-38f520e6a8ea",
+            "lineageTag": "7774330b-9ef3-4e70-880c-a7461d946bbd",
             "sortByColumn": "NoTrimestre",
             "summarizeBy": "none",
             "type": "calculated"
@@ -22008,7 +20952,7 @@
             "dataType": "int64",
             "expression": "DAY([Date])",
             "isHidden": true,
-            "lineageTag": "91cb266e-69af-4736-8c26-ea641f7a9a8c",
+            "lineageTag": "9bf4bfbb-90e9-46a6-be63-4caf2decaf77",
             "summarizeBy": "none",
             "type": "calculated"
           }
@@ -22026,39 +20970,290 @@
               {
                 "name": "Année",
                 "column": "Année",
-                "lineageTag": "e1853c35-e2bc-467c-af73-56c300e9ea50",
+                "lineageTag": "e4b4059b-7040-47f8-b032-5e74acbeec9f",
                 "ordinal": 0
               },
               {
                 "name": "Trimestre",
                 "column": "Trimestre",
-                "lineageTag": "7d170431-795f-4b20-a57b-b998658b5560",
+                "lineageTag": "c05b4821-10e2-44a7-a439-9fe38a1c1ab7",
                 "ordinal": 1
               },
               {
                 "name": "Mois",
                 "column": "Mois",
-                "lineageTag": "e0217dd7-e02d-40c6-82e2-5542e69af118",
+                "lineageTag": "3111fb9b-f777-4f75-a434-4a3a7fa305a9",
                 "ordinal": 2
               },
               {
                 "name": "Jour",
                 "column": "Jour",
-                "lineageTag": "ddb7467e-cb8f-4d27-9540-d5a4896126b7",
+                "lineageTag": "7010ff19-f093-4470-8d25-e770ca9345ff",
                 "ordinal": 3
               }
             ],
-            "lineageTag": "ff1cc479-4079-4c05-8a26-123bb6ec30ab"
+            "lineageTag": "1df2da77-86d3-45b9-92d5-1df49592c562"
           }
         ],
         "isHidden": true,
-        "lineageTag": "07473da3-5faf-4b3e-980a-a37d739704bb",
+        "lineageTag": "43eec45a-6674-4b7b-911e-76db46b58fb3",
         "partitions": [
           {
-            "name": "LocalDateTable_deb87397-ff64-4a1e-835c-b87feca0f9cb",
+            "name": "LocalDateTable_ab3eb1c6-385e-4955-8174-baab655a01a5",
             "mode": "import",
             "source": {
-              "expression": "Calendar(Date(Year(MIN('vTop'[eDateCreation])), 1, 1), Date(Year(MAX('vTop'[eDateCreation])), 12, 31))",
+              "expression": "Calendar(Date(Year(MIN('Article'[eDateCreation])), 1, 1), Date(Year(MAX('Article'[eDateCreation])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "Date_Articles",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "b006ebce62974cb7879053e00acff395"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "e5d0c084-8d9a-49d9-9067-14c777cea5f4",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hiérarchie de dates",
+                  "table": "LocalDateTable_7c4f4f6a-b740-434e-9cc2-b9db6c7d7754"
+                },
+                "isDefault": true,
+                "relationship": "ba35f940-8ca9-41b3-9cf7-94a3bc4f0037"
+              }
+            ]
+          }
+        ],
+        "lineageTag": "2530f44d-970b-451b-af87-5ae3dd026e87",
+        "partitions": [
+          {
+            "name": "Date_Articles",
+            "mode": "import",
+            "source": {
+              "expression": "CALENDAR(MIN(vTop[eDateCreation]), MAX(vTop[eDateCreation]))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_7c4f4f6a-b740-434e-9cc2-b9db6c7d7754",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "d2d4a81d-0f57-48cd-9399-a96e3d789030",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Année",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "3a700d87-2413-4a21-8e0b-5e77d4a290d8",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NoMois",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "354ca957-4b32-4a1f-b6b2-4bcb4aa188e9",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mois",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "e271b936-aac4-42b6-ac80-6d36ee7e3d46",
+            "sortByColumn": "NoMois",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NoTrimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([NoMois] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "686a48d3-5447-48b8-a637-22da4ef28e2d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim \" & [NoTrimestre]",
+            "isHidden": true,
+            "lineageTag": "c09e09d1-7edb-43e4-9626-6565b7cb675b",
+            "sortByColumn": "NoTrimestre",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Jour",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "718c866c-43bf-42b5-95e8-9c83eede1055",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hiérarchie de dates",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Année",
+                "column": "Année",
+                "lineageTag": "2fd2c68f-c46e-4e0c-bc18-1fc8e3a07c05",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "382a3d09-2bca-48e5-9406-7c719c03db87",
+                "ordinal": 1
+              },
+              {
+                "name": "Mois",
+                "column": "Mois",
+                "lineageTag": "37e179a0-5e7e-4b9b-9a08-32e80f48af44",
+                "ordinal": 2
+              },
+              {
+                "name": "Jour",
+                "column": "Jour",
+                "lineageTag": "10e0c3d0-631d-4d51-8ac5-dbbd2ebe4ff8",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "0b14bd00-0bbf-4b1a-8397-7642f7407b51"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "9d7da73c-49b5-4f73-9013-cf530d4a8f9b",
+        "partitions": [
+          {
+            "name": "LocalDateTable_7c4f4f6a-b740-434e-9cc2-b9db6c7d7754",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Date_Articles'[Date])), 1, 1), Date(Year(MAX('Date_Articles'[Date])), 12, 31))",
               "type": "calculated"
             }
           }
