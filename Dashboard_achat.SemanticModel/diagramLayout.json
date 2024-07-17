@@ -10,8 +10,8 @@
       "nodes": [
         {
           "location": {
-            "x": 1308.0675761080047,
-            "y": 0
+            "x": 5.78607321185973,
+            "y": 997.24183903881567
           },
           "nodeIndex": "Paramètre",
           "nodeLineageTag": "36f73dfd-753a-4ee5-89bf-e6598c39e321",
@@ -19,12 +19,12 @@
             "height": 224,
             "width": 234
           },
-          "zIndex": 2
+          "zIndex": 5
         },
         {
           "location": {
             "x": 468.67375318909114,
-            "y": 141.9930586936315
+            "y": 317.77563986938594
           },
           "nodeIndex": "vTop",
           "nodeLineageTag": "e6ab35a6-b14f-4546-8ed9-45a686887ba8",
@@ -32,33 +32,95 @@
             "height": 1000,
             "width": 391.21708284460522
           },
-          "zIndex": 1
+          "zIndex": 4
         },
         {
           "location": {
-            "x": 0,
-            "y": 549.66192216510774
+            "x": 1899.951030012023,
+            "y": 316.408646116358
           },
-          "nodeIndex": "Date_ligne",
-          "nodeLineageTag": "955f5e6f-c4fa-44c6-ad84-8b5d90bbbf2b",
+          "nodeIndex": "vArticle",
+          "nodeLineageTag": "6ee97d6f-24d4-4d49-b2b5-11ebd87d2909",
           "size": {
-            "height": 200,
+            "height": 300,
             "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 885.599954186993,
+            "y": 320.33907318747305
+          },
+          "nodeIndex": "vReport",
+          "nodeLineageTag": "b14b9e21-6162-4d8f-a2ed-1ea33877f3cf",
+          "size": {
+            "height": 1000,
+            "width": 378.11565927422112
           },
           "zIndex": 3
         },
         {
           "location": {
             "x": 0,
-            "y": 298.11458961373995
+            "y": 725.44450334086218
           },
-          "nodeIndex": "Date_Articles",
-          "nodeLineageTag": "2530f44d-970b-451b-af87-5ae3dd026e87",
+          "nodeIndex": "Date_ligne_old",
           "size": {
             "height": 200,
             "width": 234
           },
-          "zIndex": 4
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 473.8971707894944
+          },
+          "nodeIndex": "Date_Articles_old",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1451.5814524275711,
+            "y": 412.23520291470612
+          },
+          "nodeIndex": "Date_Articles",
+          "nodeLineageTag": "7e30c3d9-ec4b-4b44-8fd0-869759c8ea83",
+          "size": {
+            "height": 333.63452041791425,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 1447.6510253564559,
+            "y": 847.63712026121732
+          },
+          "nodeIndex": "Date_ligne",
+          "nodeLineageTag": "3c156410-8f45-4a6b-bd6f-b0cc47d104a1",
+          "size": {
+            "height": 304.81138856306995,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2183.9510300120228,
+            "y": 507.43476224101016
+          },
+          "nodeIndex": "Mesure",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Toutes les tables",
