@@ -1251,7 +1251,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "vTop",
-                    "ConceptualProperty": "code_region"
+                    "ConceptualProperty": "code_region_old"
                   }
                 },
                 "State": "Generated",
@@ -7743,7 +7743,7 @@
             "summarizeBy": "none"
           },
           {
-            "name": "code_region",
+            "name": "code_region_old",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -9015,6 +9015,21 @@
             "lineageTag": "ef7aa019-f565-4f40-8a2e-e1c0619a06b4",
             "sourceColumn": "Article_sLibelleCommercial",
             "summarizeBy": "none"
+          },
+          {
+            "name": "code_region",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "CONCATENATE(vReport[Entete_Etablissement_Region],CONCATENATE(\" - \", vReport[Entete_Etablissement_CodeLibelleALM]))",
+            "isDataTypeInferred": true,
+            "lineageTag": "51f3ab37-70c7-471b-b4ea-64a7b7df562c",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "b14b9e21-6162-4d8f-a2ed-1ea33877f3cf",
@@ -10319,9 +10334,9 @@
               "",
               "var _TopN = SELECTEDVALUE('Paramètre'[Paramètre])",
               "return",
-              "if(HASONEFILTER(vTop[Laboratoire livreur]),",
-              "SWITCH(TRUE(),RANKX(ALLSELECTED(vTop[Laboratoire livreur]),[Volume_article_N])<=_TopN,",
-              "RANKX(ALLSELECTED(vTop[Laboratoire livreur]),[Volume_article_N])))"
+              "if(HASONEFILTER(vReport[Entete_Laboratoire livreur]),",
+              "SWITCH(TRUE(),RANKX(ALLSELECTED(vReport[Entete_Laboratoire livreur]),[Volume_article_N])<=_TopN,",
+              "RANKX(ALLSELECTED(vReport[Entete_Laboratoire livreur]),[Volume_article_N])))"
             ],
             "formatString": "0",
             "lineageTag": "36c0ff37-e670-4494-88d8-e2ccb45b8351"
@@ -10347,7 +10362,7 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "expression": "SUM(vTop[eQteInit])",
+            "expression": "SUM(vReport[Ligne_eQteInit])",
             "lineageTag": "be26a497-fa11-4ec6-bd6f-07e72678731a"
           },
           {
@@ -10360,7 +10375,7 @@
             ],
             "expression": [
               "",
-              "CALCULATE(SUM(vTop[eQteInit]),SAMEPERIODLASTYEAR(Date_ligne_old[Date]))"
+              "CALCULATE(SUM(vReport[Ligne_eQteInit]),SAMEPERIODLASTYEAR(Date_ligne[Date]))"
             ],
             "lineageTag": "003d0a33-e9c0-400d-9b52-7665458cc77a"
           }
