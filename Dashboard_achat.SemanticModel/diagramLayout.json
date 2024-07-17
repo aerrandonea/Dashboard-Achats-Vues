@@ -4,196 +4,14 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 1620.6460956564702,
-        "y": 17.031850641498878
+        "x": 0,
+        "y": 0
       },
       "nodes": [
         {
           "location": {
-            "x": 2144.1640432641539,
-            "y": 265.8795251031741
-          },
-          "nodeIndex": "AML_Etablissement",
-          "nodeLineageTag": "e4fabf75-7952-40ab-8356-1be4095b95cd",
-          "size": {
-            "height": 314.55707652540821,
-            "width": 234
-          },
-          "zIndex": 15
-        },
-        {
-          "location": {
-            "x": 1150.6808553340877,
-            "y": 525.5098429797348
-          },
-          "nodeIndex": "Article",
-          "nodeLineageTag": "5544ba62-862b-4a93-af2c-e6095b2dbd05",
-          "size": {
-            "height": 459.75471922095539,
-            "width": 234
-          },
-          "zIndex": 17
-        },
-        {
-          "location": {
-            "x": 883.15655480775922,
-            "y": 2.0086663421870092
-          },
-          "nodeIndex": "Entete",
-          "nodeLineageTag": "0d03534f-ef87-4067-8aaf-072b6e4553be",
-          "size": {
-            "height": 388.79622753996546,
-            "width": 234
-          },
-          "zIndex": 13
-        },
-        {
-          "location": {
-            "x": 1382.4756492924666,
+            "x": 1308.0675761080047,
             "y": 0
-          },
-          "nodeIndex": "Etablissement",
-          "nodeLineageTag": "e1ebafdb-0e1d-4dab-9398-52a5b967dd5d",
-          "size": {
-            "height": 224.34591684763097,
-            "width": 234
-          },
-          "zIndex": 14
-        },
-        {
-          "location": {
-            "x": 808.29030879465051,
-            "y": 1191.7444154214113
-          },
-          "nodeIndex": "Ge_Article_Laboratoire",
-          "nodeLineageTag": "5b9ab778-4eba-47ba-9d48-86a82617da62",
-          "size": {
-            "height": 264.7965117534095,
-            "width": 234
-          },
-          "zIndex": 7
-        },
-        {
-          "location": {
-            "x": 28.179156722689413,
-            "y": 0
-          },
-          "nodeIndex": "Laboratoire",
-          "nodeLineageTag": "c6437ec9-e8b0-461b-815c-bf8c89a69bec",
-          "size": {
-            "height": 157.65735212887148,
-            "width": 234
-          },
-          "zIndex": 3
-        },
-        {
-          "location": {
-            "x": 379.79288962803685,
-            "y": 187.919948841469
-          },
-          "nodeIndex": "Ligne",
-          "nodeLineageTag": "fc6bb513-3514-4254-939a-fd987585515f",
-          "size": {
-            "height": 817.21662300198693,
-            "width": 357.14563503419009
-          },
-          "zIndex": 16
-        },
-        {
-          "location": {
-            "x": 1558.8018921417151,
-            "y": 1124.1204344810694
-          },
-          "nodeIndex": "Marche",
-          "nodeLineageTag": "a8979949-cb13-41e9-8659-aa9a1baaf947",
-          "size": {
-            "height": 145,
-            "width": 234
-          },
-          "zIndex": 4
-        },
-        {
-          "location": {
-            "x": 1484.9564964375345,
-            "y": 704.555290963198
-          },
-          "nodeIndex": "Produit",
-          "nodeLineageTag": "67c08ad2-72cd-4a3d-be11-21586d5ddf69",
-          "size": {
-            "height": 215.82391629048777,
-            "width": 234
-          },
-          "zIndex": 18
-        },
-        {
-          "location": {
-            "x": 1998.7938035739433,
-            "y": 46.172806338162687
-          },
-          "nodeIndex": "TypeEtablissement",
-          "nodeLineageTag": "fa5d576e-3e52-4a90-ab9e-40d92a6f1aed",
-          "size": {
-            "height": 151.8026785767106,
-            "width": 234
-          },
-          "zIndex": 5
-        },
-        {
-          "location": {
-            "x": 1937.7167664835188,
-            "y": 685.47784436146287
-          },
-          "nodeIndex": "TypeProduit",
-          "nodeLineageTag": "4d30a7de-9275-43e3-8437-e75e869ec0b3",
-          "size": {
-            "height": 146.38268695096019,
-            "width": 234
-          },
-          "zIndex": 19
-        },
-        {
-          "location": {
-            "x": 333.33156398505935,
-            "y": 1232.15668055202
-          },
-          "nodeIndex": "Utilisateur",
-          "nodeLineageTag": "f1c64d34-998d-48aa-983b-524696f8356f",
-          "size": {
-            "height": 152.02001953991589,
-            "width": 234
-          },
-          "zIndex": 6
-        },
-        {
-          "location": {
-            "x": 1739.3862938639445,
-            "y": 353.5973775277883
-          },
-          "nodeIndex": "Table_Mapping_Annuaire",
-          "nodeLineageTag": "3a7ff2e3-5feb-4590-a699-344fbc62cc1e",
-          "size": {
-            "height": 185.8980036254369,
-            "width": 234
-          },
-          "zIndex": 11
-        },
-        {
-          "location": {
-            "x": 0,
-            "y": 1034.9164667249388
-          },
-          "nodeIndex": "Dates",
-          "nodeLineageTag": "ef3e1d85-6f03-4f59-b9d0-09e14eeafc23",
-          "size": {
-            "height": 200,
-            "width": 234
-          },
-          "zIndex": 8
-        },
-        {
-          "location": {
-            "x": 2311.6366215994,
-            "y": 801.5024083854538
           },
           "nodeIndex": "Paramètre",
           "nodeLineageTag": "36f73dfd-753a-4ee5-89bf-e6598c39e321",
@@ -201,83 +19,46 @@
             "height": 224,
             "width": 234
           },
-          "zIndex": 2
+          "zIndex": 3
         },
         {
           "location": {
-            "x": 1385.0650737003502,
-            "y": 281.82486272764993
-          },
-          "nodeIndex": "Dates_Entete",
-          "nodeLineageTag": "00a4409e-2d60-4c7c-926e-88bf9f551764",
-          "size": {
-            "height": 200,
-            "width": 234
-          },
-          "zIndex": 9
-        },
-        {
-          "location": {
-            "x": 0,
-            "y": 230.58505483875405
-          },
-          "nodeIndex": "Producteur",
-          "nodeLineageTag": "7261b054-d60d-4776-809f-01144e4d8310",
-          "size": {
-            "height": 200,
-            "width": 234
-          },
-          "zIndex": 10
-        },
-        {
-          "location": {
-            "x": 2687.0456951147585,
-            "y": 352.2478638256224
-          },
-          "nodeIndex": "vGeArticleLaboratoireWithLPP",
-          "nodeLineageTag": "2577a689-4904-43ee-86e8-2fae33ec4b2c",
-          "size": {
-            "height": 152,
-            "width": 234
-          },
-          "zIndex": 12
-        },
-        {
-          "location": {
-            "x": 3079.7874707665728,
-            "y": 701.42384514901767
+            "x": 468.67375318909114,
+            "y": 141.9930586936315
           },
           "nodeIndex": "vTop",
           "nodeLineageTag": "e6ab35a6-b14f-4546-8ed9-45a686887ba8",
           "size": {
-            "height": 706.14413068189629,
-            "width": 320.469395564533
+            "height": 1000,
+            "width": 391.21708284460522
           },
-          "zIndex": 1
+          "zIndex": 2
         },
         {
           "location": {
-            "x": 3450.2568663311058,
-            "y": 628.2704635874104
+            "x": 0,
+            "y": 549.66192216510774
           },
           "nodeIndex": "Date_ligne",
+          "nodeLineageTag": "955f5e6f-c4fa-44c6-ad84-8b5d90bbbf2b",
           "size": {
             "height": 200,
             "width": 234
           },
-          "zIndex": 20
+          "zIndex": 4
         },
         {
           "location": {
-            "x": 3734.2568663311058,
-            "y": 628.2704635874104
+            "x": 0,
+            "y": 298.11458961373995
           },
           "nodeIndex": "Date_Articles",
+          "nodeLineageTag": "2530f44d-970b-451b-af87-5ae3dd026e87",
           "size": {
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
         }
       ],
       "name": "Toutes les tables",
