@@ -9030,6 +9030,49 @@
             "lineageTag": "51f3ab37-70c7-471b-b4ea-64a7b7df562c",
             "summarizeBy": "none",
             "type": "calculated"
+          },
+          {
+            "name": "eEtat",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0915962b-c686-45c4-95a2-53476f2d3d48",
+            "sourceColumn": "eEtat",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Expr1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b5072b5e-0f22-4799-99c8-b2b6f2b080c5",
+            "sourceColumn": "Expr1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Ligne_eQteRest",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "8b099bea-8994-4e74-87d1-9c9ab0d9894a",
+            "sourceColumn": "Ligne_eQteRest",
+            "summarizeBy": "sum"
           }
         ],
         "lineageTag": "b14b9e21-6162-4d8f-a2ed-1ea33877f3cf",
@@ -10249,7 +10292,7 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "expression": "sum(vTop[eMontHTUCD])",
+            "expression": "sum(vReport[Ligne_eMontHTUCD])",
             "lineageTag": "dc1a177c-1990-43fb-966c-db8387ab4c43"
           },
           {
@@ -10262,7 +10305,7 @@
             ],
             "expression": [
               "",
-              "CALCULATE(SUM(vTop[eMontHTUCD]),SAMEPERIODLASTYEAR(Date_ligne_old[Date]))"
+              "CALCULATE(SUM(vReport[Ligne_eMontHTUCD]),SAMEPERIODLASTYEAR(Date_ligne[Date]))"
             ],
             "lineageTag": "a72217cb-561d-4f1e-b239-bddd3e028f33"
           },
@@ -10362,7 +10405,7 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "expression": "SUM(vReport[Ligne_eQteInit])",
+            "expression": "SUM(vReport[Ligne_eQteRest])",
             "lineageTag": "be26a497-fa11-4ec6-bd6f-07e72678731a"
           },
           {
