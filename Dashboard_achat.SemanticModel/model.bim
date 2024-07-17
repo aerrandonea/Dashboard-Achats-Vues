@@ -2709,6 +2709,129 @@
                   }
                 ]
               },
+              "v_top.label_date_crea_top": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "vTop",
+                    "ConceptualProperty": "label_date_crea_top"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "label date crea top": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "label_date_crea_top": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "label date crea best": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.748
+                    }
+                  },
+                  {
+                    "label date crea first": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.748
+                    }
+                  },
+                  {
+                    "label date crea leading": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.748
+                    }
+                  },
+                  {
+                    "label date crea maximum": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.748
+                    }
+                  },
+                  {
+                    "label date crea peak": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.748
+                    }
+                  },
+                  {
+                    "label date crea upper": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.748
+                    }
+                  },
+                  {
+                    "sticker date crea top": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "label moment crea top": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "tag date crea top": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "decal date crea top": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  }
+                ]
+              },
               "v_top.label_date_top": {
                 "Definition": {
                   "Binding": {
@@ -4335,7 +4458,7 @@
                         "Role": "date_article.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises2",
+                    "ID": "trimestres_have_moises1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -4348,7 +4471,7 @@
                         "Role": "date_article.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres2",
+                    "ID": "moises_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -4731,7 +4854,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises1",
+                    "ID": "trimestres_have_moises",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -4744,7 +4867,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres1",
+                    "ID": "moises_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -5226,7 +5349,7 @@
                         "Role": "v_top.e_entete_date_creation.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises",
+                    "ID": "trimestres_have_moises2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -5239,7 +5362,7 @@
                         "Role": "v_top.e_entete_date_creation.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres",
+                    "ID": "moises_have_trimestres2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -6141,6 +6264,39 @@
                   "v_top.evolution_volume": {
                     "Target": {
                       "Entity": "v_top.evolution_volume"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_top_has_label_date_crea_top": {
+                "Binding": {
+                  "ConceptualEntity": "vTop"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_top.label_date_crea_top"
+                      },
+                      "Subject": {
+                        "Role": "v_top"
+                      }
+                    },
+                    "ID": "v_top_have_label_date_crea_top",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_top": {
+                    "Target": {
+                      "Entity": "v_top"
+                    }
+                  },
+                  "v_top.label_date_crea_top": {
+                    "Target": {
+                      "Entity": "v_top.label_date_crea_top"
                     }
                   }
                 },
@@ -7941,6 +8097,11 @@
             "expression": "[Evol_Valeur_nb_article] / [Nb_article_N-1]",
             "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
             "lineageTag": "30f3f04e-a5a9-478e-a6bc-f11c73f66d1f"
+          },
+          {
+            "name": "label_date_crea_top",
+            "expression": "CONCATENATE(FORMAT(FIRSTDATE(Date_Articles[Date]), \"mmmm - yyyy\"),CONCATENATE(\"  à  \",FORMAT(LASTDATE(Date_Articles[Date]), \"mmmm - yyyy\")))",
+            "lineageTag": "91799465-de19-4674-a16b-408104e77a6c"
           }
         ],
         "partitions": [
