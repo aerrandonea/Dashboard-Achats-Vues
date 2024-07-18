@@ -3947,6 +3947,16 @@
                       "Type": "Noun",
                       "Weight": 0.99
                     }
+                  },
+                  {
+                    "Type Produit": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -8389,16 +8399,6 @@
                   },
                   {
                     "Type": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  },
-                  {
-                    "Type produit": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
