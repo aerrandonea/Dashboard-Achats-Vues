@@ -15793,6 +15793,21 @@
             "lineageTag": "f0d2e0b3-ab94-4b5e-9d0e-05187df63b53",
             "sourceColumn": "Etablissement_Region",
             "summarizeBy": "none"
+          },
+          {
+            "name": "code_region_article",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "CONCATENATE(vArticle[Etablissement_Region],CONCATENATE(\" - \", vArticle[Etablissement_CodeLibelleALM]))",
+            "isDataTypeInferred": true,
+            "lineageTag": "21fcdcdc-6c21-452b-8b4f-c297a82753f3",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "6ee97d6f-24d4-4d49-b2b5-11ebd87d2909",
@@ -17403,12 +17418,12 @@
           },
           {
             "name": "label_date_crea_top",
-            "expression": "CONCATENATE(FORMAT(FIRSTDATE(Date_Articles_old[Date]), \"mmmm - yyyy\"),CONCATENATE(\"  à  \",FORMAT(LASTDATE(Date_Articles_old[Date]), \"mmmm - yyyy\")))",
+            "expression": "CONCATENATE(FORMAT(FIRSTDATE(Date_Articles_creation[Date]), \"mmmm - yyyy\"),CONCATENATE(\"  à  \",FORMAT(LASTDATE(Date_Articles_creation[Date]), \"mmmm - yyyy\")))",
             "lineageTag": "91799465-de19-4674-a16b-408104e77a6c"
           },
           {
             "name": "label_date_top",
-            "expression": "CONCATENATE(FORMAT(FIRSTDATE(Date_ligne_old[Date]), \"mmmm - yyyy\"),CONCATENATE(\"  à  \",FORMAT(LASTDATE(Date_ligne_old[Date]), \"mmmm - yyyy\")))",
+            "expression": "CONCATENATE(FORMAT(FIRSTDATE(Date_ligne[Date]), \"mmmm - yyyy\"),CONCATENATE(\"  à  \",FORMAT(LASTDATE(Date_ligne[Date]), \"mmmm - yyyy\")))",
             "lineageTag": "1d79acef-e0c9-444e-82ea-14ce0a5e76c3"
           },
           {
@@ -17438,7 +17453,7 @@
           },
           {
             "name": "Nb_article",
-            "expression": "DISTINCTCOUNT(vTop[eIdArticle])",
+            "expression": "DISTINCTCOUNT(vArticle[eIdArticle])",
             "formatString": "0",
             "lineageTag": "f193b79e-ef8b-4b28-81cd-c4ef4923b405"
           },
