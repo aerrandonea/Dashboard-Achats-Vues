@@ -11347,6 +11347,19 @@
             "lineageTag": "135dbbf0-f8ad-49f0-8587-33c90c17a4d9",
             "sourceColumn": "Produit_sLibelleCommercial",
             "summarizeBy": "none"
+          },
+          {
+            "name": "Ligne_eIdLigne",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4f3d314b-a3d9-4995-9c6b-a593e7fd789a",
+            "sourceColumn": "Ligne_eIdLigne",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "b14b9e21-6162-4d8f-a2ed-1ea33877f3cf",
@@ -12295,6 +12308,12 @@
               "CALCULATE(SUM(vReport[Ligne_eQteRest]),SAMEPERIODLASTYEAR(Date_ligne[Date]))"
             ],
             "lineageTag": "003d0a33-e9c0-400d-9b52-7665458cc77a"
+          },
+          {
+            "name": "Nb_ligne",
+            "expression": "count(vReport[Ligne_eIdLigne])",
+            "formatString": "0",
+            "lineageTag": "a124f8be-1418-4cbb-b40e-eded74ea53e0"
           }
         ],
         "partitions": [
