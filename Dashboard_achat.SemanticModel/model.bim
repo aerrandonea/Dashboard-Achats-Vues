@@ -3768,6 +3768,16 @@
                       "Type": "Noun",
                       "Weight": 0.45
                     }
+                  },
+                  {
+                    "Libellé Commercial": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -3880,16 +3890,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.474
-                    }
-                  },
-                  {
-                    "Article Libellé Court": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   }
                 ]
@@ -4526,6 +4526,29 @@
                   }
                 ]
               },
+              "v_report.entete_e_datecreation": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "vReport",
+                    "ConceptualProperty": "Entete_eDatecreation"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "entete e datecreation": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Entete_eDatecreation": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
               "v_report.entete_e_id_entete": {
                 "Definition": {
                   "Binding": {
@@ -5115,6 +5138,142 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.499
+                    }
+                  }
+                ]
+              },
+              "v_report.produit_e_id_produit": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "vReport",
+                    "ConceptualProperty": "Produit_eIdProduit"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "produit e id produit": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Produit_eIdProduit": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "produit e identification produit": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "produit e identity produit": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "produit e identifier produit": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "produit e credential produit": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  }
+                ]
+              },
+              "v_report.produit_s_libelle_commercial": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "vReport",
+                    "ConceptualProperty": "Produit_sLibelleCommercial"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "produit s libelle commercial": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Produit_sLibelleCommercial": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "produit s libelle advertisement": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.464
+                    }
+                  },
+                  {
+                    "produit s libelle infomercial": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.464
+                    }
+                  },
+                  {
+                    "produit s libelle ad": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.45
+                    }
+                  },
+                  {
+                    "produit s libelle advert": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.45
+                    }
+                  },
+                  {
+                    "produit s libelle trailer": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.45
                     }
                   }
                 ]
@@ -7331,16 +7490,6 @@
                     "laboratoire livreur": {
                       "State": "Generated"
                     }
-                  },
-                  {
-                    "Libellé Fournisseur": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
                   }
                 ]
               },
@@ -7426,6 +7575,16 @@
                   },
                   {
                     "Mt TTC N": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Mt HTC N": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -8519,7 +8678,7 @@
                         "Role": "date_article1.date.variation.hiérarchie_de_date.année"
                       }
                     },
-                    "ID": "années_have_trimestres5",
+                    "ID": "années_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -8532,7 +8691,7 @@
                         "Role": "date_article1.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_années5",
+                    "ID": "trimestres_have_années4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -8783,7 +8942,7 @@
                         "Role": "date_article1.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises5",
+                    "ID": "trimestres_have_moises4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -8796,7 +8955,7 @@
                         "Role": "date_article1.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres5",
+                    "ID": "moises_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -8915,7 +9074,7 @@
                         "Role": "date_article.date.variation.hiérarchie_de_date.année"
                       }
                     },
-                    "ID": "années_have_trimestres6",
+                    "ID": "années_have_trimestres5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -8928,7 +9087,7 @@
                         "Role": "date_article.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_années6",
+                    "ID": "trimestres_have_années5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -9179,7 +9338,7 @@
                         "Role": "date_article.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises6",
+                    "ID": "trimestres_have_moises5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -9192,7 +9351,7 @@
                         "Role": "date_article.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres6",
+                    "ID": "moises_have_trimestres5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -9278,7 +9437,7 @@
                         "Role": "date_articles_creation.date"
                       }
                     },
-                    "ID": "dates_have_hiérarchie_de_dates",
+                    "ID": "dates_have_hiérarchie_de_dates2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -9311,7 +9470,7 @@
                         "Role": "date_articles_creation.date.variation.hiérarchie_de_date.année"
                       }
                     },
-                    "ID": "années_have_trimestres2",
+                    "ID": "années_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -9324,12 +9483,12 @@
                         "Role": "date_articles_creation.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_années2",
+                    "ID": "trimestres_have_années3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_années4",
+                    "ID": "trimestres_are_in_années2",
                     "Preposition": {
                       "Object": {
                         "Role": "date_articles_creation.date.variation.hiérarchie_de_date.année"
@@ -9377,7 +9536,7 @@
                         "Role": "date_articles_creation.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_années2",
+                    "ID": "hiérarchie_de_dates_have_années4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -9410,7 +9569,7 @@
                         "Role": "date_articles_creation.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_jour2",
+                    "ID": "hiérarchie_de_dates_have_jour4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -9443,7 +9602,7 @@
                         "Role": "date_articles_creation.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_moises2",
+                    "ID": "hiérarchie_de_dates_have_moises4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -9476,7 +9635,7 @@
                         "Role": "date_articles_creation.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_trimestres2",
+                    "ID": "hiérarchie_de_dates_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -9509,7 +9668,7 @@
                         "Role": "date_articles_creation.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_jour1",
+                    "ID": "moises_have_jour3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -9522,12 +9681,12 @@
                         "Role": "date_articles_creation.date.variation.hiérarchie_de_date.jour"
                       }
                     },
-                    "ID": "jour_have_moises1",
+                    "ID": "jour_have_moises3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "jour_are_in_moises4",
+                    "ID": "jour_are_in_moises2",
                     "Preposition": {
                       "Object": {
                         "Role": "date_articles_creation.date.variation.hiérarchie_de_date.mois"
@@ -9575,7 +9734,7 @@
                         "Role": "date_articles_creation.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises2",
+                    "ID": "trimestres_have_moises3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -9588,12 +9747,12 @@
                         "Role": "date_articles_creation.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres2",
+                    "ID": "moises_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "moises_are_in_trimestres4",
+                    "ID": "moises_are_in_trimestres2",
                     "Preposition": {
                       "Object": {
                         "Role": "date_articles_creation.date.variation.hiérarchie_de_date.trimestre"
@@ -9674,7 +9833,7 @@
                         "Role": "date_ligne1.date"
                       }
                     },
-                    "ID": "dates_have_hiérarchie_de_dates1",
+                    "ID": "dates_have_hiérarchie_de_dates",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -9707,7 +9866,7 @@
                         "Role": "date_ligne1.date.variation.hiérarchie_de_date.année"
                       }
                     },
-                    "ID": "années_have_trimestres3",
+                    "ID": "années_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -9720,12 +9879,12 @@
                         "Role": "date_ligne1.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_années3",
+                    "ID": "trimestres_have_années1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_années3",
+                    "ID": "trimestres_are_in_années4",
                     "Preposition": {
                       "Object": {
                         "Role": "date_ligne1.date.variation.hiérarchie_de_date.année"
@@ -9773,7 +9932,7 @@
                         "Role": "date_ligne1.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_années3",
+                    "ID": "hiérarchie_de_dates_have_années2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -9806,7 +9965,7 @@
                         "Role": "date_ligne1.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_jour3",
+                    "ID": "hiérarchie_de_dates_have_jour2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -9839,7 +9998,7 @@
                         "Role": "date_ligne1.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_moises3",
+                    "ID": "hiérarchie_de_dates_have_moises2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -9872,7 +10031,7 @@
                         "Role": "date_ligne1.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_trimestres3",
+                    "ID": "hiérarchie_de_dates_have_trimestres2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -9905,7 +10064,7 @@
                         "Role": "date_ligne1.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_jour2",
+                    "ID": "moises_have_jour1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -9918,12 +10077,12 @@
                         "Role": "date_ligne1.date.variation.hiérarchie_de_date.jour"
                       }
                     },
-                    "ID": "jour_have_moises2",
+                    "ID": "jour_have_moises1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "jour_are_in_moises3",
+                    "ID": "jour_are_in_moises4",
                     "Preposition": {
                       "Object": {
                         "Role": "date_ligne1.date.variation.hiérarchie_de_date.mois"
@@ -9971,7 +10130,7 @@
                         "Role": "date_ligne1.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises3",
+                    "ID": "trimestres_have_moises1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -9984,12 +10143,12 @@
                         "Role": "date_ligne1.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres3",
+                    "ID": "moises_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "moises_are_in_trimestres3",
+                    "ID": "moises_are_in_trimestres4",
                     "Preposition": {
                       "Object": {
                         "Role": "date_ligne1.date.variation.hiérarchie_de_date.trimestre"
@@ -10070,7 +10229,7 @@
                         "Role": "date_ligne.date"
                       }
                     },
-                    "ID": "dates_have_hiérarchie_de_dates2",
+                    "ID": "dates_have_hiérarchie_de_dates1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -10103,7 +10262,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.année"
                       }
                     },
-                    "ID": "années_have_trimestres4",
+                    "ID": "années_have_trimestres2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -10116,12 +10275,12 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_années4",
+                    "ID": "trimestres_have_années2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_années2",
+                    "ID": "trimestres_are_in_années3",
                     "Preposition": {
                       "Object": {
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.année"
@@ -10169,7 +10328,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_années4",
+                    "ID": "hiérarchie_de_dates_have_années3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -10202,7 +10361,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_jour4",
+                    "ID": "hiérarchie_de_dates_have_jour3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -10235,7 +10394,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_moises4",
+                    "ID": "hiérarchie_de_dates_have_moises3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -10268,7 +10427,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date"
                       }
                     },
-                    "ID": "hiérarchie_de_dates_have_trimestres4",
+                    "ID": "hiérarchie_de_dates_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -10301,7 +10460,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_jour3",
+                    "ID": "moises_have_jour2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -10314,12 +10473,12 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.jour"
                       }
                     },
-                    "ID": "jour_have_moises3",
+                    "ID": "jour_have_moises2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "jour_are_in_moises2",
+                    "ID": "jour_are_in_moises3",
                     "Preposition": {
                       "Object": {
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.mois"
@@ -10367,7 +10526,7 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises4",
+                    "ID": "trimestres_have_moises2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -10380,12 +10539,12 @@
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres4",
+                    "ID": "moises_have_trimestres2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "moises_are_in_trimestres2",
+                    "ID": "moises_are_in_trimestres3",
                     "Preposition": {
                       "Object": {
                         "Role": "date_ligne.date.variation.hiérarchie_de_date.trimestre"
@@ -11538,7 +11697,7 @@
                         "Role": "v_report.e_entete_date_creation.variation.hiérarchie_de_date.année"
                       }
                     },
-                    "ID": "années_have_trimestres1",
+                    "ID": "années_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11551,7 +11710,7 @@
                         "Role": "v_report.e_entete_date_creation.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_années1",
+                    "ID": "trimestres_have_années",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11802,7 +11961,7 @@
                         "Role": "v_report.e_entete_date_creation.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises1",
+                    "ID": "trimestres_have_moises",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11815,7 +11974,7 @@
                         "Role": "v_report.e_entete_date_creation.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres1",
+                    "ID": "moises_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12326,39 +12485,6 @@
                 },
                 "State": "Generated"
               },
-              "v_report_has_e_etat": {
-                "Binding": {
-                  "ConceptualEntity": "vReport"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_report.e_etat"
-                      },
-                      "Subject": {
-                        "Role": "v_report"
-                      }
-                    },
-                    "ID": "v_report_have_e_etats",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_report": {
-                    "Target": {
-                      "Entity": "v_report"
-                    }
-                  },
-                  "v_report.e_etat": {
-                    "Target": {
-                      "Entity": "v_report.e_etat"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "v_report_has_entete_annee_e_date_facturation": {
                 "Binding": {
                   "ConceptualEntity": "vReport"
@@ -12420,6 +12546,39 @@
                   "v_report.entete_e_date_facturation": {
                     "Target": {
                       "Entity": "v_report.entete_e_date_facturation"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_report_has_entete_e_datecreation": {
+                "Binding": {
+                  "ConceptualEntity": "vReport"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_report.entete_e_datecreation"
+                      },
+                      "Subject": {
+                        "Role": "v_report"
+                      }
+                    },
+                    "ID": "v_report_have_entete_e_datecreations",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_report": {
+                    "Target": {
+                      "Entity": "v_report"
+                    }
+                  },
+                  "v_report.entete_e_datecreation": {
+                    "Target": {
+                      "Entity": "v_report.entete_e_datecreation"
                     }
                   }
                 },
@@ -12623,39 +12782,6 @@
                 },
                 "State": "Generated"
               },
-              "v_report_has_expr_1": {
-                "Binding": {
-                  "ConceptualEntity": "vReport"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_report.expr_1"
-                      },
-                      "Subject": {
-                        "Role": "v_report"
-                      }
-                    },
-                    "ID": "v_report_have_expr_1",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_report": {
-                    "Target": {
-                      "Entity": "v_report"
-                    }
-                  },
-                  "v_report.expr_1": {
-                    "Target": {
-                      "Entity": "v_report.expr_1"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "v_report_has_ligne_e_id_fabricant": {
                 "Binding": {
                   "ConceptualEntity": "vReport"
@@ -12816,6 +12942,72 @@
                   "v_report.ligne_e_qte_rest": {
                     "Target": {
                       "Entity": "v_report.ligne_e_qte_rest"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_report_has_produit_e_id_produit": {
+                "Binding": {
+                  "ConceptualEntity": "vReport"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_report.produit_e_id_produit"
+                      },
+                      "Subject": {
+                        "Role": "v_report"
+                      }
+                    },
+                    "ID": "v_report_have_produit_e_id_produits",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_report": {
+                    "Target": {
+                      "Entity": "v_report"
+                    }
+                  },
+                  "v_report.produit_e_id_produit": {
+                    "Target": {
+                      "Entity": "v_report.produit_e_id_produit"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_report_has_produit_s_libelle_commercial": {
+                "Binding": {
+                  "ConceptualEntity": "vReport"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_report.produit_s_libelle_commercial"
+                      },
+                      "Subject": {
+                        "Role": "v_report"
+                      }
+                    },
+                    "ID": "v_report_have_produit_s_libelle_commercials",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_report": {
+                    "Target": {
+                      "Entity": "v_report"
+                    }
+                  },
+                  "v_report.produit_s_libelle_commercial": {
+                    "Target": {
+                      "Entity": "v_report.produit_s_libelle_commercial"
                     }
                   }
                 },
@@ -13354,7 +13546,7 @@
                         "Role": "v_top.e_entete_date_creation.variation.hiérarchie_de_date.année"
                       }
                     },
-                    "ID": "années_have_trimestres",
+                    "ID": "années_have_trimestres6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13367,7 +13559,7 @@
                         "Role": "v_top.e_entete_date_creation.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_années",
+                    "ID": "trimestres_have_années6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13618,7 +13810,7 @@
                         "Role": "v_top.e_entete_date_creation.variation.hiérarchie_de_date.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_moises",
+                    "ID": "trimestres_have_moises6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13631,7 +13823,7 @@
                         "Role": "v_top.e_entete_date_creation.variation.hiérarchie_de_date.mois"
                       }
                     },
-                    "ID": "moises_have_trimestres",
+                    "ID": "moises_have_trimestres6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -16049,7 +16241,7 @@
           },
           {
             "name": "PBI_ResultType",
-            "value": "Exception"
+            "value": "Table"
           }
         ],
         "columns": [
@@ -16422,6 +16614,32 @@
             "dataType": "string",
             "lineageTag": "d3dc8b34-9e6a-4304-869f-e707be05c7ac",
             "sourceColumn": "Entete_eDatecreation",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Produit_eIdProduit",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8bc6bd5a-76da-4481-8804-11fde83f60a2",
+            "sourceColumn": "Produit_eIdProduit",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Produit_sLibelleCommercial",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "135dbbf0-f8ad-49f0-8587-33c90c17a4d9",
+            "sourceColumn": "Produit_sLibelleCommercial",
             "summarizeBy": "none"
           }
         ],
@@ -17701,9 +17919,9 @@
               "",
               "var _TopN = SELECTEDVALUE('Paramètre'[Paramètre])",
               "return",
-              "if(HASONEFILTER(vReport[Article_sLibelleCourt])&&NOT(ISBLANK([Volume_article_N])),",
-              "SWITCH(TRUE(),RANKX(ALLSELECTED(vReport[Article_sLibelleCourt]),[Volume_article_N])<=_TopN,",
-              "RANKX(ALLSELECTED(vReport[Article_sLibelleCourt]),[Volume_article_N])))"
+              "if(HASONEFILTER(vReport[Article_sLibelleCommercial])&&NOT(ISBLANK([Volume_article_N])),",
+              "SWITCH(TRUE(),RANKX(ALLSELECTED(vReport[Article_sLibelleCommercial]),[Volume_article_N])<=_TopN,",
+              "RANKX(ALLSELECTED(vReport[Article_sLibelleCommercial]),[Volume_article_N])))"
             ],
             "formatString": "0",
             "lineageTag": "5f8fc38b-fa00-4c3e-83f2-664e32867051"
@@ -17714,9 +17932,9 @@
               "",
               "var _TopN = SELECTEDVALUE('Paramètre'[Paramètre])",
               "return",
-              "if(HASONEFILTER(vReport[Article_sLibelleCourt])&&NOT(ISBLANK([Montant_N])),",
-              "SWITCH(TRUE(),RANKX(ALLSELECTED(vReport[Article_sLibelleCourt]),[Montant_N])<=_TopN,",
-              "RANKX(ALLSELECTED(vReport[Article_sLibelleCourt]),[Montant_N])))"
+              "if(HASONEFILTER(vReport[Article_sLibelleCommercial])&&NOT(ISBLANK([Montant_N])),",
+              "SWITCH(TRUE(),RANKX(ALLSELECTED(vReport[Article_sLibelleCommercial]),[Montant_N])<=_TopN,",
+              "RANKX(ALLSELECTED(vReport[Article_sLibelleCommercial]),[Montant_N])))"
             ],
             "formatString": "0",
             "lineageTag": "a95f3025-10bb-4c79-9dba-935e80822dae"
