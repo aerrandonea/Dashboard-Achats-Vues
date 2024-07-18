@@ -12933,6 +12933,39 @@
                 },
                 "State": "Generated"
               },
+              "v_report_has_v_top_Nb_commande_evol": {
+                "Binding": {
+                  "ConceptualEntity": "vReport"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_top.Nb_commande_evol"
+                      },
+                      "Subject": {
+                        "Role": "v_report"
+                      }
+                    },
+                    "ID": "v_report_have_Nb_commande_evol",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_report": {
+                    "Target": {
+                      "Entity": "v_report"
+                    }
+                  },
+                  "v_top.Nb_commande_evol": {
+                    "Target": {
+                      "Entity": "v_top.Nb_commande_evol"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "v_report_has_v_top_evolution_montant": {
                 "Binding": {
                   "ConceptualEntity": "vReport"
@@ -13060,6 +13093,105 @@
                   "v_top.montant_N_1": {
                     "Target": {
                       "Entity": "v_top.montant_N_1"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_report_has_v_top_nb_commande": {
+                "Binding": {
+                  "ConceptualEntity": "vReport"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_top.nb_commande"
+                      },
+                      "Subject": {
+                        "Role": "v_report"
+                      }
+                    },
+                    "ID": "v_report_have_nb_commande",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_report": {
+                    "Target": {
+                      "Entity": "v_report"
+                    }
+                  },
+                  "v_top.nb_commande": {
+                    "Target": {
+                      "Entity": "v_top.nb_commande"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_report_has_v_top_nb_commande_N_1": {
+                "Binding": {
+                  "ConceptualEntity": "vReport"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_top.nb_commande_N_1"
+                      },
+                      "Subject": {
+                        "Role": "v_report"
+                      }
+                    },
+                    "ID": "v_report_have_nb_commande_N_1",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_report": {
+                    "Target": {
+                      "Entity": "v_report"
+                    }
+                  },
+                  "v_top.nb_commande_N_1": {
+                    "Target": {
+                      "Entity": "v_top.nb_commande_N_1"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "v_report_has_v_top_nb_commande_evol": {
+                "Binding": {
+                  "ConceptualEntity": "vReport"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_top.nb_commande_evol"
+                      },
+                      "Subject": {
+                        "Role": "v_report"
+                      }
+                    },
+                    "ID": "v_report_have_nb_commande_evol",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "v_report": {
+                    "Target": {
+                      "Entity": "v_report"
+                    }
+                  },
+                  "v_top.nb_commande_evol": {
+                    "Target": {
+                      "Entity": "v_top.nb_commande_evol"
                     }
                   }
                 },
@@ -13579,39 +13711,6 @@
                   "v_top.e_entete_date_creation.variation.hiérarchie_de_date.trimestre": {
                     "Target": {
                       "Entity": "v_top.e_entete_date_creation.variation.hiérarchie_de_date.trimestre"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "v_top_has_Nb_commande_evol": {
-                "Binding": {
-                  "ConceptualEntity": "vTop"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_top.Nb_commande_evol"
-                      },
-                      "Subject": {
-                        "Role": "v_top"
-                      }
-                    },
-                    "ID": "v_top_have_Nb_commande_evol",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_top": {
-                    "Target": {
-                      "Entity": "v_top"
-                    }
-                  },
-                  "v_top.Nb_commande_evol": {
-                    "Target": {
-                      "Entity": "v_top.Nb_commande_evol"
                     }
                   }
                 },
@@ -14381,105 +14480,6 @@
                   "v_top.mois_e_date_facturation": {
                     "Target": {
                       "Entity": "v_top.mois_e_date_facturation"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "v_top_has_nb_commande": {
-                "Binding": {
-                  "ConceptualEntity": "vTop"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_top.nb_commande"
-                      },
-                      "Subject": {
-                        "Role": "v_top"
-                      }
-                    },
-                    "ID": "v_top_have_nb_commande",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_top": {
-                    "Target": {
-                      "Entity": "v_top"
-                    }
-                  },
-                  "v_top.nb_commande": {
-                    "Target": {
-                      "Entity": "v_top.nb_commande"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "v_top_has_nb_commande_N_1": {
-                "Binding": {
-                  "ConceptualEntity": "vTop"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_top.nb_commande_N_1"
-                      },
-                      "Subject": {
-                        "Role": "v_top"
-                      }
-                    },
-                    "ID": "v_top_have_nb_commande_N_1",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_top": {
-                    "Target": {
-                      "Entity": "v_top"
-                    }
-                  },
-                  "v_top.nb_commande_N_1": {
-                    "Target": {
-                      "Entity": "v_top.nb_commande_N_1"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "v_top_has_nb_commande_evol": {
-                "Binding": {
-                  "ConceptualEntity": "vTop"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "v_top.nb_commande_evol"
-                      },
-                      "Subject": {
-                        "Role": "v_top"
-                      }
-                    },
-                    "ID": "v_top_have_nb_commande_evol",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "v_top": {
-                    "Target": {
-                      "Entity": "v_top"
-                    }
-                  },
-                  "v_top.nb_commande_evol": {
-                    "Target": {
-                      "Entity": "v_top.nb_commande_evol"
                     }
                   }
                 },
@@ -17722,7 +17722,7 @@
           },
           {
             "name": "Nb_commande",
-            "expression": "DISTINCTCOUNT(vTop[eIdEntete])",
+            "expression": "DISTINCTCOUNT(vReport[Entete_eIdEntete])",
             "formatString": "0",
             "lineageTag": "83e42038-cc06-42de-9214-26a56aa6ed94"
           },
@@ -17740,7 +17740,7 @@
           },
           {
             "name": "Nb_commande_N-1",
-            "expression": "CALCULATE([Nb_commande], SAMEPERIODLASTYEAR(Date_ligne_old[Date]))",
+            "expression": "CALCULATE([Nb_commande], SAMEPERIODLASTYEAR(Date_ligne[Date]))",
             "formatString": "0",
             "lineageTag": "99785cde-3935-4a88-bbeb-866d5cff5590"
           },
