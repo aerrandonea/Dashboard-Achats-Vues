@@ -4433,29 +4433,6 @@
                   }
                 ]
               },
-              "v_report.e_etat": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "vReport",
-                    "ConceptualProperty": "eEtat"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "e etat": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "eEtat": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ]
-              },
               "v_report.entete_annee_e_date_facturation": {
                 "Definition": {
                   "Binding": {
@@ -4883,29 +4860,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.605
-                    }
-                  }
-                ]
-              },
-              "v_report.expr_1": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "vReport",
-                    "ConceptualProperty": "Expr1"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "expr 1": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Expr1": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
                     }
                   }
                 ]
@@ -16088,6 +16042,16 @@
       },
       {
         "name": "vReport",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
         "columns": [
           {
             "name": "Entete_Etablissement_Region",
@@ -16164,14 +16128,14 @@
             "annotations": [
               {
                 "name": "SummarizationSetBy",
-                "value": "Automatic"
+                "value": "User"
               }
             ],
             "dataType": "int64",
             "formatString": "0",
             "lineageTag": "27e7a43d-14b2-4ac2-a7b7-0c59ab552d4f",
             "sourceColumn": "Entete_Mois_eDateFacturation",
-            "summarizeBy": "sum"
+            "summarizeBy": "none"
           },
           {
             "name": "Entete_Annee_eDateFacturation",
@@ -16431,32 +16395,6 @@
             "type": "calculated"
           },
           {
-            "name": "eEtat",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "0915962b-c686-45c4-95a2-53476f2d3d48",
-            "sourceColumn": "eEtat",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Expr1",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "b5072b5e-0f22-4799-99c8-b2b6f2b080c5",
-            "sourceColumn": "Expr1",
-            "summarizeBy": "none"
-          },
-          {
             "name": "Ligne_eQteRest",
             "annotations": [
               {
@@ -16472,6 +16410,19 @@
             "lineageTag": "8b099bea-8994-4e74-87d1-9c9ab0d9894a",
             "sourceColumn": "Ligne_eQteRest",
             "summarizeBy": "sum"
+          },
+          {
+            "name": "Entete_eDatecreation",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d3dc8b34-9e6a-4304-869f-e707be05c7ac",
+            "sourceColumn": "Entete_eDatecreation",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "b14b9e21-6162-4d8f-a2ed-1ea33877f3cf",
