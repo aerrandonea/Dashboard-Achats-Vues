@@ -4,14 +4,14 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
-        "y": 0
+        "x": 992.83270251487329,
+        "y": 464.80931765677587
       },
       "nodes": [
         {
           "location": {
             "x": 5.78607321185973,
-            "y": 1155.4461620969946
+            "y": 1225.152073514447
           },
           "nodeIndex": "Paramètre",
           "nodeLineageTag": "36f73dfd-753a-4ee5-89bf-e6598c39e321",
@@ -24,7 +24,7 @@
         {
           "location": {
             "x": 1136.1380358586503,
-            "y": 133.97595634455945
+            "y": 203.68186776201196
           },
           "nodeIndex": "vArticle",
           "nodeLineageTag": "6ee97d6f-24d4-4d49-b2b5-11ebd87d2909",
@@ -37,7 +37,7 @@
         {
           "location": {
             "x": 548.89336842813054,
-            "y": 107.77310920379182
+            "y": 177.47902062124433
           },
           "nodeIndex": "vReport",
           "nodeLineageTag": "b14b9e21-6162-4d8f-a2ed-1ea33877f3cf",
@@ -50,7 +50,7 @@
         {
           "location": {
             "x": 78.552262251354023,
-            "y": 144.6432599354132
+            "y": 214.34917135286571
           },
           "nodeIndex": "Date_Articles",
           "nodeLineageTag": "7e30c3d9-ec4b-4b44-8fd0-869759c8ea83",
@@ -63,7 +63,7 @@
         {
           "location": {
             "x": 73.311692823200246,
-            "y": 674.37542698868742
+            "y": 744.08133840613993
           },
           "nodeIndex": "Date_ligne",
           "nodeLineageTag": "3c156410-8f45-4a6b-bd6f-b0cc47d104a1",
@@ -75,8 +75,8 @@
         },
         {
           "location": {
-            "x": 1562.9435527758328,
-            "y": 552.96684259388894
+            "x": 1048.0576064597515,
+            "y": 841.46652763675013
           },
           "nodeIndex": "Mesure",
           "nodeLineageTag": "5ef0bd5e-6e68-4851-80b1-c026b29c93da",
@@ -89,7 +89,7 @@
         {
           "location": {
             "x": 1476.1732657339728,
-            "y": 55.764729133962049
+            "y": 125.47064055141456
           },
           "nodeIndex": "Date_Articles_creation",
           "nodeLineageTag": "64977229-bd19-4781-9062-1811883c676b",
@@ -98,10 +98,36 @@
             "width": 234
           },
           "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 1835.9169101358195,
+            "y": 484.59609347812909
+          },
+          "nodeIndex": "dbg Entete",
+          "nodeLineageTag": "57b8f5d0-92cb-4b8b-9020-4af883a9f958",
+          "size": {
+            "height": 914.456765450998,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2228.1132219862984,
+            "y": 553.66426333198774
+          },
+          "nodeIndex": "dbg Ligne",
+          "nodeLineageTag": "def0eb9f-7c97-4b10-90a7-07906b637c2e",
+          "size": {
+            "height": 651.11815168628448,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Toutes les tables",
-      "zoomValue": 76.327583382659014,
+      "zoomValue": 107.57099330982207,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
