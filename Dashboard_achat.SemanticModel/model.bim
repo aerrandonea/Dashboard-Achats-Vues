@@ -12,7 +12,7 @@
       },
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"Ge_Article_Laboratoire\",\"Erreurs dans Ge_Article_Laboratoire\",\"Erreurs dans Ge_Article_Laboratoire (2)\",\"vArticle\",\"vReport\"]"
+        "value": "[\"vArticle\",\"vReport\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -3751,49 +3751,6 @@
                   }
                 ]
               },
-              "v_report.entete_annee_e_date_facturation": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "vReport",
-                    "ConceptualProperty": "Entete_Annee_eDateFacturation"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "entete annee e date facturation": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Entete_Annee_eDateFacturation": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "entete annee e moment facturation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.624
-                    }
-                  },
-                  {
-                    "entete annee e period facturation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  }
-                ]
-              },
               "v_report.entete_e_date_facturation": {
                 "Definition": {
                   "Binding": {
@@ -4158,49 +4115,6 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
-                    }
-                  }
-                ]
-              },
-              "v_report.entete_mois_e_date_facturation": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "vReport",
-                    "ConceptualProperty": "Entete_Mois_eDateFacturation"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "entete mois e date facturation": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Entete_Mois_eDateFacturation": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "entete mois e moment facturation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.624
-                    }
-                  },
-                  {
-                    "entete mois e period facturation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
                     }
                   }
                 ]
@@ -10307,118 +10221,6 @@
       "returnErrorValuesAsNull": true
     },
     "defaultPowerBIDataSourceVersion": "powerBI_V3",
-    "expressions": [
-      {
-        "name": "Erreurs dans Ge_Article_Laboratoire",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "expression": [
-          "let\r",
-          "Source = Ge_Article_Laboratoire,\r",
-          "  #\"Incompatibilités de types détectées\" = let\r",
-          "    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),\r",
-          "    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),\r",
-          "    fieldNames = Record.FieldNames(recordTypeFields),\r",
-          "    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),\r",
-          "    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = \"Le type de la valeur ne correspond pas à celui de la colonne.\", Detail = v], fieldTypes{i}})\r",
-          "in\r",
-          "    Table.TransformColumns(Source, pairs),\r",
-          "  #\"Index ajouté\" = Table.AddIndexColumn(#\"Incompatibilités de types détectées\", \"Numéro de ligne\" ,1),\r",
-          "  #\"Conserver les erreurs\" = Table.SelectRowsWithErrors(#\"Index ajouté\", {\"eIdArticle\", \"eIdLaboratoire\", \"sCodeLPPLaboratoire\"}),\r",
-          "  #\"Colonnes permutées\" = Table.ReorderColumns(#\"Conserver les erreurs\", {\"Numéro de ligne\", \"eIdArticle\", \"eIdLaboratoire\", \"sCodeLPPLaboratoire\"})\r",
-          "in\r",
-          "  #\"Colonnes permutées\""
-        ],
-        "kind": "m",
-        "lineageTag": "5997167d-524f-457a-b2ab-08a60ef66e33",
-        "queryGroup": "Erreurs des requêtes – 04/07/2024 14:37:01"
-      },
-      {
-        "name": "Erreurs dans Ge_Article_Laboratoire (2)",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "expression": [
-          "let\r",
-          "Source = Ge_Article_Laboratoire,\r",
-          "  #\"Incompatibilités de types détectées\" = let\r",
-          "    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),\r",
-          "    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),\r",
-          "    fieldNames = Record.FieldNames(recordTypeFields),\r",
-          "    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),\r",
-          "    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = \"Le type de la valeur ne correspond pas à celui de la colonne.\", Detail = v], fieldTypes{i}})\r",
-          "in\r",
-          "    Table.TransformColumns(Source, pairs),\r",
-          "  #\"Index ajouté\" = Table.AddIndexColumn(#\"Incompatibilités de types détectées\", \"Numéro de ligne\" ,1),\r",
-          "  #\"Conserver les erreurs\" = Table.SelectRowsWithErrors(#\"Index ajouté\", {\"eIdArticle\", \"eIdLaboratoire\", \"sCodeLPPLaboratoire\"}),\r",
-          "  #\"Colonnes permutées\" = Table.ReorderColumns(#\"Conserver les erreurs\", {\"Numéro de ligne\", \"eIdArticle\", \"eIdLaboratoire\", \"sCodeLPPLaboratoire\"})\r",
-          "in\r",
-          "  #\"Colonnes permutées\""
-        ],
-        "kind": "m",
-        "lineageTag": "3635b829-a8db-4739-b402-d607de9cc77a",
-        "queryGroup": "Erreurs des requêtes – 08/07/2024 09:58:08"
-      },
-      {
-        "name": "Ge_Article_Laboratoire",
-        "annotations": [
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "expression": [
-          "let",
-          "    Source = Sql.Databases(\"dwh-almaviva-group-uat.database.windows.net\"),",
-          "    #\"DATAMART-ACHATS\" = Source{[Name=\"DATAMART-ACHATS\"]}[Data],",
-          "    dbo_Ge_Article_Laboratoire = #\"DATAMART-ACHATS\"{[Schema=\"dbo\",Item=\"Ge_Article_Laboratoire\"]}[Data],",
-          "    #\"Colonnes supprimées\" = Table.RemoveColumns(dbo_Ge_Article_Laboratoire,{\"eIdArticleLaboratoire\", \"sCodeEDI\", \"sReference\", \"bFabricantP\", \"eIdConditionnement\", \"eNbPresentation\", \"eIdTypePresentation\", \"eNbUniteParPres\", \"eIdTypeUPP\", \"eNbUCD\", \"eDPxAchatHT\", \"eDPxAchatTTC\", \"eDPxNegocieHT\", \"eDPxNegocieTTC\", \"eDateCreation\", \"eDateModif\", \"sReferenceCodeBarre\", \"eQML\", \"bLocation\", \"bFabricant\", \"eIdUnite1_UA\", \"eQte1_UA\", \"eIdUnite2_UA\", \"eQte2_UA\", \"eIdUnite1_UC\", \"eQte1_UC\", \"eIdUnite2_UC\", \"eQte2_UC\", \"sReferenceCodeBarre2\", \"SOURCE_DB_NAME\"}),",
-          "    #\"Lignes filtrées\" = Table.SelectRows(#\"Colonnes supprimées\", each true),",
-          "    #\"Type modifié\" = Table.TransformColumnTypes(#\"Lignes filtrées\",{{\"sCodeLPPLaboratoire\", Int64.Type}})",
-          "in",
-          "    #\"Type modifié\""
-        ],
-        "kind": "m",
-        "lineageTag": "bd1c6baa-f36f-4b1e-86d6-5764de776619"
-      }
-    ],
-    "queryGroups": [
-      {
-        "annotations": [
-          {
-            "name": "PBI_QueryGroupOrder",
-            "value": "0"
-          }
-        ],
-        "description": "Erreurs dans les requêtes qui ont été chargées sur 04/07/2024 14:37:01.",
-        "folder": "Erreurs des requêtes – 04/07/2024 14:37:01"
-      },
-      {
-        "annotations": [
-          {
-            "name": "PBI_QueryGroupOrder",
-            "value": "1"
-          }
-        ],
-        "description": "Erreurs dans les requêtes qui ont été chargées sur 08/07/2024 09:58:08.",
-        "folder": "Erreurs des requêtes – 08/07/2024 09:58:08"
-      }
-    ],
     "relationships": [
       {
         "name": "d4333fc3-47b5-4f7a-8331-6a16a9ff7caa",
@@ -10472,6 +10274,14 @@
         "fromTable": "vArticle",
         "toColumn": "Date",
         "toTable": "Date_Articles_creation"
+      },
+      {
+        "name": "3d54087b-c41b-4f06-b5f3-d850b48598c1",
+        "fromColumn": "Entete_eDatecreation",
+        "fromTable": "vReport",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_be1916a6-8713-404a-939f-19eee147e34a"
       }
     ],
     "sourceQueryCulture": "fr-FR",
@@ -10739,6 +10549,16 @@
       },
       {
         "name": "vArticle",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
         "columns": [
           {
             "name": "eIdArticle",
@@ -10748,10 +10568,11 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "dataType": "int64",
+            "formatString": "0",
             "lineageTag": "42dcbf56-3cfd-4d63-a5a0-b25d8bbe5fe6",
             "sourceColumn": "eIdArticle",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "sLibelleCourt",
@@ -10872,10 +10693,11 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "dataType": "int64",
+            "formatString": "0",
             "lineageTag": "c52b726c-097b-4bd1-8a96-4a700ad20028",
             "sourceColumn": "Etablissement_eIdEtablissement",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "Etablissement_CodeLibelleALM",
@@ -10929,7 +10751,7 @@
                 "let",
                 "    Source = Sql.Databases(\"dwh-almaviva-group-uat.database.windows.net\"),",
                 "    #\"DATAMART-ACHATS\" = Source{[Name=\"DATAMART-ACHATS\"]}[Data],",
-                "    dbo_vArticle = #\"DATAMART-ACHATS\"{[Schema=\"dbo\",Item=\"vArticle\"]}[Data]",
+                "    dbo_vArticle = #\"DATAMART-ACHATS\"{[Schema=\"dbg\",Item=\"vArticle\"]}[Data]",
                 "in",
                 "    dbo_vArticle"
               ],
@@ -11020,34 +10842,6 @@
             "lineageTag": "ba7fcf43-bbdd-4080-b2e4-94d294e3d515",
             "sourceColumn": "Entete_eDateFacturation",
             "summarizeBy": "none"
-          },
-          {
-            "name": "Entete_Mois_eDateFacturation",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "27e7a43d-14b2-4ac2-a7b7-0c59ab552d4f",
-            "sourceColumn": "Entete_Mois_eDateFacturation",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Entete_Annee_eDateFacturation",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "8bd73a50-edac-43b3-b96f-44803cdc2886",
-            "sourceColumn": "Entete_Annee_eDateFacturation",
-            "summarizeBy": "sum"
           },
           {
             "name": "Ligne_eQteInit",
@@ -11152,10 +10946,11 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "dataType": "int64",
+            "formatString": "0",
             "lineageTag": "e888c295-f6c4-4226-9a8f-a1b218ed0027",
             "sourceColumn": "Article_eIdArticle",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "Article_sLibelleMarche",
@@ -11191,10 +10986,11 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "dataType": "int64",
+            "formatString": "0",
             "lineageTag": "24b80bc4-3da9-4a47-99d4-cbbd15791429",
             "sourceColumn": "Entete_eIdEtablissement",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "Entete_eIdEntete",
@@ -11204,10 +11000,11 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "dataType": "int64",
+            "formatString": "0",
             "lineageTag": "be14f6b4-7a79-4955-ac20-0cc8a52e0d47",
             "sourceColumn": "Entete_eIdEntete",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "Ligne_eIdFabricant",
@@ -11217,10 +11014,11 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "dataType": "int64",
+            "formatString": "0",
             "lineageTag": "11f86ff1-d40c-49cf-9750-e4893e511748",
             "sourceColumn": "Ligne_eIdFabricant",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "Entete_Etablissement_Sedna",
@@ -11317,10 +11115,22 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "dataType": "dateTime",
+            "formatString": "General Date",
             "lineageTag": "d3dc8b34-9e6a-4304-869f-e707be05c7ac",
             "sourceColumn": "Entete_eDatecreation",
-            "summarizeBy": "none"
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hiérarchie de dates",
+                  "table": "LocalDateTable_be1916a6-8713-404a-939f-19eee147e34a"
+                },
+                "isDefault": true,
+                "relationship": "3d54087b-c41b-4f06-b5f3-d850b48598c1"
+              }
+            ]
           },
           {
             "name": "Produit_eIdProduit",
@@ -11330,10 +11140,11 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "dataType": "int64",
+            "formatString": "0",
             "lineageTag": "8bc6bd5a-76da-4481-8804-11fde83f60a2",
             "sourceColumn": "Produit_eIdProduit",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "Produit_sLibelleCommercial",
@@ -11356,10 +11167,39 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "dataType": "int64",
+            "formatString": "0",
             "lineageTag": "4f3d314b-a3d9-4995-9c6b-a593e7fd789a",
             "sourceColumn": "Ligne_eIdLigne",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "eEtat",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "62f692d4-0320-4d65-8300-6fa37fe26e53",
+            "sourceColumn": "eEtat",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Expr1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a1a7cbaa-71ed-4899-b4ce-4b1a5330002d",
+            "sourceColumn": "Expr1",
+            "summarizeBy": "sum"
           }
         ],
         "lineageTag": "b14b9e21-6162-4d8f-a2ed-1ea33877f3cf",
@@ -11372,7 +11212,7 @@
                 "let",
                 "    Source = Sql.Databases(\"dwh-almaviva-group-uat.database.windows.net\"),",
                 "    #\"DATAMART-ACHATS\" = Source{[Name=\"DATAMART-ACHATS\"]}[Data],",
-                "    dbo_vReport = #\"DATAMART-ACHATS\"{[Schema=\"dbo\",Item=\"vReport\"]}[Data]",
+                "    dbo_vReport = #\"DATAMART-ACHATS\"{[Schema=\"dbg\",Item=\"vReport\"]}[Data]",
                 "in",
                 "    dbo_vReport"
               ],
@@ -12572,6 +12412,207 @@
             "mode": "import",
             "source": {
               "expression": "Calendar(Date(Year(MIN('Date_Articles_creation'[Date])), 1, 1), Date(Year(MAX('Date_Articles_creation'[Date])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_be1916a6-8713-404a-939f-19eee147e34a",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "2f9b2813-afb4-41a1-aaa0-4a486537bd99",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Année",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "40c0d021-3186-47b2-8bb0-7a5db38252c6",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NoMois",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "05dec57c-ce82-4fbf-9ea0-7275a9683a93",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mois",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "15282311-0a76-40ae-b8ff-ab18a8be4c73",
+            "sortByColumn": "NoMois",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NoTrimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([NoMois] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "ce517483-1939-4afc-9f12-2e9285ff89b1",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim \" & [NoTrimestre]",
+            "isHidden": true,
+            "lineageTag": "88b36752-1413-451d-8179-c19903739f8a",
+            "sortByColumn": "NoTrimestre",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Jour",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "b11ddc0e-d0bc-4091-af58-af697a3a2338",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hiérarchie de dates",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Année",
+                "column": "Année",
+                "lineageTag": "49647661-091f-4b89-8d1b-afa5b7427319",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "14dc8168-6854-4c98-a985-0051424014a8",
+                "ordinal": 1
+              },
+              {
+                "name": "Mois",
+                "column": "Mois",
+                "lineageTag": "7c8929e1-bd56-4f0b-b572-4eff6e28029a",
+                "ordinal": 2
+              },
+              {
+                "name": "Jour",
+                "column": "Jour",
+                "lineageTag": "cc82e5b4-5134-4fec-a5d2-6ec877dc09f7",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "8607a671-877a-4853-b178-e1e6bebca11a"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "b49dd7b8-4733-4fc5-afae-d9076faa5401",
+        "partitions": [
+          {
+            "name": "LocalDateTable_be1916a6-8713-404a-939f-19eee147e34a",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('vReport'[Entete_eDatecreation])), 1, 1), Date(Year(MAX('vReport'[Entete_eDatecreation])), 12, 31))",
               "type": "calculated"
             }
           }
