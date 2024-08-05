@@ -4,8 +4,8 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 992.83270251487329,
-        "y": 464.80931765677587
+        "x": 0,
+        "y": 81.228826136379269
       },
       "nodes": [
         {
@@ -114,8 +114,8 @@
         },
         {
           "location": {
-            "x": 2228.1132219862984,
-            "y": 553.66426333198774
+            "x": 2213.7016560588763,
+            "y": 531.39184326233533
           },
           "nodeIndex": "dbg Ligne",
           "nodeLineageTag": "def0eb9f-7c97-4b10-90a7-07906b637c2e",
@@ -127,7 +127,7 @@
         }
       ],
       "name": "Toutes les tables",
-      "zoomValue": 107.57099330982207,
+      "zoomValue": 76.327583382659,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

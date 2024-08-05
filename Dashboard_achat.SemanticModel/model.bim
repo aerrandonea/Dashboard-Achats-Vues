@@ -11590,29 +11590,6 @@
                   }
                 ]
               },
-              "v_report.e_etat": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "vReport",
-                    "ConceptualProperty": "eEtat"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "e etat": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "eEtat": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ]
-              },
               "v_report.entete_e_date_facturation": {
                 "Definition": {
                   "Binding": {
@@ -12115,29 +12092,6 @@
                   },
                   {
                     "Entete_Etablissement_Sedna": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ]
-              },
-              "v_report.expr_1": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "vReport",
-                    "ConceptualProperty": "Expr1"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "expr 1": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Expr1": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
@@ -26314,7 +26268,7 @@
             "summarizeBy": "sum"
           },
           {
-            "name": "eEtat",
+            "name": "Entete_eEtat",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -26323,12 +26277,12 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "62f692d4-0320-4d65-8300-6fa37fe26e53",
-            "sourceColumn": "eEtat",
+            "lineageTag": "00dd5062-6f9a-4aab-8a27-0c8bee63cc95",
+            "sourceColumn": "Entete_eEtat",
             "summarizeBy": "sum"
           },
           {
-            "name": "Expr1",
+            "name": "Ligne_eEtat",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -26337,8 +26291,35 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "a1a7cbaa-71ed-4899-b4ce-4b1a5330002d",
-            "sourceColumn": "Expr1",
+            "lineageTag": "3da6377e-0568-4bec-b62b-1867194dc795",
+            "sourceColumn": "Ligne_eEtat",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Entete_eDateLivraison",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "22a87dbe-fab2-4325-b359-6e58a53cce39",
+            "sourceColumn": "Entete_eDateLivraison",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Ligne_eIdLigneCommande",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3a5dda4d-7c1e-4a94-92ed-3699f13b4bbb",
+            "sourceColumn": "Ligne_eIdLigneCommande",
             "summarizeBy": "sum"
           }
         ],
