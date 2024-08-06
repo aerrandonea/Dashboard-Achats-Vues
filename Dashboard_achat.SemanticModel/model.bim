@@ -27480,8 +27480,23 @@
           },
           {
             "name": "Titre Etablissement",
-            "expression": "SELECTEDVALUE(vReport[code_region],\"Tous\")",
+            "expression": [
+              "",
+              "VAR Nb = COUNTROWS(VALUES(vReport[code_region]))",
+              "VAR Concat = CONCATENATEX(VALUES(vReport[code_region]),vReport[code_region],\" & \")",
+              "return if (Nb=2 , Concat, IF(Nb=1, Concat, \"Tout\"))"
+            ],
             "lineageTag": "002d548e-8c9f-48fc-96cf-b8369e2d3842"
+          },
+          {
+            "name": "Titre Etablissement Article",
+            "expression": [
+              "",
+              "VAR Nb = COUNTROWS(VALUES(vArticle[code_region_article]))",
+              "VAR Concat = CONCATENATEX(VALUES(vArticle[code_region_article]),vArticle[code_region_article],\" & \")",
+              "return if (Nb=2 , Concat, IF(Nb=1, Concat, \"Tout\"))"
+            ],
+            "lineageTag": "7d45e268-997d-47c3-b381-3d0ab56877fc"
           }
         ],
         "partitions": [
