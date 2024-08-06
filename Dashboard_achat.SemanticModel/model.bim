@@ -13478,16 +13478,6 @@
                     }
                   },
                   {
-                    "Mt HTC N": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  },
-                  {
                     "Mt TTC N": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
@@ -13522,16 +13512,6 @@
                   },
                   {
                     "Mt HT N-1": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  },
-                  {
-                    "Mt HTC N-1": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
