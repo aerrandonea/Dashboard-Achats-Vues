@@ -256,12 +256,12 @@
           "z": 14000.00
         },
         {
-          "config": "{\"name\":\"04e4cf987cd100080758\",\"layouts\":[{\"id\":0,\"position\":{\"x\":321.98533558939647,\"y\":364.57980823463055,\"z\":19000,\"width\":739.9887196841511,\"height\":355.19458544839256,\"tabOrder\":19000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(dbg Entete.eEtat)\"},{\"queryRef\":\"dbg Entete.eIdEntete\"},{\"queryRef\":\"Sum(dbg Ligne.eIdLigne)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dbg Entete\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"dbg Ligne\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"eEtat\"},\"Name\":\"Sum(dbg Entete.eEtat)\",\"NativeReferenceName\":\"eEtat\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"eIdEntete\"}},\"Function\":5},\"Name\":\"dbg Entete.eIdEntete\",\"NativeReferenceName\":\"Nombre de eIdEntete1\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"eIdLigne\"}},\"Function\":5},\"Name\":\"Sum(dbg Ligne.eIdLigne)\",\"NativeReferenceName\":\"Nombre de eIdLigne\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"eEtat\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"04e4cf987cd100080758\",\"layouts\":[{\"id\":0,\"position\":{\"x\":322.19679633867275,\"y\":364.6681922196796,\"z\":19000,\"width\":446.68192219679634,\"height\":114.23340961098397,\"tabOrder\":19000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(dbg Entete.eEtat)\"},{\"queryRef\":\"dbg Entete.eIdEntete\"},{\"queryRef\":\"Sum(dbg Ligne.eIdLigne)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dbg Entete\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"dbg Ligne\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"eEtat\"},\"Name\":\"Sum(dbg Entete.eEtat)\",\"NativeReferenceName\":\"eEtat\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"eIdEntete\"}},\"Function\":5},\"Name\":\"dbg Entete.eIdEntete\",\"NativeReferenceName\":\"Nombre de eIdEntete1\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"eIdLigne\"}},\"Function\":5},\"Name\":\"Sum(dbg Ligne.eIdLigne)\",\"NativeReferenceName\":\"Nombre de eIdLigne\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"eEtat\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
-          "height": 355.19,
-          "width": 739.99,
-          "x": 321.99,
-          "y": 364.58,
+          "height": 114.23,
+          "width": 446.68,
+          "x": 322.20,
+          "y": 364.67,
           "z": 19000.00
         },
         {
@@ -2049,6 +2049,54 @@
       "width": 1280.00
     },
     {
+      "config": "{\"visibility\":1}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "f0a927eeb6145ab1c670",
+      "ordinal": 12,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"16549db563380ae7cda5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":518.5168788046486,\"y\":0,\"z\":2,\"width\":315.218594355285,\"height\":109.0868843386829}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"vCommandeNew.eDateCommande.Variation.Hiérarchie de dates.Année\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vCommandeNew\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Name\":\"Variation\",\"Property\":\"eDateCommande\"}},\"Hierarchy\":\"Hiérarchie de dates\"}},\"Level\":\"Année\"},\"Name\":\"vCommandeNew.eDateCommande.Variation.Hiérarchie de dates.Année\",\"NativeReferenceName\":\"eDateCommande Année\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Name\":\"Variation\",\"Property\":\"eDateCommande\"}},\"Hierarchy\":\"Hiérarchie de dates\"}},\"Level\":\"Année\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocalDateTable_ff646eff-86a3-4bcb-8cae-49ed0f8bd47c\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Année\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2023L\"}}]]}}}]}}}}]},\"cachedFilterDisplayItems\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_ff646eff-86a3-4bcb-8cae-49ed0f8bd47c\"}},\"Property\":\"Année\"}},\"Right\":{\"Literal\":{\"Value\":\"2023L\"}}}}},\"displayName\":\"2023\"}]}}",
+          "filters": "[]",
+          "height": 109.09,
+          "width": 315.22,
+          "x": 518.52,
+          "y": 0.00,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"3dada89549106cb07c5c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":182.0475926950747,\"y\":0,\"z\":1,\"width\":336.4692861095739,\"height\":109.0868843386829}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"vCommandeNew.eIdEtablissement\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vCommandeNew\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdEtablissement\"},\"Name\":\"vCommandeNew.eIdEtablissement\",\"NativeReferenceName\":\"Somme de eIdEtablissement\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vCommandeNew\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdEtablissement\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"23L\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 109.09,
+          "width": 336.47,
+          "x": 182.05,
+          "y": 0.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"ab15f52df90e80a6cefc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":833.7354731599337,\"y\":0,\"z\":3,\"width\":315.218594355285,\"height\":109.0868843386829}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"vCommandeNew.eDateLivraison.Variation.Hiérarchie de dates.Année\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vCommandeNew\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Name\":\"Variation\",\"Property\":\"eDateLivraison\"}},\"Hierarchy\":\"Hiérarchie de dates\"}},\"Level\":\"Année\"},\"Name\":\"vCommandeNew.eDateLivraison.Variation.Hiérarchie de dates.Année\",\"NativeReferenceName\":\"eDateLivraison Année\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Name\":\"Variation\",\"Property\":\"eDateLivraison\"}},\"Hierarchy\":\"Hiérarchie de dates\"}},\"Level\":\"Année\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 109.09,
+          "width": 315.22,
+          "x": 833.74,
+          "y": 0.00,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"cb669950017cfa58cf82\",\"layouts\":[{\"id\":0,\"position\":{\"x\":300.3431101272828,\"y\":261.3835085777532,\"z\":0,\"width\":651.687880464859,\"height\":221.71555063641395}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(vCommandeNew.eIdEntete)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vCommandeNew\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdEntete\"}},\"Function\":5},\"Name\":\"Sum(vCommandeNew.eIdEntete)\",\"NativeReferenceName\":\"Nombre de eIdEntete\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"eIdEntete\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 221.72,
+          "width": 651.69,
+          "x": 300.34,
+          "y": 261.38,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
       "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"259L\"}}}}}]}}",
       "displayName": "Top Fournisseur",
       "displayOption": 1,
@@ -2166,7 +2214,7 @@
           "z": 16000.00
         },
         {
-          "config": "{\"name\":\"7a1fd247ec95aa0a647b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":4.721303504022444,\"y\":179.04645879371319,\"z\":5000,\"width\":256,\"height\":63.8591342626559,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"vReport.Entete_Etablissement_CodeLibelleALM\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vReport\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Entete_Etablissement_CodeLibelleALM\"},\"Name\":\"vReport.Entete_Etablissement_CodeLibelleALM\",\"NativeReferenceName\":\"Entete_Etablissement_CodeLibelleALM\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'ALM Etablissement'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}}}}],\"items\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "config": "{\"name\":\"7a1fd247ec95aa0a647b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":4.721303504022444,\"y\":179.04645879371319,\"z\":5000,\"width\":256,\"height\":63.8591342626559,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"vReport.Entete_Etablissement_CodeLibelleALM\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vReport\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Entete_Etablissement_CodeLibelleALM\"},\"Name\":\"vReport.Entete_Etablissement_CodeLibelleALM\",\"NativeReferenceName\":\"Entete_Etablissement_CodeLibelleALM\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vReport\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Entete_Etablissement_CodeLibelleALM\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'0002 Juge'\"}}]]}}}]}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'ALM Etablissement'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}}}}],\"items\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
           "filters": "[]",
           "height": 63.86,
           "width": 256.00,
