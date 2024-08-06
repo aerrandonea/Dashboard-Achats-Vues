@@ -8951,6 +8951,122 @@
                   }
                 ]
               },
+              "mesure.titre_etablissement_article": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Mesure",
+                    "ConceptualProperty": "Titre Etablissement Article"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "titre etablissement article": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "titre etablissement thing": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "titre etablissement artefact": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "titre etablissement artifact": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "titre etablissement object": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "titre etablissement item": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "titre etablissement piece": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "titre etablissement commentary": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.482
+                    }
+                  },
+                  {
+                    "titre etablissement exposé": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.482
+                    }
+                  },
+                  {
+                    "titre etablissement editorial": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.468
+                    }
+                  },
+                  {
+                    "titre etablissement critique": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.468
+                    }
+                  }
+                ]
+              },
               "mesure.z_mesure": {
                 "Definition": {
                   "Binding": {
@@ -13476,16 +13592,6 @@
                       "State": "Suggested",
                       "Weight": 0.9
                     }
-                  },
-                  {
-                    "Mt TTC N": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
                   }
                 ]
               },
@@ -13512,16 +13618,6 @@
                   },
                   {
                     "Mt HT N-1": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  },
-                  {
-                    "Mt TTC N-1": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -22091,6 +22187,39 @@
                   "mesure.titre_etablissement": {
                     "Target": {
                       "Entity": "mesure.titre_etablissement"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "mesure_has_titre_etablissement_article": {
+                "Binding": {
+                  "ConceptualEntity": "Mesure"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "mesure.titre_etablissement_article"
+                      },
+                      "Subject": {
+                        "Role": "mesure"
+                      }
+                    },
+                    "ID": "mesures_have_titre_etablissement_article",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "mesure": {
+                    "Target": {
+                      "Entity": "mesure"
+                    }
+                  },
+                  "mesure.titre_etablissement_article": {
+                    "Target": {
+                      "Entity": "mesure.titre_etablissement_article"
                     }
                   }
                 },
