@@ -16103,6 +16103,11 @@
               "return if (Nb=2 , Concat, IF(Nb=1, Concat, \"Tout\"))"
             ],
             "lineageTag": "5fc54336-c62f-47b7-b351-2e94acd62e4f"
+          },
+          {
+            "name": "label_date_top_commande",
+            "expression": "CONCATENATE(FORMAT(FIRSTDATE(Date_Commandes[Date]), \"mmmm - yyyy\"),CONCATENATE(\"  à  \",FORMAT(LASTDATE(Date_Commandes[Date]), \"mmmm - yyyy\")))",
+            "lineageTag": "79f39c9b-23e5-4648-90f6-a4d95f5ec260"
           }
         ],
         "partitions": [
