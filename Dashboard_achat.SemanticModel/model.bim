@@ -17105,6 +17105,20 @@
             "lineageTag": "7d0becd3-6cfa-46ab-9c09-8aca0cd3f633",
             "sourceColumn": "Code ALM",
             "summarizeBy": "none"
+          },
+          {
+            "name": "bGrossiste",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ad19697c-d1ce-44fd-8f06-631d14a3bd9c",
+            "sourceColumn": "bGrossiste",
+            "summarizeBy": "sum"
           }
         ],
         "lineageTag": "40c2c1f6-8288-4e5b-abd2-2fc238706a2a",
