@@ -12,7 +12,7 @@
       },
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"vArticle\",\"vReport\",\"vCommandes\",\"dbg Manuel_Etablissements\",\"dbg Manuel_MappingALMeIDEtablissements\",\"vCommandesGlobal\",\"vSortiesCommandes\"]"
+        "value": "[\"vArticle\",\"vReport\",\"vCommandes\",\"dbg Manuel_Etablissements\",\"dbg Manuel_MappingALMeIDEtablissements\",\"vCommandesGlobal\",\"vSortiesCommandes\",\"vInventaires\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -14448,6 +14448,20 @@
         "fromTable": "vSortiesCommandes",
         "toColumn": "Date",
         "toTable": "Date_ligne"
+      },
+      {
+        "name": "b875277b-2a5e-603d-7de9-0da8362bfa6f",
+        "fromColumn": "eIdEtablissement",
+        "fromTable": "vInventaires",
+        "toColumn": "eIdEtablissement",
+        "toTable": "dbg Manuel_MappingALMeIDEtablissements"
+      },
+      {
+        "name": "7f819c90-c75c-5dd4-ce6f-877b32879513",
+        "fromColumn": "eDateInventaire",
+        "fromTable": "vInventaires",
+        "toColumn": "Date",
+        "toTable": "Date_ligne"
       }
     ],
     "sourceQueryCulture": "fr-FR",
@@ -16450,6 +16464,40 @@
             "expression": "CALCULATE(DISTINCTCOUNT(vSortiesCommandes[eIdLigneUniteMedicale]),vSortiesCommandes[eEtat]=3, vSortiesCommandes[bRetour]=0, vSortiesCommandes[eIdPatient]<>0) / CALCULATE(DISTINCTCOUNT(vSortiesCommandes[eIdLigneUniteMedicale]),vSortiesCommandes[eEtat]=3, vSortiesCommandes[bRetour]=0)",
             "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
             "lineageTag": "1060dcf2-9c57-4608-86d0-080552782990"
+          },
+          {
+            "name": "InventaireNombre",
+            "expression": "CALCULATE(DISTINCTCOUNT(vInventaires[eIdEnteteInventaire]),vInventaires[eIdUniteMedicale]=0,vInventaires[bValide]=1)",
+            "formatString": "0",
+            "lineageTag": "dcc8830f-4dd2-494a-b91c-50f55aaa3b22"
+          },
+          {
+            "name": "InventaireLigne",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDecimal\":true}"
+              }
+            ],
+            "expression": "CALCULATE(DISTINCTCOUNT(vInventaires[eIdLigneInventaire]),vInventaires[eIdUniteMedicale]=0,vInventaires[bValide]=1)",
+            "formatString": "#,0",
+            "lineageTag": "709cade8-0a13-4ae4-a572-ace976de32b3"
+          },
+          {
+            "name": "InventaireMontant",
+            "expression": "CALCULATE(SUM(vInventaires[MontantTotalInventaires]),vInventaires[eIdUniteMedicale]=0,vInventaires[bValide]=1)/[InventaireNombre]",
+            "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
+            "lineageTag": "55eda07c-4a5d-4188-af71-b4d3b7ccb09d"
+          },
+          {
+            "name": "Titre Etablissement Inventaire",
+            "expression": [
+              "",
+              "VAR Nb = COUNTROWS(VALUES('dbg Manuel_Etablissements'[CodeAlm_Libelle]))",
+              "VAR Concat = CONCATENATEX(VALUES('dbg Manuel_Etablissements'[CodeAlm_Libelle]),'dbg Manuel_Etablissements'[CodeAlm_Libelle],\" & \")",
+              "return if (Nb=2 , Concat, IF(Nb=1, Concat, \"Tout\"))"
+            ],
+            "lineageTag": "2ec1bba3-9400-4aad-9b50-7fa0540bf588"
           }
         ],
         "partitions": [
@@ -18331,13 +18379,10 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
               }
             ],
             "dataType": "double",
+            "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
             "lineageTag": "86cdd1b1-489b-45c4-893f-5f2505c3c854",
             "sourceColumn": "eTotalTTC",
             "summarizeBy": "sum"
@@ -19861,6 +19906,130 @@
           }
         ],
         "showAsVariationsOnly": true
+      },
+      {
+        "name": "vInventaires",
+        "columns": [
+          {
+            "name": "eIdEnteteInventaire",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "246c7ef6-5526-41a6-bfcf-253eaab2a327",
+            "sourceColumn": "eIdEnteteInventaire",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "eIdEtablissement",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "924ae6aa-68e4-4ed6-8c64-97ce33fb80ea",
+            "sourceColumn": "eIdEtablissement",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "eIdUniteMedicale",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "eb55b6a3-1e91-4ff5-a8c1-c2ae1e2bab7f",
+            "sourceColumn": "eIdUniteMedicale",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "bValide",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b9a60357-b668-4bbe-a012-93fd6d29bbda",
+            "sourceColumn": "bValide",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "eDateInventaire",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "8bec98a3-8b95-4e35-8d3a-4db544ea3947",
+            "sourceColumn": "eDateInventaire",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "eIdLigneInventaire",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a4f3fd04-00c7-4160-b6fd-0bc7f77ce835",
+            "sourceColumn": "eIdLigneInventaire",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "MontantTotalInventaires",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "3ff7b723-ca31-4aee-96ad-7625de125a5b",
+            "sourceColumn": "MontantTotalInventaires",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "336d2efc-ec0d-4f7e-841a-bd8834a082da",
+        "partitions": [
+          {
+            "name": "vInventaires",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Databases(\"dwh-almaviva-group-uat.database.windows.net\"),",
+                "    #\"DATAMART-ACHATS\" = Source{[Name=\"DATAMART-ACHATS\"]}[Data],",
+                "    dbo_vInventaires = #\"DATAMART-ACHATS\"{[Schema=\"dbo\",Item=\"vInventaires\"]}[Data]",
+                "in",
+                "    dbo_vInventaires"
+              ],
+              "type": "m"
+            }
+          }
+        ]
       }
     ]
   }

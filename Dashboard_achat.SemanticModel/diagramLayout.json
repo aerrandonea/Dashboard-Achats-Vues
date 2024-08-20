@@ -4,14 +4,14 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
-        "y": 2557.1040434315919
+        "x": 232.21342234221311,
+        "y": 3377.9223568447014
       },
       "nodes": [
         {
           "location": {
             "x": 5.78607321185973,
-            "y": 3659.19938159319
+            "y": 4663.5316734907283
           },
           "nodeIndex": "Paramètre",
           "nodeLineageTag": "36f73dfd-753a-4ee5-89bf-e6598c39e321",
@@ -24,7 +24,7 @@
         {
           "location": {
             "x": 1119.1061852171515,
-            "y": 2451.6889611413058
+            "y": 3456.021253038844
           },
           "nodeIndex": "vArticle",
           "nodeLineageTag": "6ee97d6f-24d4-4d49-b2b5-11ebd87d2909",
@@ -37,7 +37,7 @@
         {
           "location": {
             "x": 548.89336842813054,
-            "y": 2611.5263286999871
+            "y": 3615.8586205975253
           },
           "nodeIndex": "vReport",
           "nodeLineageTag": "b14b9e21-6162-4d8f-a2ed-1ea33877f3cf",
@@ -50,7 +50,7 @@
         {
           "location": {
             "x": 78.552262251354023,
-            "y": 2648.3964794316089
+            "y": 3652.7287713291471
           },
           "nodeIndex": "Date_Articles",
           "nodeLineageTag": "7e30c3d9-ec4b-4b44-8fd0-869759c8ea83",
@@ -63,7 +63,7 @@
         {
           "location": {
             "x": 73.311692823200246,
-            "y": 3178.1286464848831
+            "y": 4182.4609383824209
           },
           "nodeIndex": "Date_ligne",
           "nodeLineageTag": "3c156410-8f45-4a6b-bd6f-b0cc47d104a1",
@@ -76,7 +76,7 @@
         {
           "location": {
             "x": 1004.822908677485,
-            "y": 3372.4643701363325
+            "y": 4376.79666203387
           },
           "nodeIndex": "Mesure",
           "nodeLineageTag": "5ef0bd5e-6e68-4851-80b1-c026b29c93da",
@@ -89,7 +89,7 @@
         {
           "location": {
             "x": 1476.1732657339728,
-            "y": 2559.5179486301577
+            "y": 3563.8502405276959
           },
           "nodeIndex": "Date_Articles_creation",
           "nodeLineageTag": "64977229-bd19-4781-9062-1811883c676b",
@@ -102,7 +102,7 @@
         {
           "location": {
             "x": 1546.0745577530115,
-            "y": 2875.1820853688273
+            "y": 3879.5143772663655
           },
           "nodeIndex": "vCommandes",
           "nodeLineageTag": "40c2c1f6-8288-4e5b-abd2-2fc238706a2a",
@@ -115,7 +115,7 @@
         {
           "location": {
             "x": 2067.9749629502894,
-            "y": 2867.7572193064543
+            "y": 3872.0895112039925
           },
           "nodeIndex": "Date_Commandes",
           "nodeLineageTag": "cf7aa5bc-1956-48b9-86b6-61b8cd612741",
@@ -128,7 +128,7 @@
         {
           "location": {
             "x": 2017.3431581217974,
-            "y": 3472.5691724239637
+            "y": 4476.9014643215014
           },
           "nodeIndex": "dbg Manuel_Etablissements",
           "nodeLineageTag": "9d5ca0ed-4f64-467d-8119-8c73adbf4837",
@@ -141,7 +141,7 @@
         {
           "location": {
             "x": 1582.3758955850567,
-            "y": 3596.2188493914477
+            "y": 4600.5511412889864
           },
           "nodeIndex": "dbg Manuel_MappingALMeIDEtablissements",
           "nodeLineageTag": "b6e1cb68-cba9-4bcd-bcf8-633f49514822",
@@ -154,7 +154,7 @@
         {
           "location": {
             "x": 1824.7522316371567,
-            "y": 2015.4848141092377
+            "y": 3019.8171060067762
           },
           "nodeIndex": "vCommandesGlobal",
           "nodeLineageTag": "d175072b-7eaf-42e7-983e-5fcd44381a3a",
@@ -167,7 +167,7 @@
         {
           "location": {
             "x": 2391.197476973739,
-            "y": 2008.6645837950766
+            "y": 3012.9968756926146
           },
           "nodeIndex": "vSortiesCommandes",
           "nodeLineageTag": "512f67f6-0e1b-49a0-9ac3-db391a028b86",
@@ -176,10 +176,23 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2700.8006636352693,
+            "y": 3008.5919726012485
+          },
+          "nodeIndex": "vInventaires",
+          "nodeLineageTag": "336d2efc-ec0d-4f7e-841a-bd8834a082da",
+          "size": {
+            "height": 307.08566564402781,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Toutes les tables",
-      "zoomValue": 76.327583382659,
+      "zoomValue": 68.078548900741282,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
