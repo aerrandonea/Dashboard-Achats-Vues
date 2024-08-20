@@ -16438,6 +16438,18 @@
             "expression": "SUM(vSortiesCommandes[MontantTotalLivraisonsServices])/DISTINCTCOUNT(vSortiesCommandes[eIdEnteteUniteMedicale])",
             "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
             "lineageTag": "5d178c72-33c8-42dd-a439-bf28356c284b"
+          },
+          {
+            "name": "%LivraisonsNominativesCommandes",
+            "expression": "CALCULATE(DISTINCTCOUNT(vSortiesCommandes[eIdEnteteUniteMedicale]),vSortiesCommandes[eEtat]=3, vSortiesCommandes[bRetour]=0, vSortiesCommandes[eIdPatient]<>0) / CALCULATE(DISTINCTCOUNT(vSortiesCommandes[eIdEnteteUniteMedicale]),vSortiesCommandes[eEtat]=3, vSortiesCommandes[bRetour]=0)",
+            "formatString": "0\\ %;-0\\ %;0\\ %",
+            "lineageTag": "0c03557a-1fd7-494d-8ea1-4b08e9546e8c"
+          },
+          {
+            "name": "%LivraisonsNominativesLignes",
+            "expression": "CALCULATE(DISTINCTCOUNT(vSortiesCommandes[eIdLigneUniteMedicale]),vSortiesCommandes[eEtat]=3, vSortiesCommandes[bRetour]=0, vSortiesCommandes[eIdPatient]<>0) / CALCULATE(DISTINCTCOUNT(vSortiesCommandes[eIdLigneUniteMedicale]),vSortiesCommandes[eEtat]=3, vSortiesCommandes[bRetour]=0)",
+            "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+            "lineageTag": "1060dcf2-9c57-4608-86d0-080552782990"
           }
         ],
         "partitions": [
@@ -19411,6 +19423,20 @@
             "dataType": "double",
             "lineageTag": "92b06973-7cc9-4fb9-8a83-6cca05929a21",
             "sourceColumn": "MontantTotalLivraisonsServices",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "eIdPatient",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8f67fb2e-11a6-4d07-a0b7-5541d4a06616",
+            "sourceColumn": "eIdPatient",
             "summarizeBy": "sum"
           }
         ],
