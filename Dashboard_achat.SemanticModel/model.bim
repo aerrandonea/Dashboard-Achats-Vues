@@ -16432,6 +16432,12 @@
             "expression": "SUM(vSortiesCommandes[MontantTotalCommandesServices])/DISTINCTCOUNT(vSortiesCommandes[eIdEnteteUniteMedicale])",
             "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
             "lineageTag": "ab16dbbf-9bee-4d4c-9e5a-09fba9c16afb"
+          },
+          {
+            "name": "SortiesLivraisonMontant",
+            "expression": "SUM(vSortiesCommandes[MontantTotalLivraisonsServices])/DISTINCTCOUNT(vSortiesCommandes[eIdEnteteUniteMedicale])",
+            "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
+            "lineageTag": "5d178c72-33c8-42dd-a439-bf28356c284b"
           }
         ],
         "partitions": [
@@ -19388,6 +19394,23 @@
             "formatString": "0",
             "lineageTag": "1d2001fd-4a67-4e7e-af7c-ec79142555b0",
             "sourceColumn": "bRetour",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "MontantTotalLivraisonsServices",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "92b06973-7cc9-4fb9-8a83-6cca05929a21",
+            "sourceColumn": "MontantTotalLivraisonsServices",
             "summarizeBy": "sum"
           }
         ],
