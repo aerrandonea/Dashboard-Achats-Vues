@@ -26753,11 +26753,24 @@
         "modelPermission": "read",
         "tablePermissions": [
           {
-            "name": "dbg Manuel_MappingALMeIDEtablissements"
-          },
-          {
             "name": "dbg Manuel_Etablissements",
             "filterExpression": "[Code ALM] == \"0002\""
+          }
+        ]
+      },
+      {
+        "name": "Région Provence",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "2a6a484a25ec49caaa3dbc2cd7869a41"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "dbg Manuel_Etablissements",
+            "filterExpression": "[Région] == \"Provence\""
           }
         ]
       }
