@@ -26732,6 +26732,34 @@
         "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
         "toTable": "LocalDateTable_7f55a134-c095-4919-9c1b-03119ee2685e"
+      },
+      {
+        "name": "3880d73f-1510-eb1e-a9cf-fe5b0817f074",
+        "fromColumn": "Etablissement_eIdEtablissement",
+        "fromTable": "vArticle",
+        "toColumn": "eIdEtablissement",
+        "toTable": "dbg Manuel_MappingALMeIDEtablissements"
+      }
+    ],
+    "roles": [
+      {
+        "name": "Etablissement Juge",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "63fa8f0ba07f4f8c8d4d98fe47d21b71"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "dbg Manuel_MappingALMeIDEtablissements"
+          },
+          {
+            "name": "dbg Manuel_Etablissements",
+            "filterExpression": "[Code ALM] == \"0002\""
+          }
+        ]
       }
     ],
     "sourceQueryCulture": "fr-FR",
@@ -27143,7 +27171,7 @@
             "formatString": "0",
             "lineageTag": "c52b726c-097b-4bd1-8a96-4a700ad20028",
             "sourceColumn": "Etablissement_eIdEtablissement",
-            "summarizeBy": "sum"
+            "summarizeBy": "none"
           },
           {
             "name": "Etablissement_CodeLibelleALM",
@@ -28539,8 +28567,14 @@
           },
           {
             "name": "Nb_article",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDecimal\":true}"
+              }
+            ],
             "expression": "DISTINCTCOUNT(vArticle[eIdArticle])",
-            "formatString": "0",
+            "formatString": "#,0",
             "lineageTag": "f193b79e-ef8b-4b28-81cd-c4ef4923b405"
           },
           {
