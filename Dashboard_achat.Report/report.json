@@ -1248,7 +1248,7 @@
       "width": 1280.00
     },
     {
-      "config": "{}",
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"244L\"}}}}}]}}",
       "displayName": "Menu Général",
       "displayOption": 1,
       "filters": "[]",
