@@ -26773,6 +26773,16 @@
             "filterExpression": "[Région] == \"Provence\""
           }
         ]
+      },
+      {
+        "name": "Admin",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "647d313ea78e432aa5d2dd96616765d2"
+          }
+        ],
+        "modelPermission": "read"
       }
     ],
     "sourceQueryCulture": "fr-FR",
